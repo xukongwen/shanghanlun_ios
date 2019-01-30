@@ -1,0 +1,67 @@
+[
+    {
+        "yaoCount" : 6,
+        "drinkNum" : 3,
+        "height" : 0,
+        "standardYaoList" : [
+            {
+                "amount" : "二两",
+                "yaoID" : 38,
+                "weight" : 200,
+                "showName" : "栝楼根",
+                "extraProcess" : "切"
+            },
+            {
+                "amount" : "三两",
+                "yaoID" : 1,
+                "weight" : 300,
+                "showName" : "桂枝",
+                "extraProcess" : "切"
+            },
+            {
+                "amount" : "三两",
+                "yaoID" : 5,
+                "weight" : 300,
+                "showName" : "芍药",
+                "extraProcess" : "切"
+            },
+            {
+                "amount" : "二两",
+                "yaoID" : 0,
+                "weight" : 200,
+                "showName" : "甘草",
+                "extraProcess" : "切"
+            },
+            {
+                "amount" : "三两",
+                "yaoID" : 2,
+                "weight" : 300,
+                "showName" : "生姜",
+                "extraProcess" : "切"
+            },
+            {
+                "amount" : "12枚",
+                "yaoID" : 3,
+                "weight" : 120,
+                "showName" : "大枣",
+                "extraProcess" : "切"
+            }
+        ],
+        "text" : "1、$f{栝楼桂枝汤} $m{6味} $u{栝楼根}$w{二两}，$u{桂枝}$w{三两}，$u{芍药}$w{三两}，$u{甘草}$w{二两}，$u{生姜}$w{三两}，$u{大枣}$w{十二枚}\n\t$s{右六味}，以水九升，煮取三升。分温三服，取微汗。汗不出，食顷，啜热粥发之。",
+        "fangList" : [
+            "栝楼桂枝汤"
+        ],
+        "yaoList" : [
+            "栝楼根",
+            "桂枝",
+            "芍药",
+            "甘草",
+            "生姜",
+            "大枣"
+        ],
+        "ID" : 0,
+        "name" : "栝楼桂枝汤"
+    }
+]
+ 
+
