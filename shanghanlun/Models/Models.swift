@@ -78,35 +78,35 @@ struct CaoYao: Codable {
 
 //=======================new===================
 
-struct SH_fang_final: Codable {
-    let name: String!
-    let ID: Int!
-    let book: String!
-    let yinyang: String!
-    let jing: String!
-    let zheng: Zheng!
-    let yaocount: Int!
-    let yaoList: [YaoList?]
-    let zhengtext: String!
-    let yaotext: String!
-    let fuyaotext: String!
+struct SH_fang_final: Decodable {
+    let name: String
+    let ID: Int
+    let book: String
+    let yinyang: String
+    let jing: String
+    let zheng: Zheng
+    let yaocount: Int
+    let yaoList: [YaoList]
+    let zhengtext: String
+    let yaotext: String
+    let fuyaotext: String
   
 }
 
-struct Zheng: Codable {
-    let ti: [String?]
-    let mai: [String?]
+struct Zheng: Decodable {
+    let ti: [String]
+    let mai: [String]
 }
 
-struct YaoList: Codable {
-    let yaoname: String!
-    let dirction: String!
-    let temp: String!
-    let wuxing: String!
-    let weightChina: String!
-    let weight: Int!
-    let extraProcess: String!
-    let cost: Int!
+struct YaoList: Decodable {
+    let yaoname: String
+    let dirction: String
+    let temp: String
+    let wuxing: String
+    let weightChina: String
+    let weight: Int
+    let extraProcess: String
+    let cost: Int
 }
 
 

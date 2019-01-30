@@ -7,11 +7,18 @@ let ScreenWidth = UIScreen.main.bounds.size.width
 class PieChartPolylineVC: UIViewController {
     var pieChartView: PieChartView  = PieChartView()
     var data: PieChartData = PieChartData()
-    var fanglist: [SH_json]!
+    
+    var fanglist: [SH_fang_final]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //readFileJson(jsonFile: "SH_ty2,json")
+        let myAppdelegate = UIApplication.shared.delegate as! AppDelegate
+        fanglist = myAppdelegate.fanglist
+        //print(fanglist)
+        
+        //readFileJson(jsonFile: "SH_all_fang1.json")
+        //print(fanglist)
         //添加饼状图
         addPieChart()
         //设置基本样式
@@ -20,6 +27,8 @@ class PieChartPolylineVC: UIViewController {
         updataData()
         view.backgroundColor = .white
     }
+    
+   
     
     
     func readFileJson(jsonFile: String) {
@@ -34,11 +43,8 @@ class PieChartPolylineVC: UIViewController {
                 guard let data = data else { return }
                 
                 do {
-                    let oneJson = try JSONDecoder().decode([SH_json].self, from: data)
-                    
+                    let oneJson = try JSONDecoder().decode([SH_fang_final].self, from: data)
                     self.fanglist = oneJson
-                    
-                    //self.tableView.reloadData()
                 } catch let jsonErr {
                     print(jsonErr)
                 }
@@ -46,21 +52,7 @@ class PieChartPolylineVC: UIViewController {
             
             }.resume()
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+   
     
     //添加饼状图
     func addPieChart(){
@@ -117,16 +109,33 @@ class PieChartPolylineVC: UIViewController {
     
     @objc func updataData(){
         //对应x轴上面需要显示的数据
-        let count = 5
+        //let count = 3
         //对应Y轴上面需要显示的数据
+        
+        var yaoamount = 0
+        var entry: PieChartDataEntry
+        var entryTotal: PieChartDataEntry
+        var yaoTotal = 0
+        
         let yVals: NSMutableArray  = NSMutableArray.init()//这个是数据的合集
-        for i in 0 ..< count {
-            let val: Double = Double(arc4random_uniform(UInt32(200)))
-            print(val)
-            let entry:PieChartDataEntry  = PieChartDataEntry.init(value: val, label: "paty\(i)")
-            // let entry:BarChartDataEntry  = BarChartDataEntry.init(x:  Double(i), y: Double(val))
-            yVals.add(entry)
+
+        for i in fanglist {
+            yaoTotal = yaoTotal + i.yaocount
+            for j in i.yaoList{
+                if j.yaoname == "杏仁" {
+                    yaoamount += 1
+                }
+            }
         }
+       
+        
+        entry = PieChartDataEntry.init(value: Double(yaoamount), label: "甘草")
+        yVals.add(entry)
+        entryTotal = PieChartDataEntry.init(value: Double(yaoTotal - yaoamount), label: "其他")
+        yVals.add(entryTotal)
+        
+        
+        
         //创建PieChartDataSet对象
         let set1: PieChartDataSet = PieChartDataSet.init(values: yVals as? [ChartDataEntry], label: "饼状图")
         set1.drawIconsEnabled = false //是否在饼状图上面显示图片

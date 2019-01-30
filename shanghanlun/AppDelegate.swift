@@ -56,7 +56,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             UINavigationController(rootViewController: gamelist1)
             ], animated: true)
         
-        readFileJson(jsonFile: "SH_json2.json")
+        readFileJson(jsonFile: "SH_all_fang1.json")
         readFileJson_yao(jsonFile: "SH_yao.json")
         //print(fanglist)
         window = UIWindow()
@@ -83,15 +83,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 
                 do {
                     let oneJson = try JSONDecoder().decode([SH_fang_final].self, from: data)
-                    
                     self.fanglist = oneJson
-//                    self.sectionData = [
-////                        Section_jk(name: "伤寒方剂", items: oneJson)
-////                    ]
-//
-                    //self.tableView.reloadData()
                 } catch let jsonErr {
-                    print(jsonErr)
+                    print("apperr:",jsonErr)
                 }
             }
             

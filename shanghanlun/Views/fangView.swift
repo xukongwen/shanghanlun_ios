@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import CoreData
 
 class fangView: UITableViewController {
     
     var bookList = [SH_json]()
     let seacherCon = UISearchController(searchResultsController: nil)
     var fliterList = [SH_json]()
+    let db = DataBase.shared
     
     //定义一个section的组
     var sectionsData = [Section_jk]()
@@ -66,16 +68,38 @@ class fangView: UITableViewController {
                 
                 do {
                     let oneJson = try JSONDecoder().decode([SH_fang_final].self, from: data)
+                    var sh_fang_list = [SH_fang_final]()
+                    var jk_fang_list = [SH_fang_final]()
+                    for i in oneJson {
+                        if i.book == "伤寒论" {
+                            sh_fang_list.append(i)
+                        }
+                        if i.book == "金匮" {
+                            jk_fang_list.append(i)
+                        }
+                    }
+                    self.sectionsData.append(Section_jk(name: "伤寒方剂", items: sh_fang_list))
+                    self.sectionsData.append(Section_jk(name: "金匮方剂", items: jk_fang_list))
                     
-                    self.sectionsData.append(Section_jk(name: "伤寒方剂", items: oneJson))
-                    //print(self.sectionsData)
                     self.tableView.reloadData()
                 } catch let jsonErr {
-                    print(jsonErr)
+                    print("fangerr:",jsonErr)
                 }
             }
             
             }.resume()
+    }
+    
+    override func tableView(_ tableView: UITableView, editActionsForRowAt: IndexPath) -> [UITableViewRowAction]? {
+        let love = UITableViewRowAction(style: .normal, title: "收藏") { action, index in
+            let myAppdelegate = UIApplication.shared.delegate as! AppDelegate//这个很重要，是获取当前AppDelegate的方法！花了好几天的时间！
+            self.saveRow(row: Int64(editActionsForRowAt.row))
+            myAppdelegate.lovelistView.updateData()
+            
+        }
+        love.backgroundColor = .orange
+        
+        return [love]
     }
     
  
@@ -132,6 +156,26 @@ class fangView: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 1.0
+    }
+    
+    func saveRow(row: Int64) {
+        //步骤一：获取总代理和托管对象总管
+        let managedObjectContext = db.persistentContainer.viewContext
+        //步骤二：建立一个entity
+        let entity = NSEntityDescription.entity(forEntityName: "LoveList", in: managedObjectContext)
+        let item = NSManagedObject(entity: entity!, insertInto: managedObjectContext)
+        //步骤三：保存文本框中的值到person
+        item.setValue(row, forKey: "row")
+        //步骤四：保存entity到托管对象中。如果保存失败，进行处理
+        do {
+            try managedObjectContext.save()
+        } catch  {
+            fatalError("无法保存")
+        }
+        //步骤五：保存到数组中，更新UI
+        let myAppdelegate = UIApplication.shared.delegate as! AppDelegate
+        myAppdelegate.lovelistView.rowofsection.append(item)
+        
     }
 }
 

@@ -26,7 +26,7 @@ class LoveView: UITableViewController {
         
         let myAppdelegate = UIApplication.shared.delegate as! AppDelegate
         loveList = myAppdelegate.fanglist
-        //print(loveList.count)
+        print(loveList.count)
         
    
        
@@ -87,6 +87,7 @@ class LoveView: UITableViewController {
         
         let ok: Int64 = rowofsection[indexPath.row].value(forKey: "row") as! Int64
         let ok1 = Int(ok)
+        print(ok1)
         
         let fang = loveList[ok1]
         cell.textLabel?.text = fang.name
