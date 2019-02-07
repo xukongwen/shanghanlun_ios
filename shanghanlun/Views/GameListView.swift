@@ -11,27 +11,12 @@ import UIKit
 class GameListView: UITableViewController {
 
     var gameList = [UIViewController]()
-    let attrs = [NSAttributedString.Key.foregroundColor: UIColor.black,
-                 NSAttributedString.Key.font: UIFont(name: "Songti Tc", size: 35)!]
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        navigationController?.navigationBar.prefersLargeTitles = true
+    
         navigationItem.title = "小游戏和测试"
-        
-        //导航栏的颜色和返回的颜色
-        self.navigationController!.navigationBar.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        self.navigationController!.navigationBar.barTintColor = #colorLiteral(red: 1, green: 0.99997437, blue: 0.9999912977, alpha: 1)
-        
-        //自定义小字体导航栏
-        self.navigationController?.navigationBar.titleTextAttributes =
-            [NSAttributedString.Key.foregroundColor: UIColor.black,
-             NSAttributedString.Key.font: UIFont(name: "Songti Tc", size: 25)!]
-        
-        navigationController?.navigationBar.largeTitleTextAttributes = attrs
-
-     
+   
     }
 
     // MARK: - Table view data source

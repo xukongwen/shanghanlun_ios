@@ -23,7 +23,10 @@
 		837DE18F21F6D0AF00E0B0E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837DE18D21F6D0AF00E0B0E3 /* LaunchScreen.storyboard */; };
 		837F29E721FD3194006EA74D /* yaoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837F29E621FD3194006EA74D /* yaoDetailView.swift */; };
 		83828AC021F722850067D1AB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83828ABF21F722850067D1AB /* GoogleService-Info.plist */; };
+		83892524220C45D2001E256B /* Core_DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83892523220C45D2001E256B /* Core_DataManager.swift */; };
 		838E1BAA21FFE674009CD478 /* SH_all_fang1.json in Resources */ = {isa = PBXBuildFile; fileRef = 838E1BA921FFE674009CD478 /* SH_all_fang1.json */; };
+		83C8B2C7220BC0810044CF4E /* peopleListview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C8B2C6220BC0810044CF4E /* peopleListview.swift */; };
+		83C8B2C9220BC8850044CF4E /* CreatePeople.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C8B2C8220BC8850044CF4E /* CreatePeople.swift */; };
 		83E0179221F8189C00D5E87F /* SH_jk_json1.json in Resources */ = {isa = PBXBuildFile; fileRef = 83E0178C21F8189C00D5E87F /* SH_jk_json1.json */; };
 		83E0179321F8189C00D5E87F /* SH_jk_book.json in Resources */ = {isa = PBXBuildFile; fileRef = 83E0178D21F8189C00D5E87F /* SH_jk_book.json */; };
 		83E0179421F8189C00D5E87F /* SH_book.json in Resources */ = {isa = PBXBuildFile; fileRef = 83E0178E21F8189C00D5E87F /* SH_book.json */; };
@@ -66,7 +69,10 @@
 		837DE19021F6D0AF00E0B0E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		837F29E621FD3194006EA74D /* yaoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yaoDetailView.swift; sourceTree = "<group>"; };
 		83828ABF21F722850067D1AB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		83892523220C45D2001E256B /* Core_DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core_DataManager.swift; sourceTree = "<group>"; };
 		838E1BA921FFE674009CD478 /* SH_all_fang1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SH_all_fang1.json; sourceTree = "<group>"; };
+		83C8B2C6220BC0810044CF4E /* peopleListview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = peopleListview.swift; sourceTree = "<group>"; };
+		83C8B2C8220BC8850044CF4E /* CreatePeople.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePeople.swift; sourceTree = "<group>"; };
 		83E0178C21F8189C00D5E87F /* SH_jk_json1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SH_jk_json1.json; sourceTree = "<group>"; };
 		83E0178D21F8189C00D5E87F /* SH_jk_book.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SH_jk_book.json; sourceTree = "<group>"; };
 		83E0178E21F8189C00D5E87F /* SH_book.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SH_book.json; sourceTree = "<group>"; };
@@ -165,6 +171,7 @@
 				83E017A121F8362800D5E87F /* BaseTableCon.swift */,
 				83E017A521F859BA00D5E87F /* collapsHeader.swift */,
 				83E017B621F95C5900D5E87F /* coredataManager.swift */,
+				83892523220C45D2001E256B /* Core_DataManager.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -181,6 +188,8 @@
 				837F29E621FD3194006EA74D /* yaoDetailView.swift */,
 				8355194C21FE9BCF0092B2DB /* Chart1.swift */,
 				8355195821FFCF3D0092B2DB /* fangView.swift */,
+				83C8B2C6220BC0810044CF4E /* peopleListview.swift */,
+				83C8B2C8220BC8850044CF4E /* CreatePeople.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -423,11 +432,14 @@
 				83E017AC21F8625600D5E87F /* BookDetailView.swift in Sources */,
 				837DE18521F6D0AE00E0B0E3 /* AppDelegate.swift in Sources */,
 				83F4690F21F7048C00BE6B0C /* Model.xcdatamodeld in Sources */,
+				83C8B2C9220BC8850044CF4E /* CreatePeople.swift in Sources */,
 				83531AA121FB32C00055DA2F /* DragandDrop.swift in Sources */,
+				83C8B2C7220BC0810044CF4E /* peopleListview.swift in Sources */,
 				83E017A421F8390600D5E87F /* BaseCell.swift in Sources */,
 				83E017B121F871C700D5E87F /* LoveView.swift in Sources */,
 				8355195921FFCF3D0092B2DB /* fangView.swift in Sources */,
 				83E017A821F85B0300D5E87F /* ext.swift in Sources */,
+				83892524220C45D2001E256B /* Core_DataManager.swift in Sources */,
 				83E017B721F95C5900D5E87F /* coredataManager.swift in Sources */,
 				837F29E721FD3194006EA74D /* yaoDetailView.swift in Sources */,
 				8355194D21FE9BCF0092B2DB /* Chart1.swift in Sources */,

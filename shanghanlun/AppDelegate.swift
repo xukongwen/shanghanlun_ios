@@ -17,11 +17,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var fanglist = [SH_fang_final]()
     var yaoList = [CaoYao]()
-    var sectionData = [Section_jk]()
+    //var sectionData = [Section_jk]()
+    var sectionsData = [Section_jk]()
+    var sectionJk = [SH_fang_final]()
+    
+    let attrs = [NSAttributedString.Key.foregroundColor: UIColor.black,
+                 NSAttributedString.Key.font: UIFont(name: "Songti Tc", size: 35)!]
    
     
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        
+        //===========用以下方法一次性定义导航栏的属性==================
+        UINavigationBar.appearance().prefersLargeTitles = true
+        
+        //导航栏的颜色和返回的颜色
+        UINavigationBar.appearance().tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        UINavigationBar.appearance().barTintColor = #colorLiteral(red: 1, green: 0.99997437, blue: 0.9999912977, alpha: 1)
+        
+        //自定义小字体导航栏
+        UINavigationBar.appearance().titleTextAttributes =
+            [NSAttributedString.Key.foregroundColor: UIColor.black,
+             NSAttributedString.Key.font: UIFont(name: "Songti Tc", size: 25)!]
+        
+        UINavigationBar.appearance().largeTitleTextAttributes = attrs
+        
+        //=====================创建这些view的实例=======================
         
         let fanglistView = fangView()
         fanglistView.title = "方剂"
@@ -37,16 +59,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let chart1View = PieChartPolylineVC()
         chart1View.title = "数据与研究"
         
+        let peopleList1 = PeopleListView()
+        peopleList1.title = "患者档案"
+        
         //获得storyboard里的创建好的view
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "MyStory", bundle: nil)
         let setViewController = mainStoryboard.instantiateViewController(withIdentifier: "drag") as! DrageandDropView
         setViewController.title = "Drag"
         
         let gamelist1 = GameListView()
-        gamelist1.gameList = [gridboxView, setViewController]
+        gamelist1.gameList = [gridboxView, setViewController, peopleList1]
         gamelist1.title = "小游戏"
         
-   
+        //======================tab view========================
         let tabVC = UITabBarController(nibName: nil, bundle: nil)
         tabVC.setViewControllers([
             UINavigationController(rootViewController: fanglistView),
@@ -56,14 +81,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             UINavigationController(rootViewController: gamelist1)
             ], animated: true)
         
+        //============read json==========================
         readFileJson(jsonFile: "SH_all_fang1.json")
         readFileJson_yao(jsonFile: "SH_yao.json")
         //print(fanglist)
         window = UIWindow()
-        window?.makeKeyAndVisible()
-
         window?.rootViewController = tabVC
-       
+        window?.makeKeyAndVisible()
+    
         return true
     }
     
@@ -84,6 +109,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 do {
                     let oneJson = try JSONDecoder().decode([SH_fang_final].self, from: data)
                     self.fanglist = oneJson
+                    
+                    var sh_fang_list = [SH_fang_final]()
+                    var jk_fang_list = [SH_fang_final]()
+                    for i in oneJson {
+                        if i.book == "伤寒论" {
+                            sh_fang_list.append(i)
+                        }
+                        if i.book == "金匮" {
+                            jk_fang_list.append(i)
+                        }
+                    }
+                    self.sectionsData.append(Section_jk(name: "伤寒方剂", items: sh_fang_list))
+                    self.sectionsData.append(Section_jk(name: "金匮方剂", items: jk_fang_list))
+                    
                 } catch let jsonErr {
                     print("apperr:",jsonErr)
                 }

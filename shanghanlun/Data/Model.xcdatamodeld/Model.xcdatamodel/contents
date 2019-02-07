@@ -3,7 +3,11 @@
     <entity name="LoveList" representedClassName=".LoveList" syncable="YES">
         <attribute name="row" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
+    <entity name="PeopleEntity" representedClassName="PeopleEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <elements>
         <element name="LoveList" positionX="-45" positionY="36" width="128" height="60"/>
+        <element name="PeopleEntity" positionX="-45" positionY="45" width="128" height="60"/>
     </elements>
 </model>

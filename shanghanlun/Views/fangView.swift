@@ -21,28 +21,15 @@ class fangView: UITableViewController {
     var sectionJk = [SH_fang_final]()
     
     
-    //自定义大字体导航栏
-    let attrs = [NSAttributedString.Key.foregroundColor: UIColor.black,
-                 NSAttributedString.Key.font: UIFont(name: "Songti Tc", size: 35)!]
-    
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         readFileJson_SH(jsonFile: "SH_all_fang1.json")
-        
-        navigationController?.navigationBar.prefersLargeTitles = true
+    
         navigationItem.title = "伤寒论方剂"
-        
-        //导航栏的颜色和返回的颜色
-        self.navigationController!.navigationBar.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        self.navigationController!.navigationBar.barTintColor = #colorLiteral(red: 1, green: 0.99997437, blue: 0.9999912977, alpha: 1)
-        
-        //自定义小字体导航栏
-        self.navigationController?.navigationBar.titleTextAttributes =
-            [NSAttributedString.Key.foregroundColor: UIColor.black,
-             NSAttributedString.Key.font: UIFont(name: "Songti Tc", size: 25)!]
-        
-        navigationController?.navigationBar.largeTitleTextAttributes = attrs
+
         
         //搜索栏
 //        seacherCon.searchResultsUpdater = self as? UISearchResultsUpdating
@@ -90,6 +77,8 @@ class fangView: UITableViewController {
             }.resume()
     }
     
+    
+    //===========收藏==================
     override func tableView(_ tableView: UITableView, editActionsForRowAt: IndexPath) -> [UITableViewRowAction]? {
         let love = UITableViewRowAction(style: .normal, title: "收藏") { action, index in
             let myAppdelegate = UIApplication.shared.delegate as! AppDelegate//这个很重要，是获取当前AppDelegate的方法！花了好几天的时间！

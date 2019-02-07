@@ -109,4 +109,10 @@ struct YaoList: Decodable {
     let cost: Int
 }
 
+struct People {
+    let name: String
+    let age: Int
+    let sex: String
+}
+
 

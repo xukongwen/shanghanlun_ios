@@ -19,33 +19,16 @@ class LoveView: UITableViewController {
     let db = DataBase.shared
     var rowofsection: [NSManagedObject] = []
     
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let myAppdelegate = UIApplication.shared.delegate as! AppDelegate
         loveList = myAppdelegate.fanglist
         print(loveList.count)
-        
-   
-       
-        navigationController?.navigationBar.prefersLargeTitles = true
+
         navigationItem.title = "收藏"
         
-        //导航栏的颜色和返回的颜色
-        self.navigationController!.navigationBar.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        self.navigationController!.navigationBar.barTintColor = #colorLiteral(red: 1, green: 0.99997437, blue: 0.9999912977, alpha: 1)
-        
-        //自定义小字体导航栏
-        self.navigationController?.navigationBar.titleTextAttributes =
-            [NSAttributedString.Key.foregroundColor: UIColor.black,
-             NSAttributedString.Key.font: UIFont(name: "Songti Tc", size: 25)!]
-        
-        navigationController?.navigationBar.largeTitleTextAttributes = attrs
-        
         title = "收藏"
-        navigationItem.largeTitleDisplayMode = .automatic
     }
     
     func updateData(){
@@ -88,14 +71,15 @@ class LoveView: UITableViewController {
         let ok: Int64 = rowofsection[indexPath.row].value(forKey: "row") as! Int64
         let ok1 = Int(ok)
         print(ok1)
-        
+        print(loveList)
         let fang = loveList[ok1]
+        
         cell.textLabel?.text = fang.name
         cell.textLabel?.font = UIFont.init(name: "Songti Tc", size: 18)
         
         return cell
     }
-    
+    //=========点击显示======================
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let fanglook = fangDetailView()
