@@ -1,13 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18C54" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18D109" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Anli" representedClassName="Anli" syncable="YES" codeGenerationType="class">
+        <attribute name="anli" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="jiage" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="pingjia" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="doc" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DoctorEntity" inverseName="docmoreinfo" inverseEntity="DoctorEntity" syncable="YES"/>
+    </entity>
+    <entity name="DoctorEntity" representedClassName="DoctorEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="bingdate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="docinfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ZhengEntity" inverseName="doc" inverseEntity="ZhengEntity" syncable="YES"/>
+        <relationship name="docmoreinfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Anli" inverseName="doc" inverseEntity="Anli" syncable="YES"/>
+        <relationship name="people" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PeopleEntity" inverseName="docs" inverseEntity="PeopleEntity" syncable="YES"/>
+    </entity>
     <entity name="LoveList" representedClassName=".LoveList" syncable="YES">
         <attribute name="row" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
     <entity name="PeopleEntity" representedClassName="PeopleEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="birthday" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="imageData" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="docs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DoctorEntity" inverseName="people" inverseEntity="DoctorEntity" syncable="YES"/>
+    </entity>
+    <entity name="ZhengEntity" representedClassName="ZhengEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="illdate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="jing" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="yinyang" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zheng" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="doc" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DoctorEntity" inverseName="docinfo" inverseEntity="DoctorEntity" syncable="YES"/>
     </entity>
     <elements>
         <element name="LoveList" positionX="-45" positionY="36" width="128" height="60"/>
-        <element name="PeopleEntity" positionX="-45" positionY="45" width="128" height="60"/>
+        <element name="PeopleEntity" positionX="-385.8125" positionY="211.95703125" width="128" height="103"/>
+        <element name="DoctorEntity" positionX="-92.66796875" positionY="209.83984375" width="128" height="133"/>
+        <element name="ZhengEntity" positionX="376.23828125" positionY="212.734375" width="128" height="133"/>
+        <element name="Anli" positionX="210.27734375" positionY="575.46484375" width="128" height="103"/>
     </elements>
 </model>

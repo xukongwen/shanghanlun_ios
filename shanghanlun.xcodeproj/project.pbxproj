@@ -23,6 +23,11 @@
 		837DE18F21F6D0AF00E0B0E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837DE18D21F6D0AF00E0B0E3 /* LaunchScreen.storyboard */; };
 		837F29E721FD3194006EA74D /* yaoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837F29E621FD3194006EA74D /* yaoDetailView.swift */; };
 		83828AC021F722850067D1AB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83828ABF21F722850067D1AB /* GoogleService-Info.plist */; };
+		83855E852211033D006C1ACC /* PeopleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83855E842211033D006C1ACC /* PeopleCell.swift */; };
+		83855E872211126C006C1ACC /* peopleListview+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83855E862211126C006C1ACC /* peopleListview+UITableView.swift */; };
+		83855E8922111A0B006C1ACC /* PeopleInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83855E8822111A0B006C1ACC /* PeopleInfoView.swift */; };
+		83855E8C22112042006C1ACC /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83855E8B22112042006C1ACC /* Helpers.swift */; };
+		83855E8E221122E7006C1ACC /* PeopleZhengView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83855E8D221122E7006C1ACC /* PeopleZhengView.swift */; };
 		83892524220C45D2001E256B /* Core_DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83892523220C45D2001E256B /* Core_DataManager.swift */; };
 		838E1BAA21FFE674009CD478 /* SH_all_fang1.json in Resources */ = {isa = PBXBuildFile; fileRef = 838E1BA921FFE674009CD478 /* SH_all_fang1.json */; };
 		83C8B2C7220BC0810044CF4E /* peopleListview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C8B2C6220BC0810044CF4E /* peopleListview.swift */; };
@@ -69,6 +74,11 @@
 		837DE19021F6D0AF00E0B0E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		837F29E621FD3194006EA74D /* yaoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yaoDetailView.swift; sourceTree = "<group>"; };
 		83828ABF21F722850067D1AB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		83855E842211033D006C1ACC /* PeopleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCell.swift; sourceTree = "<group>"; };
+		83855E862211126C006C1ACC /* peopleListview+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "peopleListview+UITableView.swift"; sourceTree = "<group>"; };
+		83855E8822111A0B006C1ACC /* PeopleInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleInfoView.swift; sourceTree = "<group>"; };
+		83855E8B22112042006C1ACC /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		83855E8D221122E7006C1ACC /* PeopleZhengView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleZhengView.swift; sourceTree = "<group>"; };
 		83892523220C45D2001E256B /* Core_DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core_DataManager.swift; sourceTree = "<group>"; };
 		838E1BA921FFE674009CD478 /* SH_all_fang1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SH_all_fang1.json; sourceTree = "<group>"; };
 		83C8B2C6220BC0810044CF4E /* peopleListview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = peopleListview.swift; sourceTree = "<group>"; };
@@ -157,6 +167,23 @@
 			path = shanghanlun;
 			sourceTree = "<group>";
 		};
+		83855E8A2211202B006C1ACC /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				83855E8B22112042006C1ACC /* Helpers.swift */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
+		83855E8F2211692B006C1ACC /* doctor */ = {
+			isa = PBXGroup;
+			children = (
+				83855E8822111A0B006C1ACC /* PeopleInfoView.swift */,
+				83855E8D221122E7006C1ACC /* PeopleZhengView.swift */,
+			);
+			path = doctor;
+			sourceTree = "<group>";
+		};
 		83E0178821F817D500D5E87F /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +206,8 @@
 		83E0178A21F817F600D5E87F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				83855E8F2211692B006C1ACC /* doctor */,
+				83855E8A2211202B006C1ACC /* helper */,
 				83E017A321F8390600D5E87F /* BaseCell.swift */,
 				83E017A921F8613E00D5E87F /* YuanWenView.swift */,
 				83E017AB21F8625600D5E87F /* BookDetailView.swift */,
@@ -190,6 +219,8 @@
 				8355195821FFCF3D0092B2DB /* fangView.swift */,
 				83C8B2C6220BC0810044CF4E /* peopleListview.swift */,
 				83C8B2C8220BC8850044CF4E /* CreatePeople.swift */,
+				83855E842211033D006C1ACC /* PeopleCell.swift */,
+				83855E862211126C006C1ACC /* peopleListview+UITableView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -427,6 +458,7 @@
 			files = (
 				83531A9C21FB087E0055DA2F /* grid_box.swift in Sources */,
 				8355194F21FE9C980092B2DB /* anthercolor.swift in Sources */,
+				83855E852211033D006C1ACC /* PeopleCell.swift in Sources */,
 				83E017AA21F8613E00D5E87F /* YuanWenView.swift in Sources */,
 				83E017A221F8362800D5E87F /* BaseTableCon.swift in Sources */,
 				83E017AC21F8625600D5E87F /* BookDetailView.swift in Sources */,
@@ -434,16 +466,20 @@
 				83F4690F21F7048C00BE6B0C /* Model.xcdatamodeld in Sources */,
 				83C8B2C9220BC8850044CF4E /* CreatePeople.swift in Sources */,
 				83531AA121FB32C00055DA2F /* DragandDrop.swift in Sources */,
+				83855E8E221122E7006C1ACC /* PeopleZhengView.swift in Sources */,
+				83855E872211126C006C1ACC /* peopleListview+UITableView.swift in Sources */,
 				83C8B2C7220BC0810044CF4E /* peopleListview.swift in Sources */,
 				83E017A421F8390600D5E87F /* BaseCell.swift in Sources */,
 				83E017B121F871C700D5E87F /* LoveView.swift in Sources */,
 				8355195921FFCF3D0092B2DB /* fangView.swift in Sources */,
+				83855E8C22112042006C1ACC /* Helpers.swift in Sources */,
 				83E017A821F85B0300D5E87F /* ext.swift in Sources */,
 				83892524220C45D2001E256B /* Core_DataManager.swift in Sources */,
 				83E017B721F95C5900D5E87F /* coredataManager.swift in Sources */,
 				837F29E721FD3194006EA74D /* yaoDetailView.swift in Sources */,
 				8355194D21FE9BCF0092B2DB /* Chart1.swift in Sources */,
 				83E017BD21F9BCD100D5E87F /* LoveList+CoreDataProperties.swift in Sources */,
+				83855E8922111A0B006C1ACC /* PeopleInfoView.swift in Sources */,
 				83E017AF21F8673C00D5E87F /* fangDetailView.swift in Sources */,
 				83E017BC21F9BCD100D5E87F /* LoveList+CoreDataClass.swift in Sources */,
 				83E017A621F859BA00D5E87F /* collapsHeader.swift in Sources */,
