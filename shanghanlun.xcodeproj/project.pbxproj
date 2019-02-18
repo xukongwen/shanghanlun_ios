@@ -28,6 +28,7 @@
 		83855E8922111A0B006C1ACC /* PeopleInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83855E8822111A0B006C1ACC /* PeopleInfoView.swift */; };
 		83855E8C22112042006C1ACC /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83855E8B22112042006C1ACC /* Helpers.swift */; };
 		83855E8E221122E7006C1ACC /* PeopleZhengView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83855E8D221122E7006C1ACC /* PeopleZhengView.swift */; };
+		83855E9322190745006C1ACC /* temp.json in Resources */ = {isa = PBXBuildFile; fileRef = 83855E9222190745006C1ACC /* temp.json */; };
 		83892524220C45D2001E256B /* Core_DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83892523220C45D2001E256B /* Core_DataManager.swift */; };
 		838E1BAA21FFE674009CD478 /* SH_all_fang1.json in Resources */ = {isa = PBXBuildFile; fileRef = 838E1BA921FFE674009CD478 /* SH_all_fang1.json */; };
 		83C8B2C7220BC0810044CF4E /* peopleListview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C8B2C6220BC0810044CF4E /* peopleListview.swift */; };
@@ -79,6 +80,7 @@
 		83855E8822111A0B006C1ACC /* PeopleInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleInfoView.swift; sourceTree = "<group>"; };
 		83855E8B22112042006C1ACC /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		83855E8D221122E7006C1ACC /* PeopleZhengView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleZhengView.swift; sourceTree = "<group>"; };
+		83855E9222190745006C1ACC /* temp.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = temp.json; sourceTree = "<group>"; };
 		83892523220C45D2001E256B /* Core_DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core_DataManager.swift; sourceTree = "<group>"; };
 		838E1BA921FFE674009CD478 /* SH_all_fang1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SH_all_fang1.json; sourceTree = "<group>"; };
 		83C8B2C6220BC0810044CF4E /* peopleListview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = peopleListview.swift; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 				8355195421FEF0DF0092B2DB /* SH_jk_json2.json */,
 				8355195621FEF8820092B2DB /* SH_jk_json_backup.json */,
 				838E1BA921FFE674009CD478 /* SH_all_fang1.json */,
+				83855E9222190745006C1ACC /* temp.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				838E1BAA21FFE674009CD478 /* SH_all_fang1.json in Resources */,
 				83E0179D21F818B900D5E87F /* song.ttf in Resources */,
 				8355195121FEEE910092B2DB /* SH_json2.json in Resources */,
+				83855E9322190745006C1ACC /* temp.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

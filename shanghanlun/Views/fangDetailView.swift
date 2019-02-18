@@ -20,7 +20,7 @@ class fangDetailView: UITableViewController {
         
         for k in fang!.yaoList {
             
-            let intext = k.yaoname + ":" + k.weightChina + "(汉制), 约为" + String(Double(k.weight) * 15) + "克"
+            let intext = k.yaoname + ":" + k.weightChina + "(汉制), 约为" + String(Double(k.weight) * 0.15) + "克"
             yaoNameList.append(k.yaoname)
             fangList.append(intext)
         }

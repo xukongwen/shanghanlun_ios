@@ -31,15 +31,6 @@ class fangView: UITableViewController {
         navigationItem.title = "伤寒论方剂"
 
         
-        //搜索栏
-//        seacherCon.searchResultsUpdater = self as? UISearchResultsUpdating
-//        seacherCon.obscuresBackgroundDuringPresentation = false
-//        seacherCon.searchBar.placeholder = "关键词"
-        
-        
-//        navigationItem.searchController = seacherCon
-//        definesPresentationContext = true
-        
     }
     
     func readFileJson_SH(jsonFile: String) {
@@ -80,10 +71,20 @@ class fangView: UITableViewController {
     
     //===========收藏==================
     override func tableView(_ tableView: UITableView, editActionsForRowAt: IndexPath) -> [UITableViewRowAction]? {
+        
         let love = UITableViewRowAction(style: .normal, title: "收藏") { action, index in
             let myAppdelegate = UIApplication.shared.delegate as! AppDelegate//这个很重要，是获取当前AppDelegate的方法！花了好几天的时间！
-            self.saveRow(row: Int64(editActionsForRowAt.row))
+            
+            let fang : SH_fang_final
+            fang = self.sectionsData[editActionsForRowAt.section].items[editActionsForRowAt.row]
+            
+            
+            let fangId = fang.ID
+          
+            self.saveRow(id: Int16(fangId))
             myAppdelegate.lovelistView.updateData()
+            print("name:",fang.name, "id:",fangId)
+            print("选中的row",editActionsForRowAt.row)
             
         }
         love.backgroundColor = .orange
@@ -147,21 +148,23 @@ class fangView: UITableViewController {
         return 1.0
     }
     
-    func saveRow(row: Int64) {
-        //步骤一：获取总代理和托管对象总管
+    
+    // 储存ID
+    func saveRow(id: Int16) {
+       
         let managedObjectContext = db.persistentContainer.viewContext
-        //步骤二：建立一个entity
+        
         let entity = NSEntityDescription.entity(forEntityName: "LoveList", in: managedObjectContext)
         let item = NSManagedObject(entity: entity!, insertInto: managedObjectContext)
-        //步骤三：保存文本框中的值到person
-        item.setValue(row, forKey: "row")
-        //步骤四：保存entity到托管对象中。如果保存失败，进行处理
+        
+        item.setValue(id, forKey: "id")
+       
         do {
             try managedObjectContext.save()
         } catch  {
             fatalError("无法保存")
         }
-        //步骤五：保存到数组中，更新UI
+        
         let myAppdelegate = UIApplication.shared.delegate as! AppDelegate
         myAppdelegate.lovelistView.rowofsection.append(item)
         

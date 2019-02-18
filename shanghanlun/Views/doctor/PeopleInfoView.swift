@@ -18,10 +18,7 @@ class NewHeader: UILabel {
 }
 
 class PeopleInfoView: UITableViewController, CreateDocdelgate {
-    
-    
-    
-    
+
     func didAddDoc(doc: DoctorEntity) {
        
         fetchdoc()
@@ -38,6 +35,8 @@ class PeopleInfoView: UITableViewController, CreateDocdelgate {
     
     let cellId = "hicell"
     
+    
+    // 设定section的类型
     var illtypes = [
         "阴",
         "阳"
@@ -52,18 +51,20 @@ class PeopleInfoView: UITableViewController, CreateDocdelgate {
     
     // 读取名单
     
-    // 这里很重要，就是根据tag来制作section
+    // 这里很重要，就是根据seciton类型来制作2维数组
     private func fetchdoc() {
     
         guard let docs = people?.docs?.allObjects as? [DoctorEntity] else {return}
         
         alldocs = []
         
+        // 这里面每一个组就对应了那一个数据类型
         illtypes.forEach { (type) in
             alldocs.append(
                 docs.filter{ $0.type == type }
             )
         }
+        //print(alldocs)
 
     }
     
@@ -72,6 +73,7 @@ class PeopleInfoView: UITableViewController, CreateDocdelgate {
         
         
         fetchdoc()
+        
         setpupPlus(selector: #selector(handlePlus))
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
@@ -88,6 +90,7 @@ class PeopleInfoView: UITableViewController, CreateDocdelgate {
         present(nav, animated: true, completion: nil)
     }
     
+    //每个section里有多少行
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
         return alldocs[section].count
@@ -95,14 +98,10 @@ class PeopleInfoView: UITableViewController, CreateDocdelgate {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
-        
-    
-        //let doctor = indexPath.section == 0 ? shotName[indexPath.row] : longName[indexPath.row]
-        
+ 
+        //根据所在section调出相应cell的数据
         let doctor = alldocs[indexPath.section][indexPath.row]
-        
-        //let doctor = doctors[indexPath.row]
-        
+  
         cell.textLabel?.text = doctor.name
         
         if let illdate = doctor.docinfo?.illdate {
@@ -118,10 +117,13 @@ class PeopleInfoView: UITableViewController, CreateDocdelgate {
         return cell
     }
     
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return alldocs.count
     }
     
+    
+    // 根据类型显示section header的文字
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let lable = NewHeader()
         lable.backgroundColor = .black

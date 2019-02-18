@@ -23,7 +23,7 @@
                 "temp" : "温",
                 "wuxing" : "木",
                 "weightChina" : "三两",
-                "weight" : 3,
+                "weight" : 300,
                 "extraProcess" : "去皮",
                 "cost" : 10
             },
@@ -33,7 +33,7 @@
                 "temp" : "平",
                 "wuxing" : "金",
                 "weightChina" : "三两",
-                "weight" : 3,
+                "weight" : 300,
                 "extraProcess" : "无",
                 "cost" : 10
             },
@@ -43,7 +43,7 @@
                 "temp" : "平",
                 "wuxing" : "土",
                 "weightChina" : "二两",
-                "weight" : 2,
+                "weight" : 200,
                 "extraProcess" : "炙",
                 "cost" : 10
             },
@@ -53,7 +53,7 @@
                 "temp" : "温",
                 "wuxing" : "木",
                 "weightChina" : "三两",
-                "weight" : 3,
+                "weight" : 300,
                 "extraProcess" : "切",
                 "cost" : 10
             },
@@ -63,7 +63,7 @@
                 "temp" : "温",
                 "wuxing" : "土",
                 "weightChina" : "12枚",
-                "weight" : 3,
+                "weight" : 120,
                 "extraProcess" : "擘",
                 "cost" : 10
             }
@@ -99,7 +99,7 @@
                 "temp" : "平",
                 "wuxing" : "土",
                 "weightChina" : "四两",
-                "weight" : 4,
+                "weight" : 400,
                 "extraProcess" : "无",
                 "cost" : 10
             },
@@ -109,7 +109,7 @@
                 "temp" : "温",
                 "wuxing" : "木",
                 "weightChina" : "三两",
-                "weight" : 3,
+                "weight" : 300,
                 "extraProcess" : "去节",
                 "cost" : 10
             },
@@ -119,7 +119,7 @@
                 "temp" : "平",
                 "wuxing" : "金",
                 "weightChina" : "二两",
-                "weight" : 2,
+                "weight" : 200,
                 "extraProcess" : "无",
                 "cost" : 10
             },
@@ -129,7 +129,7 @@
                 "temp" : "温",
                 "wuxing" : "木",
                 "weightChina" : "三两",
-                "weight" : 3,
+                "weight" : 300,
                 "extraProcess" : "切",
                 "cost" : 10
             },
@@ -139,7 +139,7 @@
                 "temp" : "平",
                 "wuxing" : "土",
                 "weightChina" : "二两",
-                "weight" : 2,
+                "weight" : 200,
                 "extraProcess" : "炙",
                 "cost" : 10
             },
@@ -149,7 +149,7 @@
                 "temp" : "温",
                 "wuxing" : "土",
                 "weightChina" : "12枚",
-                "weight" : 3,
+                "weight" : 120,
                 "extraProcess" : "擘",
                 "cost" : 10
             },
@@ -159,7 +159,7 @@
                 "temp" : "温",
                 "wuxing" : "木",
                 "weightChina" : "二两",
-                "weight" : 2,
+                "weight" : 200,
                 "extraProcess" : "去皮",
                 "cost" : 10
             }
@@ -172,7 +172,7 @@
     },
     {
         "name" : "桂枝加厚朴杏子汤",
-        "ID" : 1,
+        "ID" : 2,
         "book" : "金匮",
         "yinyang" : "阴",
         "jing" : "太阴",
@@ -195,7 +195,7 @@
                 "temp" : "温",
                 "wuxing" : "木",
                 "weightChina" : "三两",
-                "weight" : 3,
+                "weight" : 300,
                 "extraProcess" : "去皮",
                 "cost" : 10
             },
@@ -205,7 +205,7 @@
                 "temp" : "平",
                 "wuxing" : "土",
                 "weightChina" : "二两",
-                "weight" : 2,
+                "weight" : 200,
                 "extraProcess" : "炙",
                 "cost" : 10
             },
@@ -215,7 +215,7 @@
                 "temp" : "温",
                 "wuxing" : "木",
                 "weightChina" : "三两",
-                "weight" : 3,
+                "weight" : 300,
                 "extraProcess" : "切",
                 "cost" : 10
             },
@@ -225,7 +225,7 @@
                 "temp" : "平",
                 "wuxing" : "金",
                 "weightChina" : "三两",
-                "weight" : 3,
+                "weight" : 300,
                 "extraProcess" : "无",
                 "cost" : 10
             },
@@ -235,7 +235,7 @@
                 "temp" : "温",
                 "wuxing" : "土",
                 "weightChina" : "12枚",
-                "weight" : 3,
+                "weight" : 120,
                 "extraProcess" : "擘",
                 "cost" : 10
             },
@@ -245,7 +245,7 @@
                 "temp" : "温",
                 "wuxing" : "金",
                 "weightChina" : "二两",
-                "weight" : 3,
+                "weight" : 200,
                 "extraProcess" : "炙去皮",
                 "cost" : 10
             },
@@ -255,7 +255,7 @@
                 "temp" : "温",
                 "wuxing" : "金",
                 "weightChina" : "五十枚",
-                "weight" : 5,
+                "weight" : 500,
                 "extraProcess" : "去皮尖",
                 "cost" : 10
             }
@@ -264,8 +264,5009 @@
         "yaotext" : "桂枝三两[去皮] 芍药三两 甘草二两[炙] 生姜三两[切] 大枣十二枚[擘] 葛根四两。",
         "fuyaotext" : "无"
         
-    }
+    },
+    {
+        "name" : "桂枝加附子汤",
+        "ID" : 3,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "肌肉酸痛",
+                "后背酸痛",
+                "脖子僵硬",
+                "怕风"
+            ],
+            "mai" : [
+                "无"
+            ]
+        },
+        "yaocount" : 6,
+        "yaoList" : [
+            {
+                "yaoname" : "桂枝",
+                "dirction" : "辛",
+                "temp" : "温",
+                "wuxing" : "木",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "去皮",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "生姜",
+                "dirction" : "辛",
+                "temp" : "温",
+                "wuxing" : "木",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "芍药",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "大枣",
+                "dirction" : "甘",
+                "temp" : "温",
+                "wuxing" : "土",
+                "weightChina" : "12枚",
+                "weight" : 300,
+                "extraProcess" : "擘",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "附子",
+                "dirction" : "辛",
+                "temp" : "温",
+                "wuxing" : "木",
+                "weightChina" : "一枚",
+                "weight" : 100,
+                "extraProcess" : "炮去皮破八片",
+                "cost" : 10
+            }
+        ],
+        "zhengtext" : "太阳病，发汗，遂漏不止，其人恶风，小便难，四支微急，难以屈伸者，桂枝加附子汤主之。",
+        "yaotext" : "桂枝三两,去皮,芍药三两,甘草二两,炙 生姜三两,切, 大枣十二枚,擘, 附子一枚,炮,去皮,破八片",
+        "fuyaotext" : "无"
+    },
+    {
+        "name" : "桂枝去芍药汤",
+        "ID" : 4,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 4,
+        "yaoList" : [
+            {
+                "yaoname" : "桂枝",
+                "dirction" : "辛",
+                "temp" : "温",
+                "wuxing" : "木",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "去皮",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "生姜",
+                "dirction" : "辛",
+                "temp" : "温",
+                "wuxing" : "木",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "大枣",
+                "dirction" : "甘",
+                "temp" : "温",
+                "wuxing" : "土",
+                "weightChina" : "12枚",
+                "weight" : 120,
+                "extraProcess" : "擘",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "太阳病。下之后。脉促。胸满者。桂枝去芍药汤主之。",
+        "yaotext" : "桂枝三两去皮 甘草二两炙 生姜三两切 大枣十二枚擘",
+        "fuyaotext" : "右四味。以水七升。煮取三升。去滓。温服一升。 本云。桂枝汤。今去芍药。将息如前法。"
+    },
+    {
+        "name" : "桂枝去芍药加附子汤",
+        "ID" : 5,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 5,
+        "yaoList" : [
+            {
+                "yaoname" : "桂枝",
+                "dirction" : "辛",
+                "temp" : "温",
+                "wuxing" : "木",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "去皮",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "生姜",
+                "dirction" : "辛",
+                "temp" : "温",
+                "wuxing" : "木",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "大枣",
+                "dirction" : "甘",
+                "temp" : "温",
+                "wuxing" : "土",
+                "weightChina" : "12枚",
+                "weight" : 300,
+                "extraProcess" : "擘",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "附子",
+                "dirction" : "辛",
+                "temp" : "温",
+                "wuxing" : "木",
+                "weightChina" : "一枚",
+                "weight" : 100,
+                "extraProcess" : "炮去皮破八片",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "若微寒者。桂枝去芍药加附子汤主之。",
+        "yaotext" : "桂枝三两[去皮] 甘草二两[炙] 生姜三两[切] 大枣十二枚[擘] 附子一枚[炮 去皮 破八片]",
+        "fuyaotext" : "右五味。以水七升。煮取三升。去滓。温服一升。"   
+    },
+    {
+        "name" : "桂枝麻黄各半汤",
+        "ID" : 6,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 7,
+        "yaoList" : [
+            {
+                "yaoname" : "桂枝",
+                "dirction" : "辛",
+                "temp" : "温",
+                "wuxing" : "木",
+                "weightChina" : "一两十六铢",
+                "weight" : 166,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "芍药",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "一两",
+                "weight" : 100,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一两",
+                "weight" : 100,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "生姜",
+                "dirction" : "辛",
+                "temp" : "温",
+                "wuxing" : "木",
+                "weightChina" : "一两",
+                "weight" : 100,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "大枣",
+                "dirction" : "甘",
+                "temp" : "温",
+                "wuxing" : "土",
+                "weightChina" : "4枚",
+                "weight" : 40,
+                "extraProcess" : "擘",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "杏仁",
+                "dirction" : "甘",
+                "temp" : "温",
+                "wuxing" : "金",
+                "weightChina" : "24枚",
+                "weight" : 240,
+                "extraProcess" : "去皮尖",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "麻黄",
+                "dirction" : "苦",
+                "temp" : "温",
+                "wuxing" : "金",
+                "weightChina" : "一两",
+                "weight" : 100,
+                "extraProcess" : "去皮尖",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "面色反有热色者。未欲解也。以其不能得小汗出 。 身必痒。宜桂枝麻黄各半汤",
+        "yaotext" : "桂枝一两十六铢[去皮] 芍药 生姜[切] 甘草[炙] 麻黄各一两[去节] 大枣四枚[擘] 杏仁二十四枚[汤浸 去皮尖及两仁者]",
+        "fuyaotext" : "右七味。以水五升先煮麻黄一二沸。去上沫。内诸药。煮取一升八合。去滓。温服六合。【本云。桂枝汤三合。麻黄汤三合。并为六合。顿服。将息如上法。"
+    },
+    {
+        "name" : "桂枝二麻黄一汤",
+        "ID" : 7,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 7,
+        "yaoList" : [
+            {
+                "yaoname" : "桂枝",
+                "dirction" : "辛",
+                "temp" : "温",
+                "wuxing" : "木",
+                "weightChina" : "一两十七铢",
+                "weight" : 171,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "芍药",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "一两六铢",
+                "weight" : 125,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一两二铢",
+                "weight" : 108,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "生姜",
+                "dirction" : "辛",
+                "temp" : "温",
+                "wuxing" : "木",
+                "weightChina" : "一两六铢",
+                "weight" : 125,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "大枣",
+                "dirction" : "甘",
+                "temp" : "温",
+                "wuxing" : "土",
+                "weightChina" : "5枚",
+                "weight" : 50,
+                "extraProcess" : "擘",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "杏仁",
+                "dirction" : "甘",
+                "temp" : "温",
+                "wuxing" : "金",
+                "weightChina" : "16个",
+                "weight" : 160,
+                "extraProcess" : "去皮尖",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "麻黄",
+                "dirction" : "苦",
+                "temp" : "温",
+                "wuxing" : "金",
+                "weightChina" : "十六铢",
+                "weight" : 66,
+                "extraProcess" : "去皮尖",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "服桂枝汤。大汗出。脉洪大者。与桂枝汤如前法。若形似疟。一日再发者。汗出必解。宜桂枝二麻黄一汤。",
+        "yaotext" : "桂枝一两十七铢[去皮] 芍药一两六铢 麻黄十六铢[去节] 生姜一两六铢[切] 杏仁十六个[去皮尖] 甘草一两二铢[炙] 大枣五枚[擘]",
+        "fuyaotext" : "右七味。以水五升先煮麻黄一二沸。去上沫。内诸药。煮取二升。去滓。温服一升。日再服。【本云。桂枝汤二分。麻黄汤一分。合为二升。分再服。今合为一方。将息如前法。"
+    },
+    {
+        "name" : "白虎加人参汤",
+        "ID" : 8,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 5,
+        "yaoList" : [
+            {
+                "yaoname" : "知母",
+                "dirction" : "苦",
+                "temp" : "寒",
+                "wuxing" : "金",
+                "weightChina" : "六两",
+                "weight" : 600,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "石膏",
+                "dirction" : "辛",
+                "temp" : "微寒",
+                "wuxing" : "金",
+                "weightChina" : "一斤",
+                "weight" : 1600,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "梗米",
+                "dirction" : "甘苦",
+                "temp" : "平",
+                "wuxing" : "木",
+                "weightChina" : "六合",
+                "weight" : 600,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "人参",
+                "dirction" : "甘",
+                "temp" : "微寒",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            
+        ],
+        "zhengtext" : "服桂枝汤。大汗出后。大烦渴不解。脉洪大者。白虎加人参汤主之。",
+        "yaotext" : "知母六两 石膏一斤[碎 绵裹] 甘草二两[炙] 粳米六合 人参三两",
+        "fuyaotext" : "右五味。以水一斗。煮米熟汤成。去滓。温服一升。日三服。"
+    },
+    {
+        "name" : "桂枝二越婢一汤",
+        "ID" : 9,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 5,
+        "yaoList" : [
+            {
+                "yaoname" : "桂枝",
+                "dirction" : "辛",
+                "temp" : "温",
+                "wuxing" : "木",
+                "weightChina" : "十八铢",
+                "weight" : 75,
+                "extraProcess" : "去皮",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "芍药",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "十八铢",
+                "weight" : 75,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "十八铢",
+                "weight" : 75,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "生姜",
+                "dirction" : "辛",
+                "temp" : "温",
+                "wuxing" : "木",
+                "weightChina" : "一两二铢",
+                "weight" : 108,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "大枣",
+                "dirction" : "甘",
+                "temp" : "温",
+                "wuxing" : "土",
+                "weightChina" : "4枚",
+                "weight" : 40,
+                "extraProcess" : "擘",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "麻黄",
+                "dirction" : "辛",
+                "temp" : "温",
+                "wuxing" : "木",
+                "weightChina" : "十八铢",
+                "weight" : 75,
+                "extraProcess" : "炮去皮破八片",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "石膏",
+                "dirction" : "辛",
+                "temp" : "微寒",
+                "wuxing" : "木",
+                "weightChina" : "二十四铢",
+                "weight" : 100,
+                "extraProcess" : "切",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "太阳病。发热恶寒。热多寒少。脉微弱者。此无阳也。不可发汗。宜桂枝二越婢一汤。",
+        "yaotext" : "桂枝[去皮] 芍药 麻黄 甘草各十八铢[炙] 大枣四枚[擘] 生姜一两三铢[切] 石膏二十四铢[碎 绵裹]",
+        "fuyaotext" : "右七味。以水五升先煮麻黄一二沸。去上沫。内诸药。煮取二升。去滓。温服一升。"
+    },
+    {
+        "name" : "桂枝去桂加茯苓白术汤",
+        "ID" : 10,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 5,
+        "yaoList" : [
+            {
+                "yaoname" : "白术",
+                "dirction" : "辛",
+                "temp" : "温",
+                "wuxing" : "木",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "去皮",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "芍药",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "生姜",
+                "dirction" : "辛",
+                "temp" : "温",
+                "wuxing" : "木",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "大枣",
+                "dirction" : "甘",
+                "temp" : "温",
+                "wuxing" : "土",
+                "weightChina" : "12枚",
+                "weight" : 120,
+                "extraProcess" : "擘",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "茯苓",
+                "dirction" : "辛",
+                "temp" : "温",
+                "wuxing" : "木",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "切",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "服桂枝汤。或下之。仍头项强痛。翕翕发热。无汗。心下满微痛。小便不利者。桂枝去桂加茯苓白术汤主之。",
+        "yaotext" : "服桂枝汤。或下之。仍头项强痛。翕翕发热。无汗。心下满微痛。小便不利者。桂枝去桂加茯苓白术汤主之。",
+        "fuyaotext" : "右六味。以水八升。煮取三升。去滓。温服一升。小便利则愈。"
+    },
+    {
+        "name" : "甘草干姜汤",
+        "ID" : 11,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 2,
+        "yaoList" : [
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "四两",
+                "weight" : 400,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "干姜",
+                "dirction" : "辛",
+                "temp" : "温",
+                "wuxing" : "木",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "切",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "烦躁。吐逆者。作甘草干姜汤与之。以复其阳。",
+        "yaotext" : "甘草四两[炙] 干姜二两",
+        "fuyaotext" : "甘草四两[炙] 干姜二两"
+    },
+    {
+        "name" : "芍药甘草汤",
+        "ID" : 12,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 2,
+        "yaoList" : [
+            {
+                "yaoname" : "芍药",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "四两",
+                "weight" : 400,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "四两",
+                "weight" : 400,
+                "extraProcess" : "炙",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "若厥愈足温者。更作芍药甘草汤与之。",
+        "yaotext" : "芍药 甘草各四两[炙]",
+        "fuyaotext" : "右二味。以水三升。煮取一升五合。去滓。分温再服。"
+    },
+    {
+        "name" : "调胃承气汤",
+        "ID" : 13,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 2,
+        "yaoList" : [
+            {
+                "yaoname" : "大黄",
+                "dirction" : "苦",
+                "temp" : "寒",
+                "wuxing" : "金",
+                "weightChina" : "四两",
+                "weight" : 400,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "芒硝",
+                "dirction" : "苦",
+                "temp" : "寒",
+                "wuxing" : "金",
+                "weightChina" : "半升",
+                "weight" : 500,
+                "extraProcess" : "炙",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "若厥愈足温者。更作芍药甘草汤与之。",
+        "yaotext" : "芍药 甘草各四两[炙]",
+        "fuyaotext" : "右二味。以水三升。煮取一升五合。去滓。分温再服。"
+    },
+    {
+        "name" : "四逆汤",
+        "ID" : 14,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 3,
+        "yaoList" : [
+            {
+                "yaoname" : "附子",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "一枚",
+                "weight" : 100,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "干姜",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一两半",
+                "weight" : 150,
+                "extraProcess" : "炙",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "若重发汗。复加烧针者。四逆汤主之。",
+        "yaotext" : "甘草二两[炙] 干姜一两半 附子一枚[生用 去皮 破八片]",
+        "fuyaotext" : "右三味。以水三升。煮取一升二合。去滓。分温再服。 【强人可大附子一枚。干姜三两。】"
+    },
+    {
+        "name" : "葛根汤",
+        "ID" : 15,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 7,
+        "yaoList" : [
+            {
+                "yaoname" : "葛根",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "四两",
+                "weight" : 400,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "麻黄",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "桂枝",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "生姜",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "芍药",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "大枣",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "12枚",
+                "weight" : 120,
+                "extraProcess" : "切",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "太阳病。项背强几几。无汗。恶风。葛根汤主之。",
+        "yaotext" : "葛根四两 麻黄三两[去节] 桂枝二两[去皮] 生姜三两[切] 甘草二两[炙] 芍药二两 大枣十二枚[擘]",
+        "fuyaotext" : "右七味。以水一斗先煮麻黄、葛根。减二升。去上沫。内诸药。煮取三升。去滓。温服一升。覆取微似汗。余如桂枝法将息及禁忌。诸汤皆仿此。"
+    },
+    {
+        "name" : "葛根加半夏汤",
+        "ID" : 16,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 7,
+        "yaoList" : [
+            {
+                "yaoname" : "葛根",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "四两",
+                "weight" : 400,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "麻黄",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "桂枝",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "生姜",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "芍药",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "大枣",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "12枚",
+                "weight" : 120,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "半夏",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "半升",
+                "weight" : 500,
+                "extraProcess" : "切",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "太阳与阳明合病。不下利。但呕者。葛根加半夏汤主之。",
+        "yaotext" : "葛根四两 麻黄三两[去节] 甘草二两[炙] 芍药二两 桂枝二两[去皮] 生姜三两[切] 半夏半升[洗] 大枣十二枚[擘]",
+        "fuyaotext" : "右八味。以水一斗先煮葛根、麻黄。减二升。去上沫。内诸药。煮取三升。去滓。温服一升。"
+    },
+    {
+        "name" : "葛根黄芩黄连汤方",
+        "ID" : 17,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 4,
+        "yaoList" : [
+            {
+                "yaoname" : "葛根",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "半升",
+                "weight" : 500,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "黄连",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "黄芩",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            
+        ],
+        "zhengtext" : "太阳病。桂枝证。医反下之。利遂不止。脉促者。表未解也。喘而汗出者。葛根黄芩黄连汤主之。",
+        "yaotext" : "葛根半斤 甘草二两[炙] 黄芩三两 黄连三两。",
+        "fuyaotext" : "右四味。以水八升先煮葛根。减二升。内诸药。煮取二升。去滓。分温再服。"
+    },
+    {
+        "name" : "麻黄汤",
+        "ID" : 18,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 4,
+        "yaoList" : [
+            {
+                "yaoname" : "麻黄",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一两",
+                "weight" : 100,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "桂枝",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "杏仁",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "七十个",
+                "weight" : 700,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            
+        ],
+        "zhengtext" : "太阳病。头痛。发热。身疼。腰痛。骨节疼痛。恶风。无汗而喘者。麻黄汤主之。",
+        "yaotext" : "麻黄三两[去节] 桂枝二两[去皮] 甘草一两[炙] 杏仁七十个[去皮尖]",
+        "fuyaotext" : "右四味。以水九升先煮麻黄。减二升。去上沫。内诸药。煮取二升半。去滓。温服八合。覆取微似汗。不须啜粥。余如桂枝法将息。"
+    },
+    {
+        "name" : "小柴胡汤",
+        "ID" : 19,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 7,
+        "yaoList" : [
+            {
+                "yaoname" : "柴胡",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "半斤",
+                "weight" : 800,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "黄芩",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "生姜",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "大枣",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "12枚",
+                "weight" : 120,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "半夏",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "半升",
+                "weight" : 500,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            
+        ],
+        "zhengtext" : "太阳病。十日以去。脉浮细而嗜卧者。外已解也。设胸满胁痛者。与小柴胡汤。",
+        "yaotext" : "柴胡半斤 黄芩 人参 甘草[炙] 生姜各三两[切] 大枣十二枚[擘] 半夏半升[洗]",
+        "fuyaotext" : "右七味。以水一斗二升。煮取六升。去滓。再煎。取三升。温服一升。日三服。"
+    },
+    {
+        "name" : "大青龙汤",
+        "ID" : 20,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 7,
+        "yaoList" : [
+            {
+                "yaoname" : "麻黄",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "六两",
+                "weight" : 600,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "桂枝",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "杏仁",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "40枚",
+                "weight" : 400,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "大枣",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "10枚",
+                "weight" : 100,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "生姜",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "石膏",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "如鸡子大",
+                "weight" : 750,
+                "extraProcess" : "切",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "太阳中风。脉浮紧。发热。恶寒。身疼痛。不汗出而烦躁者。大青龙汤主之。若脉微弱。汗出。恶风者。不可服之。服之则厥逆。筋惕肉瞤。此为逆也。",
+        "yaotext" : "麻黄六两[去节] 桂枝二两[去皮] 甘草二两[炙] 杏仁四十枚[去皮尖] 生姜三两[切] 大枣十二枚[擘] 石膏如鸡子大[碎]",
+        "fuyaotext" : "右七味。以水九升先煮麻黄。减二升。去上沫。内诸药。煮取三升。去滓。温服一升。取微似汗。汗出多者 。温 粉粉之。一服汗者。停后服。若复服。汗多亡阳。遂 [一作逆]虚。恶风。烦躁。不得眠也。"
+    },
+    {
+        "name" : "小青龙汤",
+        "ID" : 21,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 8,
+        "yaoList" : [
+            {
+                "yaoname" : "麻黄",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "桂枝",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "五味子",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "半升",
+                "weight" : 500,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "细辛",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "半夏",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "半升",
+                "weight" : 500,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "芍药",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "干姜",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "切",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "伤寒。表不解。心下有水气。干呕。发热而咳。或渴。或利。或噎。或小便不利。少腹满。或喘者。小青龙汤主 之。",
+        "yaotext" : "麻黄[去节] 芍药 细辛 干姜 甘草[炙] 桂枝各三两[去皮] 五味子半升 半夏半升[洗]",
+        "fuyaotext" : "右八味。以水一斗先煮麻黄。减二升。去上沫。内诸药。煮取三升。去滓。温服一升。若渴。去半夏。加栝楼根三两。若微利。去麻黄。加荛花如一鸡子。熬令赤色。若噎者。去麻黄。加附子一枚。炮。若小便不利。少腹满者 。 去麻黄。加茯苓四两。若喘。去麻黄。加杏仁半升。去皮尖。"
+    },
+    {
+        "name" : "桂枝汤",
+        "ID" : 22,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 5,
+        "yaoList" : [
+            {
+                "yaoname" : "桂枝",
+                "dirction" : "辛",
+                "temp" : "温",
+                "wuxing" : "木",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "去皮",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "芍药",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "生姜",
+                "dirction" : "辛",
+                "temp" : "温",
+                "wuxing" : "木",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "大枣",
+                "dirction" : "甘",
+                "temp" : "温",
+                "wuxing" : "土",
+                "weightChina" : "12枚",
+                "weight" : 120,
+                "extraProcess" : "擘",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "太阳病。外证未解。脉浮弱者。当以汗解。宜桂枝汤。",
+        "yaotext" : "桂枝三两，去皮，味辛热；芍药三两，味苦酸，微寒；甘草二两，炙，味甘平；生姜三两，切，味辛温；大枣十二枚，擘，味甘温。",
+        "fuyaotext" : "右五味。以水七升。煮取三升。去滓。温服一升。须臾啜热稀粥一升。助药力。取微汗。"
+        
+    },
+    {
+        "name" : "桂枝加厚朴杏子汤",
+        "ID" : 23,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "肌肉酸痛",
+                "后背酸痛",
+                "脖子僵硬",
+                "怕风"
+            ],
+            "mai" : [
+                "无"
+            ]
+        },
+        "yaocount" : 7,
+        "yaoList" : [
+            {
+                "yaoname" : "桂枝",
+                "dirction" : "辛",
+                "temp" : "温",
+                "wuxing" : "木",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "去皮",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "生姜",
+                "dirction" : "辛",
+                "temp" : "温",
+                "wuxing" : "木",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "芍药",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "大枣",
+                "dirction" : "甘",
+                "temp" : "温",
+                "wuxing" : "土",
+                "weightChina" : "12枚",
+                "weight" : 120,
+                "extraProcess" : "擘",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "厚朴",
+                "dirction" : "苦",
+                "temp" : "温",
+                "wuxing" : "金",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "炙去皮",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "杏仁",
+                "dirction" : "甘",
+                "temp" : "温",
+                "wuxing" : "金",
+                "weightChina" : "五十枚",
+                "weight" : 500,
+                "extraProcess" : "去皮尖",
+                "cost" : 10
+            }
+        ],
+        "zhengtext" : "太阳病。下之。微喘者。表未解故也。桂枝加厚朴杏子汤主之。",
+        "yaotext" : "桂枝三两[去皮] 甘草二两[炙] 生姜三两[切] 芍药三两 大枣十二枚[擘] 厚朴二两[炙 去皮] 杏仁五十枚[去皮尖]",
+        "fuyaotext" : "右七味。以水七升。微火煮取三升。去滓。温服一升。覆取微似汗。"
+        
+    },
+    {
+        "name" : "干姜附子汤",
+        "ID" : 24,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 2,
+        "yaoList" : [
+            {
+                "yaoname" : "干姜",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "一两",
+                "weight" : 100,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "附子",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一枚",
+                "weight" : 100,
+                "extraProcess" : "炙",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "下之后。复发汗。昼日烦躁。不得眠。夜而安静。不呕。不渴。无表证。脉沉微。身无大热者。干姜附子汤主之。",
+        "yaotext" : "干姜一两 附子一枚[生用 去皮 破八片]",
+        "fuyaotext" : "右二味。以水三升。煮取一升。去滓。顿服。"
+    },
+    {
+        "name" : "桂枝加芍药生姜各一两人参三两新加汤方",
+        "ID" : 25,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 6,
+        "yaoList" : [
+            {
+                "yaoname" : "桂枝",
+                "dirction" : "辛",
+                "temp" : "温",
+                "wuxing" : "木",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "去皮",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "芍药",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "四两",
+                "weight" : 400,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "生姜",
+                "dirction" : "辛",
+                "temp" : "温",
+                "wuxing" : "木",
+                "weightChina" : "四两",
+                "weight" : 400,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "大枣",
+                "dirction" : "甘",
+                "temp" : "温",
+                "wuxing" : "土",
+                "weightChina" : "12枚",
+                "weight" : 120,
+                "extraProcess" : "擘",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "人参",
+                "dirction" : "甘",
+                "temp" : "温",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "切",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "发汗后。身疼痛。脉沉迟者。桂枝加芍药生姜各一两人参三两新加汤主之。",
+        "yaotext" : "桂枝三两[去皮] 芍药四两 甘草二两[炙] 人参三两 大枣十二枚[擘] 生姜四两[切]",
+        "fuyaotext" : "右六味。以水一斗二升。煮取三升。去滓。温服一升。"
+        
+    },
+    {
+        "name" : "麻黄杏仁甘草石膏汤",
+        "ID" : 26,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 4,
+        "yaoList" : [
+            {
+                "yaoname" : "麻黄",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "四两",
+                "weight" : 400,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "杏仁",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "50个",
+                "weight" : 500,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "石膏",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "半斤",
+                "weight" : 800,
+                "extraProcess" : "炙",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "发汗后。不可更行桂枝汤。汗出而喘。无大热者。可与麻黄杏仁甘草石膏汤。",
+        "yaotext" : "麻黄四两[去节] 杏仁五十个[去皮尖] 甘草二两[炙] 石膏半斤[碎 绵裹]",
+        "fuyaotext" : "右四味。以水七升先煮麻黄。减二升。去上沫。内诸药。煮取二升。去滓。温服一升。 【本云。黄耳杯。】"
+    },
+    {
+        "name" : "桂枝甘草汤",
+        "ID" : 27,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 2,
+        "yaoList" : [
+            {
+                "yaoname" : "桂枝",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "四两",
+                "weight" : 400,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "发汗过多。其人叉手自冒心。心下悸。欲得按者。桂枝甘草汤主之。",
+        "yaotext" : "桂枝四两[去皮] 甘草二两[炙]",
+        "fuyaotext" : "右二味。以水三升。煮取一升。去滓。顿服。"
+    },
+    {
+        "name" : "茯苓桂枝甘草大枣汤",
+        "ID" : 28,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 2,
+        "yaoList" : [
+            {
+                "yaoname" : "茯苓",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "半斤",
+                "weight" : 800,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "桂枝",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "四两",
+                "weight" : 400,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "大枣",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "十五枚",
+                "weight" : 150,
+                "extraProcess" : "炙",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "发汗后。其人脐下悸者。欲作奔豚。茯苓桂枝甘草大枣汤主之。",
+        "yaotext" : "茯苓半斤 桂枝四两[去皮] 甘草二两[炙] 大枣十五枚[擘]",
+        "fuyaotext" : "右四味。以甘爛水一斗先煮茯苓。减二升。内诸药。煮取三升。去滓。温服一升。日三服。 作甘爛水法。取水二斗。置大盆内。以杓扬之。水上有珠子五六千颗相逐。取用之。"
+    },
+    {
+        "name" : "厚朴生姜半夏甘草人参汤",
+        "ID" : 29,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 5,
+        "yaoList" : [
+            {
+                "yaoname" : "厚朴",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "半斤",
+                "weight" : 800,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "生姜",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "半斤",
+                "weight" : 800,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "半夏",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "半斤",
+                "weight" : 500,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "人参",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一两",
+                "weight" : 100,
+                "extraProcess" : "炙",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "发汗后。腹胀满者。厚朴生姜半夏甘草人参汤主之。",
+        "yaotext" : "厚朴半斤[炙 去皮] 生姜半斤[切] 半夏半升[洗] 甘草二两[炙] 人参一两",
+        "fuyaotext" : "右五味。以水一斗。煮取三升。去滓。温服一升。日三服。"
+    },
+    {
+        "name" : "茯苓桂枝白术甘草汤方",
+        "ID" : 30,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 4,
+        "yaoList" : [
+            {
+                "yaoname" : "茯苓",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "四两",
+                "weight" : 800,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "桂枝",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "白术",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "伤寒。若吐若下后。心下逆满。气上冲胸。起则头眩。脉沉紧。发汗则动经。身为振振摇者。茯苓桂枝白术甘草汤主之。",
+        "yaotext" : "茯苓四两 桂枝三两[去皮] 白术 甘草各二两[炙]",
+        "fuyaotext" : "右四味。以水六升。煮取三升。去滓。分温三服。"
+    },
+    {
+        "name" : "芍药甘草附子汤",
+        "ID" : 31,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 3,
+        "yaoList" : [
+            {
+                "yaoname" : "芍药",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "附子",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一枚",
+                "weight" : 100,
+                "extraProcess" : "切",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "发汗。病不解。反恶寒者。虚故也。芍药甘草附子汤主之。",
+        "yaotext" : "芍药 甘草各三两[炙] 附子一枚[炮 去皮 破八片]",
+        "fuyaotext" : "右三味。以水五升。煮取一升五合。去滓。分温三服。"
+    },
+    {
+        "name" : "茯苓四逆汤",
+        "ID" : 32,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 5,
+        "yaoList" : [
+            {
+                "yaoname" : "茯苓",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "四两",
+                "weight" : 400,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "人参",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "一两",
+                "weight" : 100,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "附子",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一枚",
+                "weight" : 100,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "干姜",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一两半",
+                "weight" : 150,
+                "extraProcess" : "炙",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "发汗。若下之。病仍不解。烦躁者。茯苓四逆汤主之。",
+        "yaotext" : "茯苓四两 人参一两 附子一枚[生用 去皮 破八片] 甘草二两[炙] 干姜一两半",
+        "fuyaotext" : "右五味。以水五升。煮取三升。去滓。温服七合。日二服。"
+    },
+    {
+        "name" : "调胃承气汤",
+        "ID" : 33,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 3,
+        "yaoList" : [
+            {
+                "yaoname" : "大黄",
+                "dirction" : "苦",
+                "temp" : "寒",
+                "wuxing" : "金",
+                "weightChina" : "四两",
+                "weight" : 400,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "芒硝",
+                "dirction" : "苦",
+                "temp" : "寒",
+                "wuxing" : "金",
+                "weightChina" : "半升",
+                "weight" : 500,
+                "extraProcess" : "炙",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "发汗后。恶寒者。虚故也。不恶寒。但热者。实也。当和胃气。与调胃承气汤。",
+        "yaotext" : "芒消半升 甘草二两[炙] 大黄四两[去皮 清酒洗]",
+        "fuyaotext" : "右三味。以水三升。煮取一升。去滓。内芒消。更煮两沸。顿服。"
+    },
+    {
+        "name" : "五苓散",
+        "ID" : 34,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 5,
+        "yaoList" : [
+            {
+                "yaoname" : "猪苓",
+                "dirction" : "苦",
+                "temp" : "寒",
+                "wuxing" : "金",
+                "weightChina" : "十八铢",
+                "weight" : 75,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "泽泻",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一两六铢",
+                "weight" : 124,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "白术",
+                "dirction" : "苦",
+                "temp" : "寒",
+                "wuxing" : "金",
+                "weightChina" : "十八铢",
+                "weight" : 75,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "茯苓",
+                "dirction" : "苦",
+                "temp" : "寒",
+                "wuxing" : "金",
+                "weightChina" : "十八铢",
+                "weight" : 75,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "桂枝",
+                "dirction" : "苦",
+                "temp" : "寒",
+                "wuxing" : "金",
+                "weightChina" : "半两",
+                "weight" : 50,
+                "extraProcess" : "炙",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "太阳病。发汗后。大汗出。胃中干。烦躁不得眠。欲得饮水者。少少与饮之。令胃气和则愈。若脉浮。小便不利。微热。消渴者。五苓散主之。",
+        "yaotext" : "猪苓十八铢[去皮] 泽泻一两六铢 白术十八铢 茯苓十八铢 桂枝半两[去皮]",
+        "fuyaotext" : "右五味。擣为散。以白饮和服方寸匕。日三服。多饮暖水。汗出愈。如法将息。"
+    },
+    {
+        "name" : "茯苓甘草汤",
+        "ID" : 35,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 4,
+        "yaoList" : [
+            {
+                "yaoname" : "茯苓",
+                "dirction" : "苦",
+                "temp" : "寒",
+                "wuxing" : "金",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "桂枝",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "苦",
+                "temp" : "寒",
+                "wuxing" : "金",
+                "weightChina" : "一两",
+                "weight" : 100,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "生姜",
+                "dirction" : "苦",
+                "temp" : "寒",
+                "wuxing" : "金",
+                "weightChina" : "十八铢",
+                "weight" : 300,
+                "extraProcess" : "炙",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "伤寒。汗出而渴者。五苓散主之。不渴者。茯苓甘草汤主之。",
+        "yaotext" : "茯苓二两 桂枝二两[去皮] 甘草一两[炙] 生姜三两[切]",
+        "fuyaotext" : "右四味。以水四升。煮取二升。去滓。分温三服。"
+    },
+    {
+        "name" : "栀子豉汤",
+        "ID" : 36,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 2,
+        "yaoList" : [
+            {
+                "yaoname" : "栀子",
+                "dirction" : "苦",
+                "temp" : "寒",
+                "wuxing" : "金",
+                "weightChina" : "十四个",
+                "weight" : 140,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "香豉",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "四合",
+                "weight" : 400,
+                "extraProcess" : "炙",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "发汗吐下后。虚烦不得眠。若剧者。必反复颠倒。心中懊憹。栀子豉汤主之。",
+        "yaotext" : "栀子十四个[擘] 香豉四合[绵裹]",
+        "fuyaotext" : "右四味。以水四升。煮取二升。去滓。分温三服。"
+    },
+    {
+        "name" : "栀子甘草豉汤",
+        "ID" : 37,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 3,
+        "yaoList" : [
+            {
+                "yaoname" : "栀子",
+                "dirction" : "苦",
+                "temp" : "寒",
+                "wuxing" : "金",
+                "weightChina" : "十四个",
+                "weight" : 140,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "苦",
+                "temp" : "寒",
+                "wuxing" : "金",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "香豉",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "四合",
+                "weight" : 400,
+                "extraProcess" : "炙",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "发汗后。水药不得入口。为逆。若更发汗。必吐下不止。发汗吐下后。虚烦不得眠。若剧者。必反复颠倒。心中懊憹。栀子豉汤主之。若少气者。栀子甘草豉汤主之。",
+        "yaotext" : "栀子十四个[擘] 甘草二两[炙] 香豉四合[绵裹]",
+        "fuyaotext" : "右三味。以水四升先煮栀子、甘草。取二升半。内豉。煮取一升半。去滓。分二服。温进一服。得吐者。止后服。"
+    },
+    {
+        "name" : "栀子生姜豉汤",
+        "ID" : 38,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 3,
+        "yaoList" : [
+            {
+                "yaoname" : "栀子",
+                "dirction" : "苦",
+                "temp" : "寒",
+                "wuxing" : "金",
+                "weightChina" : "十四个",
+                "weight" : 140,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "生姜",
+                "dirction" : "苦",
+                "temp" : "寒",
+                "wuxing" : "金",
+                "weightChina" : "五两",
+                "weight" : 500,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "香豉",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "四合",
+                "weight" : 400,
+                "extraProcess" : "炙",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "发汗后。水药不得入口。为逆。若更发汗。必吐下不止。发汗吐下后。虚烦不得眠。若剧者。必反复颠倒。心中懊憹。栀子豉汤主之。若少气者。栀子甘草豉汤主之。若呕者。栀子生姜豉汤主之。",
+        "yaotext" : "栀子十四个[擘] 生姜五两[切] 香豉四合[绵裹]",
+        "fuyaotext" : "右三味。以水四升先煮栀子、生姜。取二升半。内豉。煮取一升半。去滓。分二服。温进一服。得吐者。止后服。"
+    },
+    {
+        "name" : "栀子厚朴汤",
+        "ID" : 39,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 3,
+        "yaoList" : [
+            {
+                "yaoname" : "栀子",
+                "dirction" : "苦",
+                "temp" : "寒",
+                "wuxing" : "金",
+                "weightChina" : "十四个",
+                "weight" : 140,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "厚朴",
+                "dirction" : "苦",
+                "temp" : "寒",
+                "wuxing" : "金",
+                "weightChina" : "四两",
+                "weight" : 400,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "枳实",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "四枚",
+                "weight" : 40,
+                "extraProcess" : "炙",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "伤寒下后。心烦。腹满。卧起不安者。栀子厚朴汤主之。",
+        "yaotext" : "栀子十四个[擘] 厚朴四两[炙 去皮] 枳实四枚[水浸 炙令黄]",
+        "fuyaotext" : "右三味。以水四升先煮栀子、生姜。取二升半。内豉。煮取一升半。去滓。分二服。温进一服。得吐者。止后服。"
+    },
+    {
+        "name" : "栀子干姜汤",
+        "ID" : 40,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 2,
+        "yaoList" : [
+            {
+                "yaoname" : "栀子",
+                "dirction" : "苦",
+                "temp" : "寒",
+                "wuxing" : "金",
+                "weightChina" : "十四个",
+                "weight" : 140,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "干姜",
+                "dirction" : "苦",
+                "temp" : "寒",
+                "wuxing" : "金",
+                "weightChina" : "二两",
+                "weight" : 400,
+                "extraProcess" : "无",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "伤寒。医以丸药大下之。身热不去。微烦者。栀子干姜汤主之。",
+        "yaotext" : "栀子十四个[擘] 干姜二两",
+        "fuyaotext" : "右二味。以水三升半。煮取一升半。去滓。分二服。温进一服。得吐者。止后服。"
+    },
+    {
+        "name" : "真武汤",
+        "ID" : 41,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 5,
+        "yaoList" : [
+            {
+                "yaoname" : "茯苓",
+                "dirction" : "苦",
+                "temp" : "寒",
+                "wuxing" : "金",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "芍药",
+                "dirction" : "苦",
+                "temp" : "寒",
+                "wuxing" : "金",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "生姜",
+                "dirction" : "苦",
+                "temp" : "寒",
+                "wuxing" : "金",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "白术",
+                "dirction" : "苦",
+                "temp" : "寒",
+                "wuxing" : "金",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "附子",
+                "dirction" : "苦",
+                "temp" : "寒",
+                "wuxing" : "金",
+                "weightChina" : "一枚",
+                "weight" : 100,
+                "extraProcess" : "无",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "太阳病。发汗。汗出不解。其人仍发热。心下悸。头眩。身瞤动。振振欲擗[一作僻]地者。真武汤主之。",
+        "yaotext" : "茯苓 芍药 生姜各三两[切] 白术二两 附子一枚[炮 去皮 破八片]",
+        "fuyaotext" : "右五味。以水八升。煮取三升。去滓。温服七合。日三服。"
+    },
+    {
+        "name" : "四逆汤",
+        "ID" : 42,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 3,
+        "yaoList" : [
+            {
+                "yaoname" : "附子",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "一枚",
+                "weight" : 100,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "干姜",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一两半",
+                "weight" : 150,
+                "extraProcess" : "炙",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "病发热头痛。脉反沉。若不差。身体疼痛。当救其里。宜四逆汤。",
+        "yaotext" : "甘草二两[炙] 干姜一两半 附子一枚[生用 去皮 破八片]",
+        "fuyaotext" : "右三味。以水三升。煮取一升二合。去滓。分温再服。 【强人可大附子一枚。干姜三两。】"
+    },
+    {
+        "name" : "小柴胡汤",
+        "ID" : 43,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 4,
+        "yaoList" : [
+            {
+                "yaoname" : "柴胡",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "半斤",
+                "weight" : 800,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "黄芩",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "生姜",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "大枣",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "12枚",
+                "weight" : 120,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "半夏",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "半升",
+                "weight" : 500,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            
+        ],
+        "zhengtext" : "伤寒五六日。中风。往来寒热。胸胁苦满。嘿嘿不欲饮食。心烦喜呕。或胸中烦而不呕。或渴。或腹中痛。或胁下痞鞕。或心下悸。小便不利。或不渴。身有微热。或咳者。小柴胡汤主之。",
+        "yaotext" : "柴胡半斤 黄芩 人参 甘草[炙] 生姜各三两[切] 大枣十二枚[擘] 半夏半升[洗]",
+        "fuyaotext" : "右七味。以水一斗二升。煮取六升。去滓。再煎。取三升。温服一升。日三服。"
+    },
+    {
+        "name" : "小建中汤",
+        "ID" : 44,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 4,
+        "yaoList" : [
+            {
+                "yaoname" : "桂枝",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "芍药",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "六两",
+                "weight" : 600,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "生姜",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "大枣",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "12枚",
+                "weight" : 120,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "胶饴",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一升",
+                "weight" : 1000,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            
+        ],
+        "zhengtext" : "伤寒。阳脉涩。阴脉弦。法当腹中急痛。先与小建中汤。",
+        "yaotext" : "桂枝三两[去皮] 甘草二两[炙] 大枣十二枚[擘] 芍药六两 生姜三两[切] 胶饴一升",
+        "fuyaotext" : "右六味。以水七升。煮取三升。去滓。内饴。更上微火消解。温服一升。日三服。呕家不可用建中汤。以甜故也。"
+    },
+    {
+        "name" : "大柴胡汤",
+        "ID" : 45,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 4,
+        "yaoList" : [
+            {
+                "yaoname" : "柴胡",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "半斤",
+                "weight" : 800,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "芍药",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "黄芩",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "生姜",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "五两",
+                "weight" : 500,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "大枣",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "12枚",
+                "weight" : 120,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "半夏",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "半升",
+                "weight" : 500,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "枳实",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "四枚",
+                "weight" : 40,
+                "extraProcess" : "切",
+                "cost" : 10
+            }
+        ],
+        "zhengtext" : "太阳病。过经十余日。反二三下之。后四五日。柴胡证仍在者。先与小柴胡。呕不止。心下急。郁郁微烦者。为未解也。与大柴胡汤下之则愈。",
+        "yaotext" : "柴胡半斤 黄芩三两 芍药三两 半夏半升[洗] 生姜五两[切] 枳实四枚[炙] 大枣十二枚[擘]",
+        "fuyaotext" : "右七味。以水一斗二升。煮取六升。去滓。再煎。温服一升。日三服。【一方加大黄二两。若不加。恐不为大柴 胡汤。】"
+    },
+    {
+        "name" : "柴胡加芒消汤",
+        "ID" : 46,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 4,
+        "yaoList" : [
+            {
+                "yaoname" : "柴胡",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "二两十六铢",
+                "weight" : 266,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "芒硝",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "黄芩",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一两",
+                "weight" : 100,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "生姜",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一两",
+                "weight" : 100,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "大枣",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "4枚",
+                "weight" : 40,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "半夏",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二十铢",
+                "weight" : 83,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "人参",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一两",
+                "weight" : 100,
+                "extraProcess" : "切",
+                "cost" : 10
+            }
+        ],
+        "zhengtext" : "伤寒十三日不解。胸胁满而呕。日晡所发潮热。已而微利。此本柴胡证。下之。以不得利。今反利者。知医以丸药下之。此非其治也。潮热者。实也。先宜服小柴胡汤以解外。后以柴胡加芒消汤主之",
+        "yaotext" : "柴胡二两十六铢 黄芩一两 人参一两 甘草一两[炙] 生姜一两[切] 半夏二十铢【本云五枚】[洗] 大枣四枚[擘] 芒消二两",
+        "fuyaotext" : "右八味。以水四升。煮取二升。去滓。内芒消。更煮微沸。分温再服。不解更作。"
+    },
+    {
+        "name" : "桃核承气汤方",
+        "ID" : 47,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 2,
+        "yaoList" : [
+            {
+                "yaoname" : "核桃",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "五十个",
+                "weight" : 500,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "大黄",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "四两",
+                "weight" : 400,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "桂枝",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "芒硝",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "太阳病不解。热结膀胱。其人如狂。血自下。下者愈。其外不解者。尚未可攻。当先解其外。外解已。但少腹急结者。乃可攻之。宜桃核承气汤。",
+        "yaotext" : "桃仁五十个[去皮尖] 大黄四两 桂枝二两[去皮] 甘草二两[炙] 芒消二两",
+        "fuyaotext" : "右八味。以水四升。煮取二升。去滓。内芒消。更煮微沸。分温再服。不解更作。"
+    },
+    {
+        "name" : "柴胡加龙骨牡蛎汤",
+        "ID" : 48,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 12,
+        "yaoList" : [
+            {
+                "yaoname" : "柴胡",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "四两",
+                "weight" : 400,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "龙骨",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一两半",
+                "weight" : 150,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "黄芩",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一两半",
+                "weight" : 150,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "生姜",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一两半",
+                "weight" : 150,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "铅丹",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一两半",
+                "weight" : 150,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "半夏",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二合半",
+                "weight" : 250,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "人参",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一两半",
+                "weight" : 150,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "桂枝",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一两半",
+                "weight" : 150,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "茯苓",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一两半",
+                "weight" : 150,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "大黄",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "牡蛎",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一两半",
+                "weight" : 150,
+                "extraProcess" : "切",
+                "cost" : 10
+            }
+        ],
+        "zhengtext" : "寒八九日。下之。胸满烦惊。小便不利。讝语。一身尽重。不可转侧者。柴胡加龙骨牡蛎汤主之。",
+        "yaotext" : "柴胡四两 龙骨 黄芩 生姜[切] 铅丹 人参 桂枝[去皮] 茯苓各一两半 半夏二合半 [洗] 大黄二两 牡蛎一两半 [熬] 大枣六枚[擘]",
+        "fuyaotext" : "右十二味。以水八升。煮取四升。内大黄。切如碁子。更煮一两沸。去滓。温服一升。"
+    },
+    {
+        "name" : "桂枝去芍药加蜀漆牡蛎龙骨救逆汤",
+        "ID" : 49,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 2,
+        "yaoList" : [
+            {
+                "yaoname" : "桂枝",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "生姜",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "大枣",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "十二枚",
+                "weight" : 120,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "牡蛎",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "五两",
+                "weight" : 500,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "蜀漆",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "龙骨",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "四两",
+                "weight" : 400,
+                "extraProcess" : "炙",
+                "cost" : 10
+            }
+        ],
+        "zhengtext" : "伤寒。脉浮。医以火迫劫之。亡阳。必惊狂。卧起不安者。桂枝去芍药加蜀漆牡蛎龙骨救逆汤主之",
+        "yaotext" : "桂枝三两[去皮] 甘草二两[炙] 生姜三两[切] 大枣十二枚[擘] 牡蛎五两[熬] 蜀漆三两[洗去腥] 龙骨四两",
+        "fuyaotext" : "右七味。以水一斗二升先煮蜀漆。减二升。内诸药。煮取三升。去滓。温服一升。 【本云。桂枝汤。今去芍药。加蜀漆、牡蛎、龙骨。】"
+    },
+    {
+        "name" : "桂枝汤加桂汤",
+        "ID" : 50,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 5,
+        "yaoList" : [
+            {
+                "yaoname" : "桂枝",
+                "dirction" : "辛",
+                "temp" : "温",
+                "wuxing" : "木",
+                "weightChina" : "五两",
+                "weight" : 500,
+                "extraProcess" : "去皮",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "芍药",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "生姜",
+                "dirction" : "辛",
+                "temp" : "温",
+                "wuxing" : "木",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "大枣",
+                "dirction" : "甘",
+                "temp" : "温",
+                "wuxing" : "土",
+                "weightChina" : "12枚",
+                "weight" : 120,
+                "extraProcess" : "擘",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "烧针令其汗。针处被寒。核起而赤者。必发奔豚。气从少腹上冲心者。灸其核上各一壮。与桂枝加桂汤。更加桂 二两也。",
+        "yaotext" : "桂枝五两[去皮] 芍药三两 生姜三两[切] 甘草二两[炙] 大枣十二枚[擘]",
+        "fuyaotext" : "右五味。以水七升。煮取三升。去滓。温服一升。"
+        
+    },
+    {
+        "name" : "桂枝甘草龙骨牡蛎汤",
+        "ID" : 51,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 5,
+        "yaoList" : [
+            {
+                "yaoname" : "桂枝",
+                "dirction" : "辛",
+                "temp" : "温",
+                "wuxing" : "木",
+                "weightChina" : "一两",
+                "weight" : 100,
+                "extraProcess" : "去皮",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "牡蛎",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "龙骨",
+                "dirction" : "辛",
+                "temp" : "温",
+                "wuxing" : "木",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "切",
+                "cost" : 10
+            }
+        ],
+        "zhengtext" : "火逆。下之。因烧针烦躁者。桂枝甘草龙骨牡蛎汤主之。",
+        "yaotext" : "桂枝一两[去皮] 甘草二两[炙] 牡蛎二两[熬] 龙骨二两",
+        "fuyaotext" : "右四味。以水五升。煮取二升半。去滓。温服八合。日三服。"
+        
+    },
+    {
+        "name" : "抵当汤",
+        "ID" : 52,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 4,
+        "yaoList" : [
+            {
+                "yaoname" : "水蛭",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "三十个",
+                "weight" : 300,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "虻虫",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三十个",
+                "weight" : 300,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "桃仁",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二十个",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "大黄",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "炙",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "阳病。六七日。表证仍在。脉微而沉。反不结胸。其人发狂者。以热在下焦。少腹当鞕满。小便自利者。下血 乃愈。所以然者。以太阳随经。瘀热在里故也。抵当汤主之。",
+        "yaotext" : "水蛭[熬] 虻虫各三十个[去翅足 熬] 桃仁二十个[去皮尖] 大黄三两[酒洗]",
+        "fuyaotext" : "右四味。以水五升。煮取三升。去滓。温服一升。不下。更服。"
+    },
+    {
+        "name" : "抵当丸",
+        "ID" : 53,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 4,
+        "yaoList" : [
+            {
+                "yaoname" : "水蛭",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "三十个",
+                "weight" : 200,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "虻虫",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三十个",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "桃仁",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二十五个",
+                "weight" : 250,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "大黄",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "炙",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "伤寒有热少腹满。应小便不利。今反利者。为有血也。当下之。不可余药。宜抵当丸。",
+        "yaotext" : "水蛭二十个[熬] 虻虫二十个[去翅足 熬] 桃仁二十五个[去皮尖] 大黄三两",
+        "fuyaotext" : "右四味。擣分四丸。以水一升煮一丸。取七合服之。晬时当下血。若不下者。更服。"
+    },
+    {
+        "name" : "大陷胸丸",
+        "ID" : 54,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 4,
+        "yaoList" : [
+            {
+                "yaoname" : "大黄",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "半斤",
+                "weight" : 800,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "葶苈子",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "半升",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "芒硝",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "半升",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "杏仁",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "半升",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "病发于阳。而反下之。热入。因作结胸。病发于阴。而反下之[一作汗出]。因作痞也。所以成结胸者。以下之太早故 也。结胸者。项亦强。如柔痓状。下之则和。宜大陷胸丸。",
+        "yaotext" : "大黄半斤 葶苈子半升[熬] 芒消半升 杏仁半升[去皮尖 熬黑]",
+        "fuyaotext" : "右四味。擣筛二味。内杏仁、芒消。合研如脂。和散。取如弹丸一枚。别擣甘遂末一钱匕。白蜜二合。水二升 。煮取一升。温顿服之。一宿乃下。如不下。更服。取下为效。禁如药法。"
+    },
+    {
+        "name" : "大陷胸汤",
+        "ID" : 55,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 3,
+        "yaoList" : [
+            {
+                "yaoname" : "大黄",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "六两",
+                "weight" : 600,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "芒硝",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一升",
+                "weight" : 400,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘遂",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二钱匕",
+                "weight" : 20,
+                "extraProcess" : "炙",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "太阳病。脉浮而动数。浮则为风。数则为热。动则为痛。数则为虚。头痛。发热。微盗汗出。而反恶寒者。表未解也。医反下之。动数变迟。膈内拒痛[一云头痛即眩]。胃中空虚。客气动膈。短气。躁烦。心中懊憹。阳气内陷。心下 因鞕。则为结胸。大陷胸汤主之",
+        "yaotext" : "大黄六两[去皮] 芒消一升 甘遂一钱匕",
+        "fuyaotext" : "右三味。以水六升先煮大黄。取二升。去滓。内芒消。煮一两沸。内甘遂末。温服一升。得快利。止后服。"
+    },
+    {
+        "name" : "大柴胡汤",
+        "ID" : 56,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 7,
+        "yaoList" : [
+            {
+                "yaoname" : "柴胡",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "半斤",
+                "weight" : 800,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "芍药",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "黄芩",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "生姜",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "五两",
+                "weight" : 500,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "大枣",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "12枚",
+                "weight" : 120,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "半夏",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "半升",
+                "weight" : 500,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "枳实",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "四枚",
+                "weight" : 40,
+                "extraProcess" : "切",
+                "cost" : 10
+            }
+        ],
+        "zhengtext" : "伤寒十余日。热结在里。复往来寒热者。与大柴胡汤。",
+        "yaotext" : "柴胡半斤 黄芩三两 芍药三两 半夏半升[洗] 生姜五两[切] 枳实四枚[炙] 大枣十二枚[擘]",
+        "fuyaotext" : "右七味。以水一斗二升。煮取六升。去滓。再煎。温服一升。日三服。【一方加大黄二两。若不加。恐不为大柴 胡汤。】"
+    },
+    {
+        "name" : "小陷胸汤",
+        "ID" : 57,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 3,
+        "yaoList" : [
+            {
+                "yaoname" : "黄连",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "一两",
+                "weight" : 100,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "半夏",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "半升",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "栝楼实",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一枚",
+                "weight" : 100,
+                "extraProcess" : "炙",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "小结胸病。正在心下。按之则痛。脉浮滑者。小陷胸汤主之。",
+        "yaotext" : "黄连一两 半夏半升[洗] 栝楼实大者一枚",
+        "fuyaotext" : "右三味。以水六升先煮栝楼。取三升。去滓。内诸药。煮取二升。去滓。分温三服。"
+    },
+    {
+        "name" : "文蛤散",
+        "ID" : 58,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 1,
+        "yaoList" : [
+            {
+                "yaoname" : "文蛤",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "五两",
+                "weight" : 500,
+                "extraProcess" : "无",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "病在阳。应以汗解之。反以冷水潠之。若灌之。其热被劫不得去。弥更益烦。肉上粟起。意欲饮水。反不渴者 。服文蛤散。",
+        "yaotext" : "文蛤五两",
+        "fuyaotext" : "右一味。为散。以沸汤和一方寸匕服。汤用五合。"
+    },
+    {
+        "name" : "五苓散",
+        "ID" : 59,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 5,
+        "yaoList" : [
+            {
+                "yaoname" : "猪苓",
+                "dirction" : "苦",
+                "temp" : "寒",
+                "wuxing" : "金",
+                "weightChina" : "十八铢",
+                "weight" : 75,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "泽泻",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一两六铢",
+                "weight" : 124,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "白术",
+                "dirction" : "苦",
+                "temp" : "寒",
+                "wuxing" : "金",
+                "weightChina" : "十八铢",
+                "weight" : 75,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "茯苓",
+                "dirction" : "苦",
+                "temp" : "寒",
+                "wuxing" : "金",
+                "weightChina" : "十八铢",
+                "weight" : 75,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "桂枝",
+                "dirction" : "苦",
+                "temp" : "寒",
+                "wuxing" : "金",
+                "weightChina" : "半两",
+                "weight" : 50,
+                "extraProcess" : "炙",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "病在阳。应以汗解之。反以冷水潠之。若灌之。其热被劫不得去。弥更益烦。肉上粟起。意欲饮水。反不渴者 。服文蛤散。若不差者。与五苓散。",
+        "yaotext" : "猪苓十八铢[去皮] 泽泻一两六铢 白术十八铢 茯苓十八铢 桂枝半两[去皮]",
+        "fuyaotext" : "右五味。擣为散。以白饮和服方寸匕。日三服。多饮暖水。汗出愈。如法将息。"
+    },
+    {
+        "name" : "白散",
+        "ID" : 60,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 3,
+        "yaoList" : [
+            {
+                "yaoname" : "桔梗",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "三分",
+                "weight" : 75,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "巴豆",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一分",
+                "weight" : 25,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "贝母",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三分",
+                "weight" : 75,
+                "extraProcess" : "炙",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "病在阳。应以汗解之。反以冷水潠之。若灌之。其热被劫不得去。弥更益烦。肉上粟起。意欲饮水。反不渴者 。服文蛤散。若不差者。与五苓散。寒实结胸。无热证者。与三物小陷胸汤。 白散亦可服。",
+        "yaotext" : "桔梗三分 巴豆一分[去皮心 熬黑 研如脂] 贝母三分",
+        "fuyaotext" : "右三味。为散。内巴豆。更于臼中杵之。以白饮和服。强人半钱匕。羸者减之。病在膈上。必吐。在膈下。必利。 不利。进热粥一杯。利过不止。进冷粥一杯。身热。皮粟不解。欲引衣自覆。若以水潠之、洗之。益令热却不得出 。 当汗而不汗则烦。假令汗出已。腹中痛。与芍药三两如上法。"
+    },
+    {
+        "name" : "小柴胡汤",
+        "ID" : 61,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 7,
+        "yaoList" : [
+            {
+                "yaoname" : "柴胡",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "半斤",
+                "weight" : 800,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "黄芩",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "生姜",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "大枣",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "12枚",
+                "weight" : 120,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "半夏",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "半升",
+                "weight" : 500,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            
+        ],
+        "zhengtext" : "妇人中风。七八日续得寒热。发作有时。经水适断者。此为热入血室。其血必结。故使如疟状。发作有时。小柴 胡汤主之。",
+        "yaotext" : "柴胡半斤 黄芩 人参 甘草[炙] 生姜各三两[切] 大枣十二枚[擘] 半夏半升[洗]",
+        "fuyaotext" : "右七味。以水一斗二升。煮取六升。去滓。再煎。取三升。温服一升。日三服。"
+    },
+    {
+        "name" : "柴胡桂枝汤",
+        "ID" : 62,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 9,
+        "yaoList" : [
+            {
+                "yaoname" : "桂枝",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一两半",
+                "weight" : 150,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "柴胡",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "四两",
+                "weight" : 400,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一两",
+                "weight" : 100,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "黄芩",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一两半",
+                "weight" : 150,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "生姜",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一两半",
+                "weight" : 150,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "大枣",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "6枚",
+                "weight" : 60,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "半夏",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二合半",
+                "weight" : 250,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "人参",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一两半",
+                "weight" : 150,
+                "extraProcess" : "切",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "伤寒六七日。发热。微恶寒。支节烦疼。微呕。心下支结。外证未去者。柴胡桂枝汤主之。",
+        "yaotext" : "桂枝一两半[去皮] 黄芩一两半 人参一两半 甘草一两[炙] 半夏二合半[洗] 芍药一两半 大枣六枚[擘] 生姜一两半[切] 柴胡四两",
+        "fuyaotext" : "右九味。以水七升。煮取三升。去滓。温服一升。"
+    },
+    {
+        "name" : "柴胡桂枝干姜汤",
+        "ID" : 63,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 7,
+        "yaoList" : [
+            {
+                "yaoname" : "柴胡",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "半斤",
+                "weight" : 800,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "黄芩",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "牡蛎",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "桂枝",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "栝楼根",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "四两",
+                "weight" : 400,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            
+        ],
+        "zhengtext" : "伤寒五六日。已发汗而复下之。胸胁满。微结。小便不利。渴而不呕。但头汗出。往来寒热。心烦者。此为未解 也。柴胡桂枝干姜汤主之。",
+        "yaotext" : "柴胡半斤 桂枝三两[去皮] 干姜二两 栝楼根四两 黄芩三两 牡蛎二两[熬] 甘草二两[炙]",
+        "fuyaotext" : "右七味。以水一斗二升。煮取六升。去滓。再煎。取三升。温服一升。日三服。初服微烦。复服。汗出便愈。"
+    },
+    {
+        "name" : "半夏泻心汤",
+        "ID" : 64,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 7,
+        "yaoList" : [
+            {
+                "yaoname" : "半夏",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "半升",
+                "weight" : 500,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "黄芩",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "干姜",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "人参",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "黄连",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一两",
+                "weight" : 100,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "大枣",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "十二枚",
+                "weight" : 120,
+                "extraProcess" : "炙",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "伤寒五六日。呕而发热者。柴胡汤证具。而以他药下之。柴胡证仍在者。复与柴胡汤。此虽已下之。不为逆 。必 蒸蒸而振。却发热汗出而解。若心下满而鞕痛者。此为结胸也。大陷胸汤主之。但满而不痛者。此为痞。柴胡不中与 之。宜半夏泻心汤。",
+        "yaotext" : "半夏半升[洗] 黄芩 干姜 人参 甘草[炙]各三两 黄连一两 大枣十二枚[擘]",
+        "fuyaotext" : "右七味。以水一斗。煮取六升。去滓。再煎。取三升。温服一升。日三服。"
+    },
+    {
+        "name" : "十枣汤",
+        "ID" : 65,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 4,
+        "yaoList" : [
+            {
+                "yaoname" : "芫花",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "1/3钱匕",
+                "weight" : 3,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘遂",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "1/3钱匕",
+                "weight" : 3,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "大戟",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "1/3钱匕",
+                "weight" : 3,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "大枣",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "10枚肥大者",
+                "weight" : 150,
+                "extraProcess" : "炙",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "太阳中风。下利。呕逆。表解者。乃可攻之。其人 漐漐汗出。发作有时。头痛。心下痞鞕满。引胁下痛。干呕 。 短气。汗出不恶寒者。此表解里未和也。十枣汤主之。",
+        "yaotext" : "芫花[熬] 甘遂 大戟",
+        "fuyaotext" : "右三味。等分。各别擣为散。以水一升半先煮大枣肥者十枚。取八合。去滓。内药末。强人服一钱匕。羸人服半钱。温服之。平旦服。若下少。病不除者。明日更服。加半钱。得快下利后。糜粥自养。"
+    },
+    {
+        "name" : "大黄黄连泻心汤",
+        "ID" : 66,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 2,
+        "yaoList" : [
+            {
+                "yaoname" : "大黄",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "黄连",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一两",
+                "weight" : 100,
+                "extraProcess" : "炙",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "心下痞。按之濡。其脉关上浮者。大黄黄连泻心汤主之。",
+        "yaotext" : "大黄二两 黄连一两",
+        "fuyaotext" : "右二味。以麻沸汤二升渍之。须臾绞去滓。分温再服。"
+    },
+    {
+        "name" : "附子泻心汤",
+        "ID" : 67,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 4,
+        "yaoList" : [
+            {
+                "yaoname" : "大黄",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "黄连",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一两",
+                "weight" : 100,
+                "extraProcess" : "炙",
+                "cost" : 10
+            }
+            {
+                "yaoname" : "黄芩",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "一两",
+                "weight" : 100,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "附子",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一枚",
+                "weight" : 100,
+                "extraProcess" : "炙",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "心下痞。而复恶寒汗出者。附子泻心汤主之。",
+        "yaotext" : "大黄二两 黄连一两 黄芩一两 附子一枚[炮 去皮 破 别煮取汁]",
+        "fuyaotext" : "右四味。切三味。以麻沸汤二升渍之。须臾绞去滓。内附子汁。分温再服。"
+    },
+    {
+        "name" : "生姜泻心汤",
+        "ID" : 68,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 8,
+        "yaoList" : [
+            {
+                "yaoname" : "生姜",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "四两",
+                "weight" : 400,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "半夏",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "半升",
+                "weight" : 500,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "黄芩",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "干姜",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一两",
+                "weight" : 300,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "人参",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "黄连",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一两",
+                "weight" : 100,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "大枣",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "十二枚",
+                "weight" : 120,
+                "extraProcess" : "炙",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "伤寒。汗出解之后。胃中不和。心下痞鞕。干噫食臭。胁下有水气。腹中雷鸣下利者。生姜泻心汤主之。",
+        "yaotext" : "生姜四两[切] 甘草三两[炙] 人参三两 干姜一两 黄芩三两 半夏半升[洗] 黄连一两 大枣十二枚[擘]",
+        "fuyaotext" : "右八味。以水一斗。煮取六升。去滓。再煎。取三升。温服一升。日三服。"
+    },
+    {
+        "name" : "甘草泻心汤",
+        "ID" : 69,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 7,
+        "yaoList" : [
+            {
+                "yaoname" : "半夏",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "半升",
+                "weight" : 500,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "四两",
+                "weight" : 400,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "黄芩",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "干姜",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一两",
+                "weight" : 300,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "人参",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "黄连",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一两",
+                "weight" : 100,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "大枣",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "十二枚",
+                "weight" : 120,
+                "extraProcess" : "炙",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "伤寒中风。医反下之。其人下利。日数十行。谷不化。腹中雷鸣。心下痞鞕而满。干呕。心烦。不得安。医见心 下痞。谓病不尽。复下之。其痞益甚。此非结热。但以胃中虚。客气上逆。故使鞕也。甘草泻心汤主之。",
+        "yaotext" : "甘草四两[炙] 人参三两 黄芩三两 干姜三两 半夏半升[洗] 大枣十二枚[擘] 黄连一两",
+        "fuyaotext" : "右七味。以水一斗。煮取六升。去滓。再煎。取三升。温服一升。日三服。"
+    },
+    {
+        "name" : "赤石脂禹余粮汤",
+        "ID" : 70,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 2,
+        "yaoList" : [
+            {
+                "yaoname" : "赤石脂",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "一斤",
+                "weight" : 1600,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "禹余粮",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一斤",
+                "weight" : 1600,
+                "extraProcess" : "炙",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "伤寒。服汤药。下利不止。心下痞鞕。服泻心汤已。复以他药下之。利不止。医以理中与之。利益甚。理中者 。理中焦。此利在下焦。赤石脂禹余粮汤主之。复不止者。当利其小便。",
+        "yaotext" : "赤石脂一斤[碎] 禹余粮一斤[碎]",
+        "fuyaotext" : "右二味。以水六升。煮取二升。去滓。分温三服。"
+    },
+    {
+        "name" : "旋复代赭汤",
+        "ID" : 71,
+        "book" : "伤寒论",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 2,
+        "yaoList" : [
+            {
+                "yaoname" : "旋复花",
+                "dirction" : "苦",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "三两",
+                "weight" : 300,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "人参",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "二两",
+                "weight" : 200,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "生姜",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "五两",
+                "weight" : 500,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "代赭",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一两",
+                "weight" : 100,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "半夏",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "半升",
+                "weight" : 500,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "大枣",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "十二枚",
+                "weight" : 120,
+                "extraProcess" : "炙",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "若厥愈足温者。更作芍药甘草汤与之。",
+        "yaotext" : "芍药 甘草各四两[炙]",
+        "fuyaotext" : "右二味。以水三升。煮取一升五合。去滓。分温再服。"
+    },
 
-    
+
+
+
+
+
+
+
 ]
 

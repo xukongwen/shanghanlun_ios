@@ -122,7 +122,7 @@ class PieChartPolylineVC: UIViewController {
         for i in fanglist {
             yaoTotal = yaoTotal + i.yaocount
             for j in i.yaoList{
-                if j.yaoname == "杏仁" {
+                if j.yaoname == "甘草" {
                     yaoamount += 1
                 }
             }
