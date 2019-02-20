@@ -18,6 +18,8 @@ class fangDetailView: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        // 分配每个cell-fangList
         for k in fang!.yaoList {
             
             let intext = k.yaoname + ":" + k.weightChina + "(汉制), 约为" + String(Double(k.weight) * 0.15) + "克"
