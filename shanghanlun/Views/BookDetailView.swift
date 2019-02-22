@@ -42,6 +42,7 @@ class bookDetailTableViewController: UITableViewController {
         cell.textLabel?.numberOfLines = 0//这个是让一个cell完整显示无论多少text，自动扩展
         cell.textLabel?.text = fangdata.text
         cell.textLabel?.font = UIFont.init(name: "Songti Tc", size: 18)
+        cell.isUserInteractionEnabled = false
         
         return cell
     }

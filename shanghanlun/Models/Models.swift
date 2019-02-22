@@ -75,6 +75,15 @@ struct CaoYao: Codable {
     let text: String!
 }
 
+struct BenCao: Decodable {
+    let ID: Int
+    let name: String
+    let wei: String
+    let temp: String
+    let cost: Int
+    let text: String
+}
+
 
 //=======================new===================
 

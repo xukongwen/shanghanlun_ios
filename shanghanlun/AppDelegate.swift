@@ -17,12 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var fanglist = [SH_fang_final]()
     var yaoList = [CaoYao]()
+    var benCaoList = [BenCao]()
     //var sectionData = [Section_jk]()
     var sectionsData = [Section_jk]()
     var sectionJk = [SH_fang_final]()
     
     let attrs = [NSAttributedString.Key.foregroundColor: UIColor.black,
-                 NSAttributedString.Key.font: UIFont(name: "Songti Tc", size: 35)!]
+                 NSAttributedString.Key.font: UIFont(name: "WenYue-GuDianMingChaoTi-NC-W5", size: 35)!]
    
     
 
@@ -39,7 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //自定义小字体导航栏
         UINavigationBar.appearance().titleTextAttributes =
             [NSAttributedString.Key.foregroundColor: UIColor.black,
-             NSAttributedString.Key.font: UIFont(name: "Songti Tc", size: 25)!]
+             NSAttributedString.Key.font: UIFont(name: "WenYue-GuDianMingChaoTi-NC-W5", size: 25)!]
         
         UINavigationBar.appearance().largeTitleTextAttributes = attrs
         
@@ -83,8 +84,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //============read json==========================
         readFileJson(jsonFile: "SH_all_fang1.json")
-        readFileJson_yao(jsonFile: "SH_yao.json")
-        //print(fanglist)
+        readFile_BenCao(jsonFile: "SH_yao_1.json")
+
+    
         window = UIWindow()
         window?.rootViewController = tabVC
         window?.makeKeyAndVisible()
@@ -130,8 +132,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             }.resume()
     }
+
     
-    func readFileJson_yao(jsonFile: String) {
+    func readFile_BenCao(jsonFile: String) {
         
         guard let fileURL = Bundle.main.url(forResource: jsonFile, withExtension: nil),
             let _ = try? Data.init(contentsOf: fileURL) else{
@@ -143,10 +146,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 guard let data = data else { return }
                 
                 do {
-                    let oneJson = try JSONDecoder().decode([CaoYao].self, from: data)
+                    let oneJson = try JSONDecoder().decode([BenCao].self, from: data)
                     
-                    self.yaoList = oneJson
-                 
+                    self.benCaoList = oneJson
+                    
                 } catch let jsonErr {
                     print(jsonErr)
                 }
