@@ -11,7 +11,7 @@ class PieChartPolylineVC: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("hi")
+        //print("hi")
         
         chartList.append(chart1)
         chartList.append(chart2)

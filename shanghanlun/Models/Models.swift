@@ -67,6 +67,20 @@ struct Section {
     }
 }
 
+struct BookDetailSection {
+    var name: String
+    var items: [SH_book_data]
+    var collapsed: Bool
+    
+    init(name: String, items: [SH_book_data], collapsed: Bool = false) {
+        self.name = name
+        self.items = items
+        self.collapsed = collapsed
+    }
+}
+
+
+
 struct CaoYao: Codable {
     let ID: Int!
     let yaoList: [String]!

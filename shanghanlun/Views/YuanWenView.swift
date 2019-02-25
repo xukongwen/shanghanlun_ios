@@ -14,34 +14,57 @@ import UIKit
 class yuanwenTableViewController: UITableViewController {
     
     var bookList = [SH_book]()
-    let seacherCon = UISearchController(searchResultsController: nil)
+    let searchController = UISearchController(searchResultsController: nil)
     var fliterList = [SH_book]()
     
     //定义一个section的组
     var sectionsData = [Section]()
+    var filtersectionData = [Section]()
+    var filter_sectionData = [BookDetailSection]()
+    
+    var newList = [SH_book_data]()
     
     //定义各种section的具体组里的内容
     var sectionXuyan = [SH_book]()
     var sectionPingmai = [SH_book]()
     var sectionZhengzhi = [SH_book]()
     
+    // 定义六经的section，是搜索结果用
+  
+    
+    var section_Taiyang = [SH_book_data]()
+    var section_Yangming = [SH_book_data]()
+    var section_ShaoYang = [SH_book_data]()
+    var section_Taiyin = [SH_book_data]()
+    var section_Shaoyin = [SH_book_data]()
+    var section_Jueyin = [SH_book_data]()
+    
+    // 其他的section
+    
+    var section_Other = [SH_book_data]()
+    
+    
+    // 金匮的section
     var sectionJk = [SH_book]()
+    
+    // section返回的出不触发
+    var issectionBack = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         readFileJson_book(jsonFile: "SH_book.json")
         readFileJson_jk_book(jsonFile: "SH_jk_book.json")
 
-        navigationItem.title = "伤寒论原文"
+        navigationItem.title = "伤寒论与金匮要略原文"
         
         
         //搜索栏
-        seacherCon.searchResultsUpdater = self as? UISearchResultsUpdating
-        seacherCon.obscuresBackgroundDuringPresentation = false
-        seacherCon.searchBar.placeholder = "关键词"
+        searchController.searchResultsUpdater = self as? UISearchResultsUpdating
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "关键词"
         
         
-        navigationItem.searchController = seacherCon
+        navigationItem.searchController = searchController
         definesPresentationContext = true
         
     }
@@ -118,71 +141,145 @@ class yuanwenTableViewController: UITableViewController {
     
     //搜索相关func
     func searchBarIsEmputy () -> Bool{
-        return seacherCon.searchBar.text?.isEmpty ?? true
+        return searchController.searchBar.text?.isEmpty ?? true
     }
     
     func isFiltering() -> Bool {
-        return seacherCon.isActive && !searchBarIsEmputy()
+        return searchController.isActive && !searchBarIsEmputy()
     }
     
-    //    func fliterContentforSearcheText(_ searchText: String, scope: String = "All"){
-    //        fliterList = bookList.filter({( fang : SH_book) -> Bool in
-    //            return (fang.header?.lowercased().contains(searchText.lowercased()))!
-    //        })
-    //        tableView.reloadData()
-    //    }
+    func searchHelp() {
+        
+    }
+    
+    func fliterContentforSearcheText(_ searchText: String, scope: String = "All"){
+        
+        section_Taiyang = []
+        section_ShaoYang = []
+        section_Yangming = []
+        section_Jueyin = []
+        section_Shaoyin = []
+        section_Taiyin = []
+        section_Other = []
+        newList = []
+        
+        
+        bookList.forEach { (book) in
+            book.data.forEach({ (data) in
+                if (data?.text?.contains(searchText))! {
+                    newList.append(data!)
+                }
+            })
+            
+        }
+        
+
+        
+        newList.forEach { (data) in
+            if data.ID! <= 178 {
+                section_Taiyang.append(data)
+            } else if data.ID! > 178 && data.ID! <= 262 {
+                section_Yangming.append(data)
+            } else if data.ID! > 262 && data.ID! <= 272 {
+                section_ShaoYang.append(data)
+            } else if data.ID! > 272 && data.ID! <= 280 {
+                section_Taiyang.append(data)
+            } else if data.ID! > 280 && data.ID! <= 325 {
+                section_Shaoyin.append(data)
+            } else if data.ID! > 325 && data.ID! <= 381 {
+                section_Jueyin.append(data)
+            }
+            else {
+                section_Other.append(data)
+            }
+        }
+        
+        
+        
+        filter_sectionData = [
+            BookDetailSection(name: "太阳:\(section_Taiyang.count)", items: section_Taiyang),
+            BookDetailSection(name: "阳明:\(section_Yangming.count)", items: section_Yangming),
+            BookDetailSection(name: "少阳:\(section_ShaoYang.count)", items: section_ShaoYang),
+            BookDetailSection(name: "太阴:\(section_Taiyin.count)", items: section_Taiyin),
+            BookDetailSection(name: "少阴:\(section_Shaoyin.count)", items: section_Shaoyin),
+            BookDetailSection(name: "厥阴:\(section_Jueyin.count)", items: section_Jueyin),
+            BookDetailSection(name: "其他:\(section_Other.count)", items: section_Other)
+            
+        ]
+       
+        
+        tableView.reloadData()
+    }
     
     
     
     
     
-    // MARK: - Table view data source
-    //我操下面这个必须给注释掉，否则啥也出不来，因为return0！
+    //下面这个必须给注释掉，否则啥也出不来，因为return0！
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        //print(sectionsData)
+        
+        if isFiltering() {
+            
+            return filter_sectionData.count
+        }
+      
         return sectionsData.count
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
+        
         if isFiltering() {
-            return fliterList.count
+            return filter_sectionData[section].collapsed ? 0 : filter_sectionData[section].items.count
         }
-        
-        //print(bookList)
-        
+      
         return sectionsData[section].collapsed ? 0 : sectionsData[section].items.count //有多少行
     }
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: "Cell")
-        let fang : SH_book
-        //print("open")
+        let fang : SH_book_data
+        let book: SH_book
+     
         //搜索过滤
         if isFiltering() {
-            fang = fliterList[indexPath.row]
+           
+            fang = filter_sectionData[indexPath.section].items[indexPath.row]
+            cell.textLabel?.numberOfLines = 0
+            cell.textLabel?.text = fang.text
+            cell.isUserInteractionEnabled = false
         } else {
-            fang = sectionsData[indexPath.section].items[indexPath.row]
+          
+            book = sectionsData[indexPath.section].items[indexPath.row]
+            cell.textLabel?.numberOfLines = 0
+            cell.textLabel?.text = book.header
         }
         
-        //显示每个cell的内容
-        cell.textLabel?.numberOfLines = 0//这个是让一个cell完整显示无论多少text，自动扩展
-        cell.textLabel?.text = fang.header
-        //print(fang.section!)
-        //cell.detailTextLabel?.text = fang.text
+       
+     
         cell.textLabel?.font = UIFont.init(name: "Songti Tc", size: 18)
-        //cell.detailTextLabel?.font = UIFont.init(name: "STSong", size: 14)
-        
+     
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let booklook = bookDetailTableViewController()
-        booklook.fang = sectionsData[indexPath.section].items[indexPath.row]
-        navigationController?.pushViewController(booklook, animated: true)
+        
+        if isFiltering() {
+            
+            let booklook = bookDetailTableViewController()
+            booklook.fang = filtersectionData[indexPath.section].items[indexPath.row]
+            navigationController?.pushViewController(booklook, animated: true)
+            
+            
+        } else {
+            
+            let booklook = bookDetailTableViewController()
+            booklook.fang = sectionsData[indexPath.section].items[indexPath.row]
+            navigationController?.pushViewController(booklook, animated: true)
+            
+        }
+       
     }
 
 
@@ -190,18 +287,46 @@ class yuanwenTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "header") as? CollapsibleTableViewHeader ?? CollapsibleTableViewHeader(reuseIdentifier: "header")
         
-        header.titleLabel.text = sectionsData[section].name
-        header.arrowLabel.text = "-"
-        header.setCollapsed(sectionsData[section].collapsed)
+        if isFiltering() {
+            header.titleLabel.text = filter_sectionData[section].name
+            header.arrowLabel.text = "-"
+            header.setCollapsed(filter_sectionData[section].collapsed)
+            
+            header.section = section
+            header.delegate = self as CollapsibleTableViewHeaderDelegate
+            
+            return header
+            
+        } else {
+            header.titleLabel.text = sectionsData[section].name
+            header.arrowLabel.text = "-"
+            header.setCollapsed(sectionsData[section].collapsed)
+            
+            header.section = section
+            header.delegate = self as CollapsibleTableViewHeaderDelegate
+            
+            return header
+        }
         
-        header.section = section
-        header.delegate = self as CollapsibleTableViewHeaderDelegate
         
-        return header
     }
     //header的一些设置
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 44.0
+  
+        
+        // 隐藏没有内容的section
+        if isFiltering() {
+            
+            if filter_sectionData[section].items.count == 0 {
+                return 0
+            }
+            
+        }
+        
+        
+        return 50.0
+            
+     
     }
     
     override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
@@ -225,5 +350,16 @@ extension yuanwenTableViewController: CollapsibleTableViewHeaderDelegate {
         tableView.reloadSections(NSIndexSet(index: section) as IndexSet, with: .automatic)
     }
     
+}
+
+extension yuanwenTableViewController: UISearchResultsUpdating {
+    // MARK: - UISearchResultsUpdating Delegate
+    func updateSearchResults(for searchController: UISearchController) {
+        //let searchBar = searchController.searchBar
+        //let scope = searchBar.scopeButtonTitles![searchBar.selectedScopeButtonIndex]
+        //fliterContentforSearcheText(searchController.searchBar.text!, scope: scope)
+        
+        fliterContentforSearcheText(searchController.searchBar.text!)
+    }
 }
 

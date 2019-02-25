@@ -41,9 +41,7 @@ class ChartCell: UITableViewCell {
         pieView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
         pieView.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         pieView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
-        
-    
-        
+     
     }
     
    
