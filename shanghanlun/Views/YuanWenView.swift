@@ -10,7 +10,6 @@ import UIKit
 
 //伤寒原文部分
 
-
 class yuanwenTableViewController: UITableViewController {
     
     var bookList = [SH_book]()
@@ -30,8 +29,6 @@ class yuanwenTableViewController: UITableViewController {
     var sectionZhengzhi = [SH_book]()
     
     // 定义六经的section，是搜索结果用
-  
-    
     var section_Taiyang = [SH_book_data]()
     var section_Yangming = [SH_book_data]()
     var section_ShaoYang = [SH_book_data]()
@@ -40,16 +37,12 @@ class yuanwenTableViewController: UITableViewController {
     var section_Jueyin = [SH_book_data]()
     
     // 其他的section
-    
     var section_Other = [SH_book_data]()
     
     
     // 金匮的section
     var sectionJk = [SH_book]()
-    
-    // section返回的出不触发
-    var issectionBack = false
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         readFileJson_book(jsonFile: "SH_book.json")
@@ -147,13 +140,11 @@ class yuanwenTableViewController: UITableViewController {
     func isFiltering() -> Bool {
         return searchController.isActive && !searchBarIsEmputy()
     }
-    
-    func searchHelp() {
-        
-    }
-    
+   
     func fliterContentforSearcheText(_ searchText: String, scope: String = "All"){
         
+        
+        // 再次搜索时清空
         section_Taiyang = []
         section_ShaoYang = []
         section_Yangming = []
@@ -163,7 +154,7 @@ class yuanwenTableViewController: UITableViewController {
         section_Other = []
         newList = []
         
-        
+        // 查关键词
         bookList.forEach { (book) in
             book.data.forEach({ (data) in
                 if (data?.text?.contains(searchText))! {
@@ -174,7 +165,7 @@ class yuanwenTableViewController: UITableViewController {
         }
         
 
-        
+        // 分六经
         newList.forEach { (data) in
             if data.ID! <= 178 {
                 section_Taiyang.append(data)
@@ -195,7 +186,7 @@ class yuanwenTableViewController: UITableViewController {
         }
         
         
-        
+        // 设置section
         filter_sectionData = [
             BookDetailSection(name: "太阳:\(section_Taiyang.count)", items: section_Taiyang),
             BookDetailSection(name: "阳明:\(section_Yangming.count)", items: section_Yangming),
@@ -313,7 +304,6 @@ class yuanwenTableViewController: UITableViewController {
     //header的一些设置
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
   
-        
         // 隐藏没有内容的section
         if isFiltering() {
             
@@ -322,11 +312,7 @@ class yuanwenTableViewController: UITableViewController {
             }
             
         }
-        
-        
         return 50.0
-            
-     
     }
     
     override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
@@ -353,7 +339,7 @@ extension yuanwenTableViewController: CollapsibleTableViewHeaderDelegate {
 }
 
 extension yuanwenTableViewController: UISearchResultsUpdating {
-    // MARK: - UISearchResultsUpdating Delegate
+   
     func updateSearchResults(for searchController: UISearchController) {
         //let searchBar = searchController.searchBar
         //let scope = searchBar.scopeButtonTitles![searchBar.selectedScopeButtonIndex]

@@ -64,7 +64,7 @@ class fangDetailView: UITableViewController {
 
         })
         
-        fangList.append("一副药之大约市场价格：\(yaoAllCost ?? "")圆")
+        fangList.append("一副药之大约市场价格：\(yaoAllCost ?? "")元")
         
         
     }

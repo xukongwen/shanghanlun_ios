@@ -63,13 +63,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let peopleList1 = PeopleListView()
         peopleList1.title = "患者档案"
         
+        let zhengFindYao = ZhengTestCon()
+        zhengFindYao.title = "自助对证找药"
+        
         //获得storyboard里的创建好的view
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "MyStory", bundle: nil)
         let setViewController = mainStoryboard.instantiateViewController(withIdentifier: "drag") as! DrageandDropView
         setViewController.title = "Drag"
         
         let gamelist1 = GameListView()
-        gamelist1.gameList = [gridboxView, setViewController, peopleList1]
+        gamelist1.gameList = [gridboxView, setViewController, peopleList1, zhengFindYao]
         gamelist1.title = "小游戏"
         
         //======================tab view========================

@@ -11,6 +11,10 @@
 		8310AC54221E257D008BF23E /* SH_yao_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 8310AC53221E257D008BF23E /* SH_yao_1.json */; };
 		8310AC57221F7910008BF23E /* ChartFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8310AC56221F7910008BF23E /* ChartFuncs.swift */; };
 		8310AC59221F83E6008BF23E /* ChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8310AC58221F83E6008BF23E /* ChartCell.swift */; };
+		8310AC5B2224E3DD008BF23E /* SearchFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8310AC5A2224E3DD008BF23E /* SearchFooter.swift */; };
+		8310AC5D22251E80008BF23E /* Test_zheng_con.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8310AC5C22251E80008BF23E /* Test_zheng_con.swift */; };
+		8310AC6122252854008BF23E /* zhengCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8310AC6022252854008BF23E /* zhengCell.swift */; };
+		8310AC6322253143008BF23E /* zhengMatchYaoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8310AC6222253143008BF23E /* zhengMatchYaoView.swift */; };
 		83531A9C21FB087E0055DA2F /* grid_box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83531A9B21FB087E0055DA2F /* grid_box.swift */; };
 		83531A9F21FB31000055DA2F /* GameListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83531A9E21FB31000055DA2F /* GameListView.swift */; };
 		83531AA121FB32C00055DA2F /* DragandDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83531AA021FB32C00055DA2F /* DragandDrop.swift */; };
@@ -64,6 +68,10 @@
 		8310AC53221E257D008BF23E /* SH_yao_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SH_yao_1.json; sourceTree = "<group>"; };
 		8310AC56221F7910008BF23E /* ChartFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartFuncs.swift; sourceTree = "<group>"; };
 		8310AC58221F83E6008BF23E /* ChartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartCell.swift; sourceTree = "<group>"; };
+		8310AC5A2224E3DD008BF23E /* SearchFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFooter.swift; sourceTree = "<group>"; };
+		8310AC5C22251E80008BF23E /* Test_zheng_con.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_zheng_con.swift; sourceTree = "<group>"; };
+		8310AC6022252854008BF23E /* zhengCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zhengCell.swift; sourceTree = "<group>"; };
+		8310AC6222253143008BF23E /* zhengMatchYaoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zhengMatchYaoView.swift; sourceTree = "<group>"; };
 		83531A9B21FB087E0055DA2F /* grid_box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grid_box.swift; sourceTree = "<group>"; };
 		83531A9E21FB31000055DA2F /* GameListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListView.swift; sourceTree = "<group>"; };
 		83531AA021FB32C00055DA2F /* DragandDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragandDrop.swift; sourceTree = "<group>"; };
@@ -139,6 +147,23 @@
 			path = Charts;
 			sourceTree = "<group>";
 		};
+		8310AC5E22252827008BF23E /* cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		8310AC5F2225283C008BF23E /* zheng */ = {
+			isa = PBXGroup;
+			children = (
+				8310AC5C22251E80008BF23E /* Test_zheng_con.swift */,
+				8310AC6022252854008BF23E /* zhengCell.swift */,
+				8310AC6222253143008BF23E /* zhengMatchYaoView.swift */,
+			);
+			path = zheng;
+			sourceTree = "<group>";
+		};
 		83531A9A21FB08630055DA2F /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				83855E8B22112042006C1ACC /* Helpers.swift */,
+				8310AC5A2224E3DD008BF23E /* SearchFooter.swift */,
 			);
 			path = helper;
 			sourceTree = "<group>";
@@ -228,6 +254,8 @@
 		83E0178A21F817F600D5E87F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8310AC5F2225283C008BF23E /* zheng */,
+				8310AC5E22252827008BF23E /* cell */,
 				83855E8F2211692B006C1ACC /* doctor */,
 				83855E8A2211202B006C1ACC /* helper */,
 				83E017A321F8390600D5E87F /* BaseCell.swift */,
@@ -493,11 +521,15 @@
 				83855E8E221122E7006C1ACC /* PeopleZhengView.swift in Sources */,
 				83855E872211126C006C1ACC /* peopleListview+UITableView.swift in Sources */,
 				83C8B2C7220BC0810044CF4E /* peopleListview.swift in Sources */,
+				8310AC5D22251E80008BF23E /* Test_zheng_con.swift in Sources */,
 				83E017A421F8390600D5E87F /* BaseCell.swift in Sources */,
 				83E017B121F871C700D5E87F /* LoveView.swift in Sources */,
 				8355195921FFCF3D0092B2DB /* fangView.swift in Sources */,
+				8310AC5B2224E3DD008BF23E /* SearchFooter.swift in Sources */,
+				8310AC6322253143008BF23E /* zhengMatchYaoView.swift in Sources */,
 				83855E8C22112042006C1ACC /* Helpers.swift in Sources */,
 				83E017A821F85B0300D5E87F /* ext.swift in Sources */,
+				8310AC6122252854008BF23E /* zhengCell.swift in Sources */,
 				83892524220C45D2001E256B /* Core_DataManager.swift in Sources */,
 				83E017B721F95C5900D5E87F /* coredataManager.swift in Sources */,
 				837F29E721FD3194006EA74D /* yaoDetailView.swift in Sources */,

@@ -35,6 +35,7 @@ class GameListView: UITableViewController {
         let cell = UITableViewCell(style: .default, reuseIdentifier: "Cell")
         
         cell.textLabel?.text = gameList[indexPath.row].title
+        cell.textLabel?.font = UIFont.init(name: "Songti Tc", size: 20)
 
         return cell
     }

@@ -12,25 +12,37 @@ import CoreData
 class fangView: UITableViewController {
     
     var bookList = [SH_json]()
-    let seacherCon = UISearchController(searchResultsController: nil)
+    let searchController = UISearchController(searchResultsController: nil)
+
     var fliterList = [SH_json]()
     let db = DataBase.shared
+    var fangallList = [SH_fang_final]()
+    var filter_fangallList = [SH_fang_final]()
     
     //定义一个section的组
     var sectionsData = [Section_jk]()
+    var filter_sectionData = [Section_jk]()
     var sectionJk = [SH_fang_final]()
     
     
-
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        searchController.searchResultsUpdater = self as? UISearchResultsUpdating
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "关键词"
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
+        
+        // Setup the Scope Bar
+        searchController.searchBar.scopeButtonTitles = ["方剂", "证", "脉", "其他"]
+        searchController.searchBar.delegate = self
+        
+      
+        
         readFileJson_SH(jsonFile: "SH_all_fang1.json")
-    
         navigationItem.title = "伤寒论方剂"
 
-        
     }
     
     // 读取json并且规划section
@@ -47,6 +59,7 @@ class fangView: UITableViewController {
                 
                 do {
                     let oneJson = try JSONDecoder().decode([SH_fang_final].self, from: data)
+                    self.fangallList = oneJson
                   
                     var jk_fang_list = [SH_fang_final]()
                     var sh_fang_taiyang = [SH_fang_final]()
@@ -106,38 +119,104 @@ class fangView: UITableViewController {
             }.resume()
     }
     
+    func searchBarIsEmputy () -> Bool{
+        return searchController.searchBar.text?.isEmpty ?? true
+    }
     
+    func isFiltering() -> Bool {
+        let searchBarScopeIsFiltering = searchController.searchBar.selectedScopeButtonIndex != 0
+        return searchController.isActive && (!searchBarIsEmputy() || searchBarScopeIsFiltering)
+    }
+    
+    func fliterContentforSearcheText(_ searchText: String, scope: String = "方剂"){
+ 
+        var jk_fang_list = [SH_fang_final]()
+        var sh_fang_taiyang = [SH_fang_final]()
+        var sh_fang_yangming = [SH_fang_final]()
+        var sh_fang_shaoyang = [SH_fang_final]()
+        var sh_fang_taiyin = [SH_fang_final]()
+        var sh_fang_shaoyin = [SH_fang_final]()
+        var sh_fang_jueyin = [SH_fang_final]()
+        var sh_fang_other = [SH_fang_final]()
+        filter_fangallList = []
+     
+        fangallList.forEach { (fang) in
+            if fang.name.contains(searchText) {
+                filter_fangallList.append(fang)
+            }
+        }
+        
+        filter_fangallList.forEach { (fang) in
+            if fang.jing == "太阳" {
+                sh_fang_taiyang.append(fang)
+            } else if fang.jing == "阳明" {
+                sh_fang_yangming.append(fang)
+            } else if fang.jing == "少阳" {
+                sh_fang_shaoyang.append(fang)
+            } else
+            if fang.jing == "太阴" {
+                sh_fang_taiyin.append(fang)
+            } else
+            if fang.jing == "少阴" {
+                sh_fang_shaoyin.append(fang)
+            } else
+            if fang.jing == "厥阴" {
+                sh_fang_jueyin.append(fang)
+            } else
+            if fang.book == "金匮" {
+                jk_fang_list.append(fang)
+            } else {
+                sh_fang_other.append(fang)
+            }
+        }
+        
+        filter_sectionData = [
+            Section_jk(name: "太阳:\(sh_fang_taiyang.count)", items: sh_fang_taiyang),
+            Section_jk(name: "阳明:\(sh_fang_yangming.count)", items: sh_fang_yangming),
+            Section_jk(name: "少阳:\(sh_fang_shaoyang.count)", items: sh_fang_shaoyang),
+            Section_jk(name: "太阴:\(sh_fang_taiyin.count)", items: sh_fang_taiyin),
+            Section_jk(name: "少阴:\(sh_fang_shaoyin.count)", items: sh_fang_shaoyin),
+            Section_jk(name: "厥阴:\(sh_fang_jueyin.count)", items: sh_fang_jueyin),
+            Section_jk(name: "金匮:\(jk_fang_list.count)", items: jk_fang_list),
+            Section_jk(name: "其他:\(sh_fang_other.count)", items: sh_fang_other)
+        ]
+        tableView.reloadData()
+    }
+    
+  
     //===========收藏==================
     override func tableView(_ tableView: UITableView, editActionsForRowAt: IndexPath) -> [UITableViewRowAction]? {
         
         let love = UITableViewRowAction(style: .normal, title: "收藏") { action, index in
             let myAppdelegate = UIApplication.shared.delegate as! AppDelegate//这个很重要，是获取当前AppDelegate的方法！花了好几天的时间！
-            
             let fang : SH_fang_final
             fang = self.sectionsData[editActionsForRowAt.section].items[editActionsForRowAt.row]
-            
-            
             let fangId = fang.ID
-          
             self.saveRow(id: Int16(fangId))
             myAppdelegate.lovelistView.updateData()
-            print("name:",fang.name, "id:",fangId)
-            print("选中的row",editActionsForRowAt.row)
-            
+        
         }
         love.backgroundColor = .orange
-        
         return [love]
     }
     
  
  
     override func numberOfSections(in tableView: UITableView) -> Int {
-        //print(sectionsData.count)
+        
+        if isFiltering() {
+            
+            return filter_sectionData.count
+        }
+       
         return sectionsData.count
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        if isFiltering() {
+            return filter_sectionData[section].collapsed ? 0 : filter_sectionData[section].items.count
+        }
         
         return sectionsData[section].collapsed ? 0 : sectionsData[section].items.count //有多少行
     }
@@ -147,8 +226,15 @@ class fangView: UITableViewController {
         let cell = UITableViewCell(style: .default, reuseIdentifier: "Cell")
         let fang : SH_fang_final
         
-        fang = sectionsData[indexPath.section].items[indexPath.row]
-      
+        if isFiltering() {
+           
+            fang = filter_sectionData[indexPath.section].items[indexPath.row]
+            
+        } else {
+            fang = sectionsData[indexPath.section].items[indexPath.row]
+            
+        }
+
         //显示每个cell的内容
         cell.textLabel?.numberOfLines = 0//这个是让一个cell完整显示无论多少text，自动扩展
         cell.textLabel?.text = fang.name
@@ -158,9 +244,19 @@ class fangView: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let booklook = fangDetailView()
-        booklook.fang = sectionsData[indexPath.section].items[indexPath.row]
-        navigationController?.pushViewController(booklook, animated: true)
+        
+        if isFiltering() {
+            let booklook = fangDetailView()
+            booklook.fang = filter_sectionData[indexPath.section].items[indexPath.row]
+            navigationController?.pushViewController(booklook, animated: true)
+            
+        } else {
+            let booklook = fangDetailView()
+            booklook.fang = sectionsData[indexPath.section].items[indexPath.row]
+            navigationController?.pushViewController(booklook, animated: true)
+        }
+   
+        
     }
     
     
@@ -168,18 +264,45 @@ class fangView: UITableViewController {
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "header") as? CollapsibleTableViewHeader ?? CollapsibleTableViewHeader(reuseIdentifier: "header")
         
-        header.titleLabel.text = sectionsData[section].name
-        header.arrowLabel.text = "-"
-        header.setCollapsed(sectionsData[section].collapsed)
+        if isFiltering() {
+            
+            header.titleLabel.text = filter_sectionData[section].name
+            header.arrowLabel.text = "-"
+            header.setCollapsed(filter_sectionData[section].collapsed)
+            
+            header.section = section
+            header.delegate = self as CollapsibleTableViewHeaderDelegate
+            
+            return header
+            
+            
+            
+        } else {
+            header.titleLabel.text = sectionsData[section].name
+            header.arrowLabel.text = "-"
+            header.setCollapsed(sectionsData[section].collapsed)
+            
+            header.section = section
+            header.delegate = self as CollapsibleTableViewHeaderDelegate
+            
+            return header
+            
+        }
         
-        header.section = section
-        header.delegate = self as CollapsibleTableViewHeaderDelegate
         
-        return header
     }
     //header的一些设置
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 44.0
+        
+        if isFiltering() {
+            
+            if filter_sectionData[section].items.count == 0 {
+                return 0
+            }
+            
+        }
+        
+        return 50.0
     }
     
     override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
@@ -223,6 +346,26 @@ extension fangView: CollapsibleTableViewHeaderDelegate {
         tableView.reloadSections(NSIndexSet(index: section) as IndexSet, with: .automatic)
     }
     
+}
+
+extension fangView: UISearchResultsUpdating {
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        let searchBar = searchController.searchBar
+        let scope = searchBar.scopeButtonTitles![searchBar.selectedScopeButtonIndex]
+        fliterContentforSearcheText(searchController.searchBar.text!, scope: scope)
+        
+        fliterContentforSearcheText(searchController.searchBar.text!)
+    }
+    
+    
+}
+
+extension fangView: UISearchBarDelegate {
+    // MARK: - UISearchBar Delegate
+    func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
+        fliterContentforSearcheText(searchBar.text!, scope: searchBar.scopeButtonTitles![selectedScope])
+    }
 }
 
 

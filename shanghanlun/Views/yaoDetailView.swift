@@ -31,7 +31,7 @@ class YaoDetailView: UITableViewController {
         yaoDetail.append("味：\(selectYao.wei)")
         yaoDetail.append("性：\(selectYao.temp)")
         yaoDetail.append(selectYao.text)
-        yaoDetail.append("一公斤市场价格约为：\(selectYao.cost)圆")
+        yaoDetail.append("一公斤市场价格约为：\(selectYao.cost)元")
    
         
     }

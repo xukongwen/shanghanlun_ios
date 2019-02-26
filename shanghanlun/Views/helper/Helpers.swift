@@ -16,6 +16,12 @@ extension UIViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "创建", style: .plain, target: self, action: selector)
     }
     
+    func setupNext(selector: Selector) {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "下一步", style: .plain, target: self, action: selector)
+    }
+    
+    
+    
     
     // 取消按钮
     func setpupCancle() {
