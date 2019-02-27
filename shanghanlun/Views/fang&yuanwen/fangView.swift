@@ -24,24 +24,44 @@ class fangView: UITableViewController {
     var filter_sectionData = [Section_jk]()
     var sectionJk = [SH_fang_final]()
     
+    let illType : UISegmentedControl = {
+        let type = ["方剂","原文"]
+        let sc = UISegmentedControl(items: type)
+        sc.selectedSegmentIndex = 0
+        sc.tintColor = .black
+        
+        sc.translatesAutoresizingMaskIntoConstraints = false
+        return sc
+    }()
+   
+    func setUI() {
+        view.addSubview(illType)
+        illType.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 16).isActive = true
+        illType.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -16).isActive = true
+        illType.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 100).isActive = true
+        illType.heightAnchor.constraint(equalToConstant: 30).isActive = true
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+//        tableView.contentInset = .init(top: 16, left: 0, bottom: 0, right: 0)
+//        tableView.tableFooterView = UIView()
+
+        //setUI()
         searchController.searchResultsUpdater = self as? UISearchResultsUpdating
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "关键词"
         navigationItem.searchController = searchController
         definesPresentationContext = true
         
-        // Setup the Scope Bar
-        searchController.searchBar.scopeButtonTitles = ["方剂", "证", "脉", "其他"]
-        searchController.searchBar.delegate = self
-        
-      
-        
         readFileJson_SH(jsonFile: "SH_all_fang1.json")
-        navigationItem.title = "伤寒论方剂"
+        navigationItem.title = "伤寒论方与原文"
+        
+        
+        
 
     }
     
@@ -124,11 +144,11 @@ class fangView: UITableViewController {
     }
     
     func isFiltering() -> Bool {
-        let searchBarScopeIsFiltering = searchController.searchBar.selectedScopeButtonIndex != 0
-        return searchController.isActive && (!searchBarIsEmputy() || searchBarScopeIsFiltering)
+        //let searchBarScopeIsFiltering = searchController.searchBar.selectedScopeButtonIndex != 0
+        return searchController.isActive && (!searchBarIsEmputy())
     }
     
-    func fliterContentforSearcheText(_ searchText: String, scope: String = "方剂"){
+    func fliterContentforSearcheText(_ searchText: String){
  
         var jk_fang_list = [SH_fang_final]()
         var sh_fang_taiyang = [SH_fang_final]()
@@ -245,17 +265,21 @@ class fangView: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        if isFiltering() {
-            let booklook = fangDetailView()
-            booklook.fang = filter_sectionData[indexPath.section].items[indexPath.row]
-            navigationController?.pushViewController(booklook, animated: true)
-            
-        } else {
-            let booklook = fangDetailView()
-            booklook.fang = sectionsData[indexPath.section].items[indexPath.row]
-            navigationController?.pushViewController(booklook, animated: true)
-        }
-   
+//        if isFiltering() {
+//            let booklook = fangDetailView()
+//            booklook.fang = filter_sectionData[indexPath.section].items[indexPath.row]
+//            navigationController?.pushViewController(booklook, animated: true)
+//
+//        } else {
+//            let booklook = fangDetailView()
+//            booklook.fang = sectionsData[indexPath.section].items[indexPath.row]
+//            navigationController?.pushViewController(booklook, animated: true)
+//        }
+        
+        let booklook = fangDetailView()
+        booklook.fang = sectionsData[indexPath.section].items[indexPath.row]
+        navigationController?.pushViewController(booklook, animated: true)
+        print(navigationController)
         
     }
     
@@ -351,21 +375,14 @@ extension fangView: CollapsibleTableViewHeaderDelegate {
 extension fangView: UISearchResultsUpdating {
     
     func updateSearchResults(for searchController: UISearchController) {
-        let searchBar = searchController.searchBar
-        let scope = searchBar.scopeButtonTitles![searchBar.selectedScopeButtonIndex]
-        fliterContentforSearcheText(searchController.searchBar.text!, scope: scope)
-        
+//        let searchBar = searchController.searchBar
+//        let scope = searchBar.scopeButtonTitles![searchBar.selectedScopeButtonIndex]
+//        fliterContentforSearcheText(searchController.searchBar.text!, scope: scope)
+//
         fliterContentforSearcheText(searchController.searchBar.text!)
     }
     
     
-}
-
-extension fangView: UISearchBarDelegate {
-    // MARK: - UISearchBar Delegate
-    func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
-        fliterContentforSearcheText(searchBar.text!, scope: searchBar.scopeButtonTitles![selectedScope])
-    }
 }
 
 

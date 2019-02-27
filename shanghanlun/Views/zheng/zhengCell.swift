@@ -35,8 +35,8 @@ class ZhengCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         addSubview(peopleimageivew)
-        peopleimageivew.heightAnchor.constraint(equalToConstant: 30).isActive = true
-        peopleimageivew.widthAnchor.constraint(equalToConstant: 30).isActive = true
+        peopleimageivew.heightAnchor.constraint(equalToConstant: 15).isActive = true
+        peopleimageivew.widthAnchor.constraint(equalToConstant: 15).isActive = true
         peopleimageivew.leftAnchor.constraint(equalTo: leftAnchor, constant: 16).isActive = true
         peopleimageivew.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
         

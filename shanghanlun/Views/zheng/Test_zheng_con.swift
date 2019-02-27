@@ -39,7 +39,8 @@ class ZhengTestCon: UITableViewController {
         "脐下悸",
         "腹胀满",
         "往来寒热",
-        "口苦"
+        "口苦",
+        "脖子僵硬"
     ]
     
     var selectedRow = [String]()
@@ -49,6 +50,8 @@ class ZhengTestCon: UITableViewController {
         setupNext(selector: #selector(findYao))
         tableView.allowsMultipleSelection = true
         tableView.register(ZhengCell.self, forCellReuseIdentifier: "Cell")
+        
+        //selectedZheng.append("您的体证为：")
         
         
     }
@@ -108,7 +111,6 @@ class ZhengTestCon: UITableViewController {
             cell.peopleimageivew.image = UIImage(named:"select")
         }
         self.tableView?.reloadRows(at: [indexPath], with: .automatic)
-        print(selectedZheng)
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

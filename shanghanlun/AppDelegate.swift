@@ -46,13 +46,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //=====================创建这些view的实例=======================
         
+        let fangandyuanwenView = FangAndYuanwenViewCon()
+        fangandyuanwenView.title = "方剂与原文"
+        
         let fanglistView = fangView()
         fanglistView.title = "方剂"
-        //print("hi:",fanglistView.sectionData)
+       
         let booklistView = yuanwenTableViewController()
         booklistView.title = "原文"
-        //print("hi2:", booklistView.sectionsData)
+       
         lovelistView.title = "收藏"
+        
+        let swip = SwipingController(collectionViewLayout: UICollectionViewFlowLayout())
+        swip.title = "方剂与原文"
         
         let gridboxView = BoxGird()
         gridboxView.title = "Grid"
@@ -64,7 +70,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         peopleList1.title = "患者档案"
         
         let zhengFindYao = ZhengTestCon()
-        zhengFindYao.title = "自助对证找药"
+        zhengFindYao.title = "自医"
         
         //获得storyboard里的创建好的view
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "MyStory", bundle: nil)
@@ -72,14 +78,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         setViewController.title = "Drag"
         
         let gamelist1 = GameListView()
-        gamelist1.gameList = [gridboxView, setViewController, peopleList1, zhengFindYao]
-        gamelist1.title = "小游戏"
+        gamelist1.gameList = [gridboxView, setViewController, peopleList1, booklistView]
+        gamelist1.title = "其他"
         
         //======================tab view========================
         let tabVC = UITabBarController(nibName: nil, bundle: nil)
         tabVC.setViewControllers([
             UINavigationController(rootViewController: fanglistView),
-            UINavigationController(rootViewController: booklistView),
+            UINavigationController(rootViewController: zhengFindYao),
             UINavigationController(rootViewController: lovelistView),
             UINavigationController(rootViewController: chart1View),
             UINavigationController(rootViewController: gamelist1)
