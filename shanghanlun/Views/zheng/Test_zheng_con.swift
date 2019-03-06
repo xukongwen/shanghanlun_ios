@@ -9,8 +9,7 @@
 import UIKit
 
 class ZhengTestCon: UITableViewController {
-    
-    
+   
     var selectedIndexs: [Int] = []
     var selectedZheng = [String]()
     
@@ -50,10 +49,7 @@ class ZhengTestCon: UITableViewController {
         setupNext(selector: #selector(findYao))
         tableView.allowsMultipleSelection = true
         tableView.register(ZhengCell.self, forCellReuseIdentifier: "Cell")
-        
-        //selectedZheng.append("您的体证为：")
-        
-        
+     
     }
     
     

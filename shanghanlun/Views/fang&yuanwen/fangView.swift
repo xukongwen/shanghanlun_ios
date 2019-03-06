@@ -35,22 +35,22 @@ class fangView: UITableViewController {
     }()
    
     func setUI() {
-        view.addSubview(illType)
-        illType.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 16).isActive = true
-        illType.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -16).isActive = true
-        illType.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 100).isActive = true
+        //view.addSubview(illType)
+        illType.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 50).isActive = true
+        illType.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        illType.topAnchor.constraint(equalTo: view.topAnchor, constant: 5).isActive = true
+        illType.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 10).isActive = true
         illType.heightAnchor.constraint(equalToConstant: 30).isActive = true
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+//        tableView.tableHeaderView = illType
+//
+//        setUI()
         
-        
-//        tableView.contentInset = .init(top: 16, left: 0, bottom: 0, right: 0)
-//        tableView.tableFooterView = UIView()
-
-        //setUI()
         searchController.searchResultsUpdater = self as? UISearchResultsUpdating
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "关键词"
@@ -59,9 +59,7 @@ class fangView: UITableViewController {
         
         readFileJson_SH(jsonFile: "SH_all_fang1.json")
         navigationItem.title = "伤寒论方与原文"
-        
-        
-        
+       
 
     }
     
@@ -144,7 +142,7 @@ class fangView: UITableViewController {
     }
     
     func isFiltering() -> Bool {
-        //let searchBarScopeIsFiltering = searchController.searchBar.selectedScopeButtonIndex != 0
+        
         return searchController.isActive && (!searchBarIsEmputy())
     }
     
@@ -265,21 +263,17 @@ class fangView: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-//        if isFiltering() {
-//            let booklook = fangDetailView()
-//            booklook.fang = filter_sectionData[indexPath.section].items[indexPath.row]
-//            navigationController?.pushViewController(booklook, animated: true)
-//
-//        } else {
-//            let booklook = fangDetailView()
-//            booklook.fang = sectionsData[indexPath.section].items[indexPath.row]
-//            navigationController?.pushViewController(booklook, animated: true)
-//        }
-        
-        let booklook = fangDetailView()
-        booklook.fang = sectionsData[indexPath.section].items[indexPath.row]
-        navigationController?.pushViewController(booklook, animated: true)
-        print(navigationController)
+        if isFiltering() {
+            let booklook = fangDetailView()
+            booklook.fang = filter_sectionData[indexPath.section].items[indexPath.row]
+            navigationController?.pushViewController(booklook, animated: true)
+
+        } else {
+            let booklook = fangDetailView()
+            booklook.fang = sectionsData[indexPath.section].items[indexPath.row]
+            self.navigationController?.pushViewController(booklook, animated: true)
+        }
+       
         
     }
     
@@ -375,10 +369,7 @@ extension fangView: CollapsibleTableViewHeaderDelegate {
 extension fangView: UISearchResultsUpdating {
     
     func updateSearchResults(for searchController: UISearchController) {
-//        let searchBar = searchController.searchBar
-//        let scope = searchBar.scopeButtonTitles![searchBar.selectedScopeButtonIndex]
-//        fliterContentforSearcheText(searchController.searchBar.text!, scope: scope)
-//
+
         fliterContentforSearcheText(searchController.searchBar.text!)
     }
     

@@ -121,9 +121,7 @@ class CreatePeopleView: UIViewController, UINavigationControllerDelegate, UIImag
         } else {
             saveeditChange()
         }
-        
   
-    
     }
     
     

@@ -27,6 +27,8 @@ class yuanwenTableViewController: UITableViewController {
     var sectionXuyan = [SH_book]()
     var sectionPingmai = [SH_book]()
     var sectionZhengzhi = [SH_book]()
+    var sectionLiuJjing = [SH_book]()
+  
     
     // 定义六经的section，是搜索结果用
     var section_Taiyang = [SH_book_data]()
@@ -38,6 +40,7 @@ class yuanwenTableViewController: UITableViewController {
     
     // 其他的section
     var section_Other = [SH_book_data]()
+    var section_Jinkui = [SH_book_data]()
     
     
     // 金匮的section
@@ -45,12 +48,11 @@ class yuanwenTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+   
         readFileJson_book(jsonFile: "SH_book.json")
-        readFileJson_jk_book(jsonFile: "SH_jk_book.json")
 
         navigationItem.title = "伤寒论与金匮要略原文"
-        
-        
+   
         //搜索栏
         searchController.searchResultsUpdater = self as? UISearchResultsUpdating
         searchController.obscuresBackgroundDuringPresentation = false
@@ -86,16 +88,23 @@ class yuanwenTableViewController: UITableViewController {
                     for i in oneJson[4...7] {
                         self.sectionPingmai.append(i)
                     }
-                    for i in oneJson[8...25] {
+                    for i in oneJson[8...15] {
+                        self.sectionLiuJjing.append(i)
+                    }
+                    for i in oneJson[16...25] {
                         self.sectionZhengzhi.append(i)
+                        }
+                    for i in oneJson[27...48] {
+                        self.sectionJk.append(i)
                     }
                     self.sectionXuyan.append(oneJson[26])
                     //制作sections
                     self.sectionsData = [
                         Section(name: "序言", items: self.sectionXuyan),
                         Section(name: "平脉法", items: self.sectionPingmai),
-                        Section(name: "六经辨证", items: self.sectionZhengzhi)
-                        
+                        Section(name: "六经辨证", items: self.sectionLiuJjing),
+                        Section(name: "伤寒其他", items: self.sectionZhengzhi),
+                        Section(name: "金匮要略", items: self.sectionJk)
                     ]
                     self.tableView.reloadData()
                 } catch let jsonErr {
@@ -105,33 +114,7 @@ class yuanwenTableViewController: UITableViewController {
             
             }.resume()
     }
-    
-    func readFileJson_jk_book(jsonFile: String) {
-        
-        guard let fileURL = Bundle.main.url(forResource: jsonFile, withExtension: nil),
-            let _ = try? Data.init(contentsOf: fileURL) else{
-                fatalError("`JSON File Fetch Failed`")
-        }
-        
-        URLSession.shared.dataTask(with: fileURL) { (data, response, err) in
-            DispatchQueue.main.async {
-                guard let data = data else { return }
-                
-                do {
-                    let oneJson = try JSONDecoder().decode([SH_book].self, from: data)
-                    
-            
-                    self.sectionsData.append(Section(name: "金匮要略", items: oneJson))
-                    //print(self.sectionsData)
-                    self.tableView.reloadData()
-                } catch let jsonErr {
-                    print(jsonErr)
-                }
-            }
-            
-            }.resume()
-    }
-    
+ 
     //搜索相关func
     func searchBarIsEmputy () -> Bool{
         return searchController.searchBar.text?.isEmpty ?? true
@@ -152,6 +135,7 @@ class yuanwenTableViewController: UITableViewController {
         section_Shaoyin = []
         section_Taiyin = []
         section_Other = []
+        section_Jinkui = []
         newList = []
         
         // 查关键词
@@ -179,6 +163,8 @@ class yuanwenTableViewController: UITableViewController {
                 section_Shaoyin.append(data)
             } else if data.ID! > 325 && data.ID! <= 381 {
                 section_Jueyin.append(data)
+            } else if data.ID! >= 2000000 { // 金匮
+                section_Jinkui.append(data)
             }
             else {
                 section_Other.append(data)
@@ -194,18 +180,13 @@ class yuanwenTableViewController: UITableViewController {
             BookDetailSection(name: "太阴:\(section_Taiyin.count)", items: section_Taiyin),
             BookDetailSection(name: "少阴:\(section_Shaoyin.count)", items: section_Shaoyin),
             BookDetailSection(name: "厥阴:\(section_Jueyin.count)", items: section_Jueyin),
+            BookDetailSection(name: "金匮:\(section_Jinkui.count)", items: section_Jinkui),
             BookDetailSection(name: "其他:\(section_Other.count)", items: section_Other)
-            
         ]
-       
-        
         tableView.reloadData()
     }
     
-    
-    
-    
-    
+ 
     //下面这个必须给注释掉，否则啥也出不来，因为return0！
     override func numberOfSections(in tableView: UITableView) -> Int {
         
