@@ -12,6 +12,8 @@ import UIKit
 
 class yuanwenTableViewController: UITableViewController {
     
+    var items: [CellConfiguratorType] = []
+    
     var bookList = [SH_book]()
     let searchController = UISearchController(searchResultsController: nil)
     var fliterList = [SH_book]()
@@ -20,6 +22,7 @@ class yuanwenTableViewController: UITableViewController {
     var sectionsData = [Section]()
     var filtersectionData = [Section]()
     var filter_sectionData = [BookDetailSection]()
+    var filter_seach_section = [BookSearcheSection]()
     
     var newList = [SH_book_data]()
     
@@ -31,20 +34,22 @@ class yuanwenTableViewController: UITableViewController {
   
     
     // 定义六经的section，是搜索结果用
-    var section_Taiyang = [SH_book_data]()
-    var section_Yangming = [SH_book_data]()
-    var section_ShaoYang = [SH_book_data]()
-    var section_Taiyin = [SH_book_data]()
-    var section_Shaoyin = [SH_book_data]()
-    var section_Jueyin = [SH_book_data]()
+    var section_cell_Taiyang = [CellConfiguratorType]()
+    var section_cell_Yangming = [CellConfiguratorType]()
+    var section_cell_Shaoyang = [CellConfiguratorType]()
+    var section_cell_Taiyin = [CellConfiguratorType]()
+    var section_cell_Shaoyin = [CellConfiguratorType]()
+    var section_cell_Jueyin = [CellConfiguratorType]()
     
     // 其他的section
     var section_Other = [SH_book_data]()
     var section_Jinkui = [SH_book_data]()
+    var section_cell_other = [CellConfiguratorType]()
     
     
     // 金匮的section
     var sectionJk = [SH_book]()
+    var section_cell_jk = [CellConfiguratorType]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +58,7 @@ class yuanwenTableViewController: UITableViewController {
 
         navigationItem.title = "伤寒论与金匮要略原文"
    
+        tableView.tableFooterView = UIView()
         //搜索栏
         searchController.searchResultsUpdater = self as? UISearchResultsUpdating
         searchController.obscuresBackgroundDuringPresentation = false
@@ -62,6 +68,21 @@ class yuanwenTableViewController: UITableViewController {
         navigationItem.searchController = searchController
         definesPresentationContext = true
         
+        
+        
+        
+    }
+    
+    func registerCells() {
+//        for cellConfigurator in items {
+//            tableView.register(cellConfigurator.cellClass, forCellReuseIdentifier: cellConfigurator.reuseIdentifier)
+//        }
+//
+        filter_seach_section.forEach { (bb) in
+            for cellConfigurator in bb.newcells {
+                tableView.register(cellConfigurator.cellClass, forCellReuseIdentifier: cellConfigurator.reuseIdentifier)
+            }
+        }
     }
     
     
@@ -125,17 +146,17 @@ class yuanwenTableViewController: UITableViewController {
     }
    
     func fliterContentforSearcheText(_ searchText: String, scope: String = "All"){
-        
-        
         // 再次搜索时清空
-        section_Taiyang = []
-        section_ShaoYang = []
-        section_Yangming = []
-        section_Jueyin = []
-        section_Shaoyin = []
-        section_Taiyin = []
-        section_Other = []
-        section_Jinkui = []
+
+        section_cell_Taiyang = []
+        section_cell_Shaoyang = []
+        section_cell_Yangming = []
+        section_cell_Jueyin = []
+        section_cell_Shaoyin = []
+        section_cell_Taiyin = []
+        section_cell_other = []
+        section_cell_jk = []
+        
         newList = []
         
         // 查关键词
@@ -147,42 +168,53 @@ class yuanwenTableViewController: UITableViewController {
             })
             
         }
-        
-
         // 分六经
         newList.forEach { (data) in
             if data.ID! <= 178 {
-                section_Taiyang.append(data)
+                
+                section_cell_Taiyang.append(CellConfigurator<TextTableViewCell>(viewData: TextCellViewData(title: data.text!)))
             } else if data.ID! > 178 && data.ID! <= 262 {
-                section_Yangming.append(data)
+                
+                section_cell_Yangming.append(CellConfigurator<TextTableViewCell>(viewData: TextCellViewData(title: data.text!)))
             } else if data.ID! > 262 && data.ID! <= 272 {
-                section_ShaoYang.append(data)
+                
+                section_cell_Shaoyang.append(CellConfigurator<TextTableViewCell>(viewData: TextCellViewData(title: data.text!)))
             } else if data.ID! > 272 && data.ID! <= 280 {
-                section_Taiyang.append(data)
+                
+                section_cell_Taiyin.append(CellConfigurator<TextTableViewCell>(viewData: TextCellViewData(title: data.text!)))
             } else if data.ID! > 280 && data.ID! <= 325 {
-                section_Shaoyin.append(data)
+                
+                section_cell_Shaoyin.append(CellConfigurator<TextTableViewCell>(viewData: TextCellViewData(title: data.text!)))
             } else if data.ID! > 325 && data.ID! <= 381 {
-                section_Jueyin.append(data)
+                
+                section_cell_Jueyin.append(CellConfigurator<TextTableViewCell>(viewData: TextCellViewData(title: data.text!)))
             } else if data.ID! >= 2000000 { // 金匮
-                section_Jinkui.append(data)
+                
+                section_cell_jk.append(CellConfigurator<TextTableViewCell>(viewData: TextCellViewData(title: data.text!)))
             }
             else {
-                section_Other.append(data)
+                
+                section_cell_other.append(CellConfigurator<TextTableViewCell>(viewData: TextCellViewData(title: data.text!)))
             }
         }
-        
-        
+    
         // 设置section
-        filter_sectionData = [
-            BookDetailSection(name: "太阳:\(section_Taiyang.count)", items: section_Taiyang),
-            BookDetailSection(name: "阳明:\(section_Yangming.count)", items: section_Yangming),
-            BookDetailSection(name: "少阳:\(section_ShaoYang.count)", items: section_ShaoYang),
-            BookDetailSection(name: "太阴:\(section_Taiyin.count)", items: section_Taiyin),
-            BookDetailSection(name: "少阴:\(section_Shaoyin.count)", items: section_Shaoyin),
-            BookDetailSection(name: "厥阴:\(section_Jueyin.count)", items: section_Jueyin),
-            BookDetailSection(name: "金匮:\(section_Jinkui.count)", items: section_Jinkui),
-            BookDetailSection(name: "其他:\(section_Other.count)", items: section_Other)
+        filter_seach_section = [
+            BookSearcheSection(name: "搜索图", newcells: [CellConfigurator<TextTableViewCell>(viewData: TextCellViewData(title: "搜索六经统计柱图")),CellConfigurator<ImageTableViewCell>(viewData: ImageCellViewData(image: UIImage(named: "brain")!))]),
+            BookSearcheSection(name: "太阳 \(section_cell_Taiyang.count)", newcells: section_cell_Taiyang),
+            BookSearcheSection(name: "阳明 \(section_cell_Yangming.count)", newcells: section_cell_Yangming),
+            BookSearcheSection(name: "少阳 \(section_cell_Shaoyang.count)", newcells: section_cell_Shaoyang),
+            BookSearcheSection(name: "太阴 \(section_cell_Taiyin.count)", newcells: section_cell_Taiyin),
+            BookSearcheSection(name: "少阴 \(section_cell_Shaoyin.count)", newcells: section_cell_Shaoyin),
+            BookSearcheSection(name: "厥阴 \(section_cell_Jueyin.count)", newcells: section_cell_Jueyin),
+            BookSearcheSection(name: "金匮 \(section_cell_jk.count)", newcells: section_cell_jk),
+            BookSearcheSection(name: "其他 \(section_cell_other.count)", newcells: section_cell_other)
+     
         ]
+        
+        
+        registerCells()
+     
         tableView.reloadData()
     }
     
@@ -192,7 +224,8 @@ class yuanwenTableViewController: UITableViewController {
         
         if isFiltering() {
             
-            return filter_sectionData.count
+            //return filter_sectionData.count
+            return filter_seach_section.count
         }
       
         return sectionsData.count
@@ -201,34 +234,34 @@ class yuanwenTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if isFiltering() {
-            return filter_sectionData[section].collapsed ? 0 : filter_sectionData[section].items.count
+            //return filter_sectionData[section].collapsed ? 0 : filter_sectionData[section].items.count
+            return filter_seach_section[section].collapsed ? 0 : filter_seach_section[section].newcells.count
         }
       
         return sectionsData[section].collapsed ? 0 : sectionsData[section].items.count //有多少行
     }
     
-    
+    // 设置cell
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "Cell")
-        let fang : SH_book_data
+        var cell = UITableViewCell(style: .default, reuseIdentifier: "Cell")
         let book: SH_book
      
         //搜索过滤
         if isFiltering() {
-           
-            fang = filter_sectionData[indexPath.section].items[indexPath.row]
-            cell.textLabel?.numberOfLines = 0
-            cell.textLabel?.text = fang.text
+            //加装自制cell
+            let cellConfigurator = filter_seach_section[indexPath.section].newcells[(indexPath as NSIndexPath).row]
+            cell = tableView.dequeueReusableCell(withIdentifier: cellConfigurator.reuseIdentifier, for: indexPath)
+            cellConfigurator.update(cell: cell)
             cell.isUserInteractionEnabled = false
+            cell.textLabel?.numberOfLines = 0
+           
         } else {
           
             book = sectionsData[indexPath.section].items[indexPath.row]
             cell.textLabel?.numberOfLines = 0
             cell.textLabel?.text = book.header
         }
-        
-       
-     
+   
         cell.textLabel?.font = UIFont.init(name: "Songti Tc", size: 18)
      
         return cell
@@ -260,9 +293,9 @@ class yuanwenTableViewController: UITableViewController {
         let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "header") as? CollapsibleTableViewHeader ?? CollapsibleTableViewHeader(reuseIdentifier: "header")
         
         if isFiltering() {
-            header.titleLabel.text = filter_sectionData[section].name
+            header.titleLabel.text = filter_seach_section[section].name
             header.arrowLabel.text = "-"
-            header.setCollapsed(filter_sectionData[section].collapsed)
+            header.setCollapsed(filter_seach_section[section].collapsed)
             
             header.section = section
             header.delegate = self as CollapsibleTableViewHeaderDelegate
@@ -288,7 +321,7 @@ class yuanwenTableViewController: UITableViewController {
         // 隐藏没有内容的section
         if isFiltering() {
             
-            if filter_sectionData[section].items.count == 0 {
+            if filter_seach_section[section].newcells.count == 0 {
                 return 0
             }
             

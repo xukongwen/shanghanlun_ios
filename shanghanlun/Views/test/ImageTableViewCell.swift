@@ -1,14 +1,12 @@
-//
-//  ImageTableViewCell.swift
-//  ConfigurableTableViewController
-//
-//  Created by Arkadiusz Holko on 03-01-16.
-//  Copyright © 2016 Arkadiusz Holko. All rights reserved.
-//
 
 import UIKit
 
 class ImageTableViewCell: UITableViewCell {
+    
+    let ScreenHeight = UIScreen.main.bounds.size.height
+    let ScreenWidth = UIScreen.main.bounds.size.width
+    
+    var chart = SH_Charts()
 
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -22,6 +20,22 @@ class ImageTableViewCell: UITableViewCell {
 
     func update(viewData: ImageCellViewData) {
         imageView?.image = viewData.image
+        
+        let pieView = chart.pieChartView
+        
+        pieView.backgroundColor = ZHFColor.white
+        pieView.frame.size = CGSize.init(width: ScreenWidth - 20, height: 300)
+        pieView.translatesAutoresizingMaskIntoConstraints = false
+    
+        chart.setPieChartViewBaseStyle(title: "默认")
+        chart.updataData()
+        
+        addSubview(pieView)
+        pieView.heightAnchor.constraint(equalToConstant: 300).isActive = true
+        pieView.widthAnchor.constraint(equalToConstant: 300).isActive = true
+        pieView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
+        pieView.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
+        pieView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
     }
 }
 

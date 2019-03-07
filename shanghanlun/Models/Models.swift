@@ -72,12 +72,27 @@ struct BookDetailSection {
     var items: [SH_book_data]
     var collapsed: Bool
     
-    init(name: String, items: [SH_book_data], collapsed: Bool = false) {
+    init(name: String, items: [SH_book_data],collapsed: Bool = false) {
         self.name = name
         self.items = items
         self.collapsed = collapsed
     }
 }
+
+struct BookSearcheSection {
+    var name: String
+    //var items: [SH_book_data]
+    var newcells: [CellConfiguratorType]
+    var collapsed: Bool
+    
+    init(name: String, newcells: [CellConfiguratorType], collapsed: Bool = false) {
+        self.name = name
+        self.newcells = newcells
+        self.collapsed = collapsed
+    }
+}
+
+
 
 
 

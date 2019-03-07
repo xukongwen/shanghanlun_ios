@@ -1,10 +1,3 @@
-//
-//  TextTableViewCell.swift
-//  ConfigurableTableViewController
-//
-//  Created by Arkadiusz Holko on 03-01-16.
-//  Copyright © 2016 Arkadiusz Holko. All rights reserved.
-//
 
 import UIKit
 
@@ -22,7 +15,8 @@ class TextTableViewCell: UITableViewCell {
 
     func update(viewData: TextCellViewData) {
         textLabel?.text = viewData.title
-        backgroundColor = UIColor(white: 0.93, alpha: 1)
+        backgroundColor = UIColor.white
+        textLabel?.font = UIFont.init(name: "Songti Tc", size: 18)
     }
 }
 

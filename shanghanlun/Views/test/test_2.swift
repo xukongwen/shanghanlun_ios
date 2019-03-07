@@ -15,14 +15,15 @@ class Tt_1cell : UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        registerCells()
-        
+        tableView.tableFooterView = UIView()//隐藏cell下面不用多余的line
+        //tableView.rowHeight = 100 //cell的高度
+    
         items = [
-        CellConfigurator<TextTableViewCell>(viewData: TextCellViewData(title: "Foo")),
-        CellConfigurator<ImageTableViewCell>(viewData: ImageCellViewData(image: UIImage(named: "brain")!)),
-        CellConfigurator<ImageTableViewCell>(viewData: ImageCellViewData(image: UIImage(named: "brain")!)),
-        CellConfigurator<TextTableViewCell>(viewData: TextCellViewData(title: "Bar")),
+        CellConfigurator<TextTableViewCell>(viewData: TextCellViewData(title: "搜索六经统计柱图")),
+        CellConfigurator<ImageTableViewCell>(viewData: ImageCellViewData(image: UIImage(named: "brain")!))
         ]
+        
+        registerCells()
      
     }
     
@@ -31,12 +32,9 @@ class Tt_1cell : UITableViewController {
             tableView.register(cellConfigurator.cellClass, forCellReuseIdentifier: cellConfigurator.reuseIdentifier)
         }
     }
-    
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        
-        
+  
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
-        
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -45,6 +43,5 @@ class Tt_1cell : UITableViewController {
         cellConfigurator.update(cell: cell)
         return cell
     }
-    
     
 }
