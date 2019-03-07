@@ -11,20 +11,15 @@ import UIKit
 class ZhengMatchYao: UITableViewController {
     
     var result = [String]()
-  
     var fangList = [SH_fang_final]()
-    
     var findedYao = [SH_fang_final]()
-    
     var displayAll = [String]()
-    
     var fang: SH_fang_final?
-    
     var findedfangList = [SH_fang_final]()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.tableFooterView = UIView()
         title = "推荐方剂"
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "取消", style: .plain, target: self, action: #selector(handleCancel))
@@ -86,13 +81,12 @@ class ZhengMatchYao: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let booklook = fangDetailView()
+//
+//        findedfangList.forEach({ (fang) in
+//            print(fang.name)
+//        })
         
-        print(indexPath.row - 2 - result.count)
-        print("zheng:", result.count)
         
-        findedfangList.forEach({ (fang) in
-            print(fang.name)
-        })
         
         booklook.fang = findedYao[indexPath.row - 2 - result.count]
         

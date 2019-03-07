@@ -159,6 +159,8 @@ class yuanwenTableViewController: UITableViewController {
         
         newList = []
         
+        var outputData = [Int]()
+        
         // 查关键词
         bookList.forEach { (book) in
             book.data.forEach({ (data) in
@@ -197,10 +199,18 @@ class yuanwenTableViewController: UITableViewController {
                 section_cell_other.append(CellConfigurator<TextTableViewCell>(viewData: TextCellViewData(title: data.text!)))
             }
         }
+        
+        outputData = [section_cell_Taiyang.count,
+                      section_cell_Yangming.count,
+                      section_cell_Shaoyang.count,
+                      section_cell_Taiyin.count,
+                      section_cell_Shaoyin.count,
+                      section_cell_Jueyin.count
+        ]
     
         // 设置section
         filter_seach_section = [
-            BookSearcheSection(name: "搜索图", newcells: [CellConfigurator<TextTableViewCell>(viewData: TextCellViewData(title: "搜索六经统计柱图")),CellConfigurator<ImageTableViewCell>(viewData: ImageCellViewData(image: UIImage(named: "brain")!))]),
+            BookSearcheSection(name: "统计图表", newcells: [CellConfigurator<TextTableViewCell>(viewData: TextCellViewData(title: "根据搜索关键词统计出的六经统计图")),CellConfigurator<ImageTableViewCell>(viewData: ImageCellViewData(image: UIImage(named: "brain")!, data: outputData))]),
             BookSearcheSection(name: "太阳 \(section_cell_Taiyang.count)", newcells: section_cell_Taiyang),
             BookSearcheSection(name: "阳明 \(section_cell_Yangming.count)", newcells: section_cell_Yangming),
             BookSearcheSection(name: "少阳 \(section_cell_Shaoyang.count)", newcells: section_cell_Shaoyang),
@@ -209,10 +219,8 @@ class yuanwenTableViewController: UITableViewController {
             BookSearcheSection(name: "厥阴 \(section_cell_Jueyin.count)", newcells: section_cell_Jueyin),
             BookSearcheSection(name: "金匮 \(section_cell_jk.count)", newcells: section_cell_jk),
             BookSearcheSection(name: "其他 \(section_cell_other.count)", newcells: section_cell_other)
-     
         ]
-        
-        
+
         registerCells()
      
         tableView.reloadData()
@@ -223,8 +231,7 @@ class yuanwenTableViewController: UITableViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         
         if isFiltering() {
-            
-            //return filter_sectionData.count
+        
             return filter_seach_section.count
         }
       
@@ -234,7 +241,7 @@ class yuanwenTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if isFiltering() {
-            //return filter_sectionData[section].collapsed ? 0 : filter_sectionData[section].items.count
+          
             return filter_seach_section[section].collapsed ? 0 : filter_seach_section[section].newcells.count
         }
       
@@ -355,10 +362,7 @@ extension yuanwenTableViewController: CollapsibleTableViewHeaderDelegate {
 extension yuanwenTableViewController: UISearchResultsUpdating {
    
     func updateSearchResults(for searchController: UISearchController) {
-        //let searchBar = searchController.searchBar
-        //let scope = searchBar.scopeButtonTitles![searchBar.selectedScopeButtonIndex]
-        //fliterContentforSearcheText(searchController.searchBar.text!, scope: scope)
-        
+    
         fliterContentforSearcheText(searchController.searchBar.text!)
     }
 }

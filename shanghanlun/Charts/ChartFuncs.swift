@@ -64,7 +64,7 @@ class SH_Charts {
         //  barChartView.animate(xAxisDuration: 2, yAxisDuration: 2)//展示方式xAxisDuration 和 yAxisDuration两种
     }
     
-    @objc func updataData(){
+    @objc func updataData(chartData: [Int]){
       
         let myAppdelegate = UIApplication.shared.delegate as! AppDelegate
         self.fanglist = myAppdelegate.fanglist
@@ -80,9 +80,11 @@ class SH_Charts {
         var taiyin = 0
         var jueyin = 0
         var shaoyin = 0
-        let fangtotal = fanglist.count
+        //let fangtotal = fanglist.count
         
         let yVals: NSMutableArray  = NSMutableArray.init()//这个是数据的合集
+        
+        
         
         for i in fanglist {
             yaoTotal = fanglist.count
@@ -144,28 +146,21 @@ class SH_Charts {
             }
         }
         
-        //print("一共有方：",yaoTotal,"附子：", guizhi, "甘草：", yaoamount)
-        
         entry = PieChartDataEntry.init(value: Double(yaoamount), label: "甘草\(yaoamount)")
-        //let entry1 = PieChartDataEntry.init(value: Double(guizhi), label: "桂枝\(guizhi)")
-        let entry1 = PieChartDataEntry.init(value: Double(taiyang), label: "太阳\(taiyang)")
-        let entry2 = PieChartDataEntry.init(value: Double(shaoyang), label: "少阳\(shaoyang)")
-        let entry3 = PieChartDataEntry.init(value: Double(yangming), label: "阳明\(yangming )")
-        let entry4 = PieChartDataEntry.init(value: Double(taiyin), label: "太阴\(taiyin)")
-        let entry5 = PieChartDataEntry.init(value: Double(shaoyin), label: "少阴\(shaoyin)")
-        let entry6 = PieChartDataEntry.init(value: Double(jueyin), label: "厥阴\(jueyin)")
+       
+        let entry1 = PieChartDataEntry.init(value: Double(chartData[0]), label: "太阳\(chartData[0])")
+        let entry2 = PieChartDataEntry.init(value: Double(chartData[1]), label: "少阳\(chartData[1])")
+        let entry3 = PieChartDataEntry.init(value: Double(chartData[2]), label: "阳明\(chartData[2])")
+        let entry4 = PieChartDataEntry.init(value: Double(chartData[3]), label: "太阴\(chartData[3])")
+        let entry5 = PieChartDataEntry.init(value: Double(chartData[4]), label: "少阴\(chartData[4])")
+        let entry6 = PieChartDataEntry.init(value: Double(chartData[5]), label: "厥阴\(chartData[5])")
         yVals.add(entry1)
         yVals.add(entry2)
         yVals.add(entry3)
         yVals.add(entry4)
         yVals.add(entry5)
         yVals.add(entry6)
-        //entryTotal = PieChartDataEntry.init(value: Double(yaoTotal - taiyang), label: "其他\(yaoTotal - taiyang)")
-       // yVals.add(entryTotal)
-        //print(<#T##items: Any...##Any#>)
-        
-        
-        
+     
         //创建PieChartDataSet对象
         let set1: PieChartDataSet = PieChartDataSet.init(values: yVals as? [ChartDataEntry], label: "饼状图")
         set1.drawIconsEnabled = false //是否在饼状图上面显示图片

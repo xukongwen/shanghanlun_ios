@@ -33,7 +33,7 @@ class ChartCell: UITableViewCell {
         
         
         chart.setPieChartViewBaseStyle(title: "默认")
-        chart.updataData()
+        //chart.updataData()
         
         addSubview(pieView)
         pieView.heightAnchor.constraint(equalToConstant: 300).isActive = true

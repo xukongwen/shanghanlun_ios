@@ -20,15 +20,15 @@ class ImageTableViewCell: UITableViewCell {
 
     func update(viewData: ImageCellViewData) {
         imageView?.image = viewData.image
-        
+  
         let pieView = chart.pieChartView
-        
+    
         pieView.backgroundColor = ZHFColor.white
         pieView.frame.size = CGSize.init(width: ScreenWidth - 20, height: 300)
         pieView.translatesAutoresizingMaskIntoConstraints = false
     
-        chart.setPieChartViewBaseStyle(title: "默认")
-        chart.updataData()
+        chart.setPieChartViewBaseStyle(title: "")
+        chart.updataData(chartData: viewData.data)
         
         addSubview(pieView)
         pieView.heightAnchor.constraint(equalToConstant: 300).isActive = true

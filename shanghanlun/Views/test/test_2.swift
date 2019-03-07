@@ -20,7 +20,6 @@ class Tt_1cell : UITableViewController {
     
         items = [
         CellConfigurator<TextTableViewCell>(viewData: TextCellViewData(title: "搜索六经统计柱图")),
-        CellConfigurator<ImageTableViewCell>(viewData: ImageCellViewData(image: UIImage(named: "brain")!))
         ]
         
         registerCells()

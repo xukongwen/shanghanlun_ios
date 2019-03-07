@@ -72,16 +72,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let zhengFindYao = ZhengTestCon()
         zhengFindYao.title = "自医"
         
-        let test_cell = Tt_1cell()
-        test_cell.title = "多类型的cell"
-        
-        let viewController = ConfigurableTableViewController(items: [
-            CellConfigurator<TextTableViewCell>(viewData: TextCellViewData(title: "Foo")),
-            CellConfigurator<ImageTableViewCell>(viewData: ImageCellViewData(image: UIImage(named: "brain")!)),
-            CellConfigurator<ImageTableViewCell>(viewData: ImageCellViewData(image: UIImage(named: "brain")!)),
-            CellConfigurator<TextTableViewCell>(viewData: TextCellViewData(title: "Bar")),
-            ])
-        viewController.title = "cell"
         
         //获得storyboard里的创建好的view
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "MyStory", bundle: nil)
@@ -89,7 +79,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         setViewController.title = "Drag"
         
         let gamelist1 = GameListView()
-        gamelist1.gameList = [gridboxView, setViewController, peopleList1, booklistView, viewController, test_cell]
+        gamelist1.gameList = [gridboxView, setViewController, peopleList1, booklistView]
         gamelist1.title = "其他"
         
         //======================tab view========================
