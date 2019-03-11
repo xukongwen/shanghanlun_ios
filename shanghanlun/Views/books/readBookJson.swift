@@ -12,7 +12,7 @@ struct ReadJson {
     
     static let shared = ReadJson()
     
-    let bookname = "Book_NeiJjing.json"
+    let bookname = "Book_XinJjing.json"
     
     func readBookJson() -> ([Book]) {
         

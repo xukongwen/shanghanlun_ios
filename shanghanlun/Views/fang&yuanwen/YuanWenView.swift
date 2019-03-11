@@ -69,16 +69,14 @@ class yuanwenTableViewController: UITableViewController {
         navigationItem.searchController = searchController
         definesPresentationContext = true
         
-        
-        
-        
+        let text = "I made this wonderful pic last #chRistmas... #instagram #nofilter #snow #fun"
+        let hashtags = text.hashtags()
+        print(hashtags)
+   
     }
     
     func registerCells() {
-//        for cellConfigurator in items {
-//            tableView.register(cellConfigurator.cellClass, forCellReuseIdentifier: cellConfigurator.reuseIdentifier)
-//        }
-//
+
         filter_seach_section.forEach { (bb) in
             for cellConfigurator in bb.newcells {
                 tableView.register(cellConfigurator.cellClass, forCellReuseIdentifier: cellConfigurator.reuseIdentifier)
@@ -276,6 +274,8 @@ class yuanwenTableViewController: UITableViewController {
         return cell
     }
     
+    
+    // 点击进入
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         

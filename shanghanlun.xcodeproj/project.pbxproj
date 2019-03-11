@@ -23,6 +23,8 @@
 		8310AC7222263067008BF23E /* SwipingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8310AC6F22263067008BF23E /* SwipingController.swift */; };
 		8310AC7322263067008BF23E /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8310AC7022263067008BF23E /* MainCell.swift */; };
 		8310AC75222630FC008BF23E /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8310AC74222630FC008BF23E /* Extensions+UIView.swift */; };
+		8350099D22364DB800519C0D /* eachBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8350099C22364DB800519C0D /* eachBookView.swift */; };
+		8350099F2236511B00519C0D /* bookPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8350099E2236511B00519C0D /* bookPageView.swift */; };
 		83531A9C21FB087E0055DA2F /* grid_box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83531A9B21FB087E0055DA2F /* grid_box.swift */; };
 		83531A9F21FB31000055DA2F /* GameListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83531A9E21FB31000055DA2F /* GameListView.swift */; };
 		83531AA121FB32C00055DA2F /* DragandDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83531AA021FB32C00055DA2F /* DragandDrop.swift */; };
@@ -54,8 +56,8 @@
 		83855E8E221122E7006C1ACC /* PeopleZhengView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83855E8D221122E7006C1ACC /* PeopleZhengView.swift */; };
 		83855E9322190745006C1ACC /* temp.json in Resources */ = {isa = PBXBuildFile; fileRef = 83855E9222190745006C1ACC /* temp.json */; };
 		8386E399223205D90037D36A /* allBookview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8386E398223205D90037D36A /* allBookview.swift */; };
-		8386E39B2232070F0037D36A /* Book_NeiJjing.json in Resources */ = {isa = PBXBuildFile; fileRef = 8386E39A2232070F0037D36A /* Book_NeiJjing.json */; };
-		8386E39E22320B100037D36A /* Book_XinJjing.json in Resources */ = {isa = PBXBuildFile; fileRef = 8386E39D22320B100037D36A /* Book_XinJjing.json */; };
+		8386E39B2232070F0037D36A /* Book_NeiJing.json in Resources */ = {isa = PBXBuildFile; fileRef = 8386E39A2232070F0037D36A /* Book_NeiJing.json */; };
+		8386E39E22320B100037D36A /* Book_XinJing.json in Resources */ = {isa = PBXBuildFile; fileRef = 8386E39D22320B100037D36A /* Book_XinJing.json */; };
 		8386E3A022320C7B0037D36A /* readBookJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8386E39F22320C7B0037D36A /* readBookJson.swift */; };
 		83892524220C45D2001E256B /* Core_DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83892523220C45D2001E256B /* Core_DataManager.swift */; };
 		838E1BAA21FFE674009CD478 /* SH_all_fang1.json in Resources */ = {isa = PBXBuildFile; fileRef = 838E1BA921FFE674009CD478 /* SH_all_fang1.json */; };
@@ -101,6 +103,8 @@
 		8310AC6F22263067008BF23E /* SwipingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipingController.swift; sourceTree = "<group>"; };
 		8310AC7022263067008BF23E /* MainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 		8310AC74222630FC008BF23E /* Extensions+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UIView.swift"; sourceTree = "<group>"; };
+		8350099C22364DB800519C0D /* eachBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eachBookView.swift; sourceTree = "<group>"; };
+		8350099E2236511B00519C0D /* bookPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bookPageView.swift; sourceTree = "<group>"; };
 		83531A9B21FB087E0055DA2F /* grid_box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grid_box.swift; sourceTree = "<group>"; };
 		83531A9E21FB31000055DA2F /* GameListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListView.swift; sourceTree = "<group>"; };
 		83531AA021FB32C00055DA2F /* DragandDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragandDrop.swift; sourceTree = "<group>"; };
@@ -134,8 +138,8 @@
 		83855E8D221122E7006C1ACC /* PeopleZhengView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleZhengView.swift; sourceTree = "<group>"; };
 		83855E9222190745006C1ACC /* temp.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = temp.json; sourceTree = "<group>"; };
 		8386E398223205D90037D36A /* allBookview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allBookview.swift; sourceTree = "<group>"; };
-		8386E39A2232070F0037D36A /* Book_NeiJjing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Book_NeiJjing.json; sourceTree = "<group>"; };
-		8386E39D22320B100037D36A /* Book_XinJjing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Book_XinJjing.json; sourceTree = "<group>"; };
+		8386E39A2232070F0037D36A /* Book_NeiJing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Book_NeiJing.json; sourceTree = "<group>"; };
+		8386E39D22320B100037D36A /* Book_XinJing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Book_XinJing.json; sourceTree = "<group>"; };
 		8386E39F22320C7B0037D36A /* readBookJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = readBookJson.swift; sourceTree = "<group>"; };
 		83892523220C45D2001E256B /* Core_DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core_DataManager.swift; sourceTree = "<group>"; };
 		838E1BA921FFE674009CD478 /* SH_all_fang1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SH_all_fang1.json; sourceTree = "<group>"; };
@@ -346,6 +350,8 @@
 				8386E39C223207200037D36A /* books_data */,
 				8386E398223205D90037D36A /* allBookview.swift */,
 				8386E39F22320C7B0037D36A /* readBookJson.swift */,
+				8350099C22364DB800519C0D /* eachBookView.swift */,
+				8350099E2236511B00519C0D /* bookPageView.swift */,
 			);
 			path = books;
 			sourceTree = "<group>";
@@ -353,8 +359,8 @@
 		8386E39C223207200037D36A /* books_data */ = {
 			isa = PBXGroup;
 			children = (
-				8386E39A2232070F0037D36A /* Book_NeiJjing.json */,
-				8386E39D22320B100037D36A /* Book_XinJjing.json */,
+				8386E39A2232070F0037D36A /* Book_NeiJing.json */,
+				8386E39D22320B100037D36A /* Book_XinJing.json */,
 				830C150A2234EBEA00AFAF36 /* test1.json */,
 			);
 			path = books_data;
@@ -525,7 +531,7 @@
 				83E0179221F8189C00D5E87F /* SH_jk_json1.json in Resources */,
 				8310AC54221E257D008BF23E /* SH_yao_1.json in Resources */,
 				83E0179721F8189C00D5E87F /* SH_json1.json in Resources */,
-				8386E39E22320B100037D36A /* Book_XinJjing.json in Resources */,
+				8386E39E22320B100037D36A /* Book_XinJing.json in Resources */,
 				83E0179421F8189C00D5E87F /* SH_book.json in Resources */,
 				83828AC021F722850067D1AB /* GoogleService-Info.plist in Resources */,
 				8355195521FEF0DF0092B2DB /* SH_jk_json2.json in Resources */,
@@ -539,7 +545,7 @@
 				838E1BAA21FFE674009CD478 /* SH_all_fang1.json in Resources */,
 				83E0179D21F818B900D5E87F /* song.ttf in Resources */,
 				8355195121FEEE910092B2DB /* SH_json2.json in Resources */,
-				8386E39B2232070F0037D36A /* Book_NeiJjing.json in Resources */,
+				8386E39B2232070F0037D36A /* Book_NeiJing.json in Resources */,
 				83855E9322190745006C1ACC /* temp.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -644,8 +650,10 @@
 				8355194D21FE9BCF0092B2DB /* Chart1.swift in Sources */,
 				83E017BD21F9BCD100D5E87F /* LoveList+CoreDataProperties.swift in Sources */,
 				837C51CA222F7450007B62FD /* Updatable.swift in Sources */,
+				8350099F2236511B00519C0D /* bookPageView.swift in Sources */,
 				837C51D7222F7507007B62FD /* UITableViewCell+Margins.swift in Sources */,
 				83855E8922111A0B006C1ACC /* PeopleInfoView.swift in Sources */,
+				8350099D22364DB800519C0D /* eachBookView.swift in Sources */,
 				837C51D3222F748A007B62FD /* TextCellViewData.swift in Sources */,
 				83E017AF21F8673C00D5E87F /* fangDetailView.swift in Sources */,
 				8310AC7322263067008BF23E /* MainCell.swift in Sources */,

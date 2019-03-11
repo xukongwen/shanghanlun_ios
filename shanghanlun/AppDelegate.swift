@@ -18,6 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var fanglist = [SH_fang_final]()
     var yaoList = [CaoYao]()
     var benCaoList = [BenCao]()
+    
+    var allbook = [Book]()
+    
     //var sectionData = [Section_jk]()
     var sectionsData = [Section_jk]()
     var sectionJk = [SH_fang_final]()
@@ -98,6 +101,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //============read json==========================
         readFileJson(jsonFile: "SH_all_fang1.json")
         readFile_BenCao(jsonFile: "SH_yao_1.json")
+        readFile_book(jsonFile: "Book_XinJing.json")
+        readFile_book(jsonFile: "Book_NeiJing.json")
 
     
         window = UIWindow()
@@ -162,6 +167,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     let oneJson = try JSONDecoder().decode([BenCao].self, from: data)
                     
                     self.benCaoList = oneJson
+                    
+                } catch let jsonErr {
+                    print(jsonErr)
+                }
+            }
+            
+            }.resume()
+    }
+    
+    func readFile_book(jsonFile: String) {
+        
+        guard let fileURL = Bundle.main.url(forResource: jsonFile, withExtension: nil),
+            let _ = try? Data.init(contentsOf: fileURL) else{
+                fatalError("`JSON File Fetch Failed`")
+        }
+        
+        URLSession.shared.dataTask(with: fileURL) { (data, response, err) in
+            DispatchQueue.main.async {
+                guard let data = data else { return }
+                
+                do {
+                    let oneJson = try JSONDecoder().decode(Book.self, from: data)
+                    
+                    self.allbook.append(oneJson)
                     
                 } catch let jsonErr {
                     print(jsonErr)
