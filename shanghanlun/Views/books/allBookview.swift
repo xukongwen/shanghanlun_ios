@@ -59,12 +59,14 @@ class AllBookView : UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "Cell")
-        let book = allBook[indexPath.row].bookname
+        let cell = UITableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: "cellId")
+        let book = allBook[indexPath.row]
       
         cell.textLabel?.numberOfLines = 0
-        cell.textLabel?.font = UIFont.init(name: "Songti Tc", size: 18)
-        cell.textLabel?.text = book
+        cell.textLabel?.font = UIFont.init(name: "Songti Tc", size: 20)
+        cell.textLabel?.text = book.bookname
+        cell.detailTextLabel?.text = book.writer
+        cell.detailTextLabel?.textColor = .gray
     
         return cell
     }
@@ -72,6 +74,7 @@ class AllBookView : UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let bookview = EachBookView()
         bookview.alldata = allBook[indexPath.row].alldata
+        bookview.booktitle = allBook[indexPath.row].bookname
         navigationController?.pushViewController(bookview, animated: true)
     }
     

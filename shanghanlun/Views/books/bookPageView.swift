@@ -35,7 +35,7 @@ class BookPageView : UITableViewController {
         
         let book = data[indexPath.row].text
         cell.textLabel?.numberOfLines = 0
-        cell.textLabel?.font = UIFont.init(name: "Songti Tc", size: 18)
+        cell.textLabel?.font = UIFont.init(name: "Songti Tc", size: 20)
         cell.textLabel?.text = book
         cell.isUserInteractionEnabled = false
         return cell
