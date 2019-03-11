@@ -154,3 +154,27 @@ struct People {
 }
 
 
+//=============books============
+
+struct Book: Decodable {
+    let bookname: String
+    let writer: String
+    let type: String
+    let age: String
+    let alldata: [Book_allData]
+}
+
+struct Book_allData: Decodable {
+    let section: Int
+    let header: String
+    let data: [Book_allData_Data]
+}
+
+struct Book_allData_Data: Decodable {
+    let ID: Int
+    let text: String
+}
+
+
+
+

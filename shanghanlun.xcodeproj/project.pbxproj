@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		66605DEA03356B119F68385B /* Pods_shanghanlun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 863FEE1E1C34B936D55071C6 /* Pods_shanghanlun.framework */; };
+		830C150B2234EBEA00AFAF36 /* test1.json in Resources */ = {isa = PBXBuildFile; fileRef = 830C150A2234EBEA00AFAF36 /* test1.json */; };
 		8310AC54221E257D008BF23E /* SH_yao_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 8310AC53221E257D008BF23E /* SH_yao_1.json */; };
 		8310AC57221F7910008BF23E /* ChartFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8310AC56221F7910008BF23E /* ChartFuncs.swift */; };
 		8310AC59221F83E6008BF23E /* ChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8310AC58221F83E6008BF23E /* ChartCell.swift */; };
@@ -52,6 +53,10 @@
 		83855E8C22112042006C1ACC /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83855E8B22112042006C1ACC /* Helpers.swift */; };
 		83855E8E221122E7006C1ACC /* PeopleZhengView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83855E8D221122E7006C1ACC /* PeopleZhengView.swift */; };
 		83855E9322190745006C1ACC /* temp.json in Resources */ = {isa = PBXBuildFile; fileRef = 83855E9222190745006C1ACC /* temp.json */; };
+		8386E399223205D90037D36A /* allBookview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8386E398223205D90037D36A /* allBookview.swift */; };
+		8386E39B2232070F0037D36A /* Book_NeiJjing.json in Resources */ = {isa = PBXBuildFile; fileRef = 8386E39A2232070F0037D36A /* Book_NeiJjing.json */; };
+		8386E39E22320B100037D36A /* Book_XinJjing.json in Resources */ = {isa = PBXBuildFile; fileRef = 8386E39D22320B100037D36A /* Book_XinJjing.json */; };
+		8386E3A022320C7B0037D36A /* readBookJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8386E39F22320C7B0037D36A /* readBookJson.swift */; };
 		83892524220C45D2001E256B /* Core_DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83892523220C45D2001E256B /* Core_DataManager.swift */; };
 		838E1BAA21FFE674009CD478 /* SH_all_fang1.json in Resources */ = {isa = PBXBuildFile; fileRef = 838E1BA921FFE674009CD478 /* SH_all_fang1.json */; };
 		83C8B2C7220BC0810044CF4E /* peopleListview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C8B2C6220BC0810044CF4E /* peopleListview.swift */; };
@@ -81,6 +86,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		830C150A2234EBEA00AFAF36 /* test1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test1.json; sourceTree = "<group>"; };
 		8310AC53221E257D008BF23E /* SH_yao_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SH_yao_1.json; sourceTree = "<group>"; };
 		8310AC56221F7910008BF23E /* ChartFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartFuncs.swift; sourceTree = "<group>"; };
 		8310AC58221F83E6008BF23E /* ChartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartCell.swift; sourceTree = "<group>"; };
@@ -127,6 +133,10 @@
 		83855E8B22112042006C1ACC /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		83855E8D221122E7006C1ACC /* PeopleZhengView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleZhengView.swift; sourceTree = "<group>"; };
 		83855E9222190745006C1ACC /* temp.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = temp.json; sourceTree = "<group>"; };
+		8386E398223205D90037D36A /* allBookview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allBookview.swift; sourceTree = "<group>"; };
+		8386E39A2232070F0037D36A /* Book_NeiJjing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Book_NeiJjing.json; sourceTree = "<group>"; };
+		8386E39D22320B100037D36A /* Book_XinJjing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Book_XinJjing.json; sourceTree = "<group>"; };
+		8386E39F22320C7B0037D36A /* readBookJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = readBookJson.swift; sourceTree = "<group>"; };
 		83892523220C45D2001E256B /* Core_DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core_DataManager.swift; sourceTree = "<group>"; };
 		838E1BA921FFE674009CD478 /* SH_all_fang1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SH_all_fang1.json; sourceTree = "<group>"; };
 		83C8B2C6220BC0810044CF4E /* peopleListview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = peopleListview.swift; sourceTree = "<group>"; };
@@ -330,6 +340,26 @@
 			path = doctor;
 			sourceTree = "<group>";
 		};
+		8386E397223205670037D36A /* books */ = {
+			isa = PBXGroup;
+			children = (
+				8386E39C223207200037D36A /* books_data */,
+				8386E398223205D90037D36A /* allBookview.swift */,
+				8386E39F22320C7B0037D36A /* readBookJson.swift */,
+			);
+			path = books;
+			sourceTree = "<group>";
+		};
+		8386E39C223207200037D36A /* books_data */ = {
+			isa = PBXGroup;
+			children = (
+				8386E39A2232070F0037D36A /* Book_NeiJjing.json */,
+				8386E39D22320B100037D36A /* Book_XinJjing.json */,
+				830C150A2234EBEA00AFAF36 /* test1.json */,
+			);
+			path = books_data;
+			sourceTree = "<group>";
+		};
 		83E0178821F817D500D5E87F /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -353,6 +383,7 @@
 		83E0178A21F817F600D5E87F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8386E397223205670037D36A /* books */,
 				837C51CD222F747A007B62FD /* test */,
 				8310AC74222630FC008BF23E /* Extensions+UIView.swift */,
 				8310AC6422261EF8008BF23E /* fang&yuanwen */,
@@ -440,7 +471,6 @@
 				837DE17E21F6D0AE00E0B0E3 /* Frameworks */,
 				837DE17F21F6D0AE00E0B0E3 /* Resources */,
 				AAEC5930CB2339CDADC6F0CE /* [CP] Embed Pods Frameworks */,
-				5778A4909C3941CDE9A894B2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -490,10 +520,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				83E0179E21F818B900D5E87F /* Songti.ttc in Resources */,
+				830C150B2234EBEA00AFAF36 /* test1.json in Resources */,
 				837DE18F21F6D0AF00E0B0E3 /* LaunchScreen.storyboard in Resources */,
 				83E0179221F8189C00D5E87F /* SH_jk_json1.json in Resources */,
 				8310AC54221E257D008BF23E /* SH_yao_1.json in Resources */,
 				83E0179721F8189C00D5E87F /* SH_json1.json in Resources */,
+				8386E39E22320B100037D36A /* Book_XinJjing.json in Resources */,
 				83E0179421F8189C00D5E87F /* SH_book.json in Resources */,
 				83828AC021F722850067D1AB /* GoogleService-Info.plist in Resources */,
 				8355195521FEF0DF0092B2DB /* SH_jk_json2.json in Resources */,
@@ -507,6 +539,7 @@
 				838E1BAA21FFE674009CD478 /* SH_all_fang1.json in Resources */,
 				83E0179D21F818B900D5E87F /* song.ttf in Resources */,
 				8355195121FEEE910092B2DB /* SH_json2.json in Resources */,
+				8386E39B2232070F0037D36A /* Book_NeiJjing.json in Resources */,
 				83855E9322190745006C1ACC /* temp.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,28 +547,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5778A4909C3941CDE9A894B2 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-shanghanlun/Pods-shanghanlun-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestore/gRPCCertificates-Firestore.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates-Firestore.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-shanghanlun/Pods-shanghanlun-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		AAEC5930CB2339CDADC6F0CE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -545,29 +556,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-shanghanlun/Pods-shanghanlun-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
-				"${BUILT_PRODUCTS_DIR}/YYText/YYText.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${BUILT_PRODUCTS_DIR}/Highlighter/Highlighter.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYText.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Highlighter.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -605,6 +602,7 @@
 			files = (
 				83531A9C21FB087E0055DA2F /* grid_box.swift in Sources */,
 				8355194F21FE9C980092B2DB /* anthercolor.swift in Sources */,
+				8386E3A022320C7B0037D36A /* readBookJson.swift in Sources */,
 				83855E852211033D006C1ACC /* PeopleCell.swift in Sources */,
 				83E017AA21F8613E00D5E87F /* YuanWenView.swift in Sources */,
 				8310AC6C22263053008BF23E /* MenuController.swift in Sources */,
@@ -630,6 +628,7 @@
 				83E017B121F871C700D5E87F /* LoveView.swift in Sources */,
 				8310AC6B22263053008BF23E /* MenuCell.swift in Sources */,
 				8355195921FFCF3D0092B2DB /* fangView.swift in Sources */,
+				8386E399223205D90037D36A /* allBookview.swift in Sources */,
 				837C51D4222F748A007B62FD /* ImageCellViewData.swift in Sources */,
 				8310AC7222263067008BF23E /* SwipingController.swift in Sources */,
 				837C51D5222F748A007B62FD /* ImageTableViewCell.swift in Sources */,

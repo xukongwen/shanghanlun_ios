@@ -72,6 +72,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let zhengFindYao = ZhengTestCon()
         zhengFindYao.title = "自医"
         
+        let allbookView = AllBookView()
+        allbookView.title = "古籍"
+        
         
         //获得storyboard里的创建好的view
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "MyStory", bundle: nil)
@@ -79,16 +82,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         setViewController.title = "Drag"
         
         let gamelist1 = GameListView()
-        gamelist1.gameList = [gridboxView, setViewController, peopleList1, booklistView]
+        gamelist1.gameList = [gridboxView, setViewController, peopleList1, chart1View, allbookView]
         gamelist1.title = "其他"
         
         //======================tab view========================
         let tabVC = UITabBarController(nibName: nil, bundle: nil)
         tabVC.setViewControllers([
             UINavigationController(rootViewController: fanglistView),
+            UINavigationController(rootViewController: booklistView),
             UINavigationController(rootViewController: zhengFindYao),
             UINavigationController(rootViewController: lovelistView),
-            UINavigationController(rootViewController: chart1View),
             UINavigationController(rootViewController: gamelist1)
             ], animated: true)
         

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Highlighter
 
 //伤寒原文部分
 
@@ -210,7 +211,7 @@ class yuanwenTableViewController: UITableViewController {
     
         // 设置section
         filter_seach_section = [
-            BookSearcheSection(name: "统计图表", newcells: [CellConfigurator<TextTableViewCell>(viewData: TextCellViewData(title: "根据搜索关键词统计出的六经统计图")),CellConfigurator<ImageTableViewCell>(viewData: ImageCellViewData(image: UIImage(named: "brain")!, data: outputData))]),
+            BookSearcheSection(name: "统计图表", newcells: [CellConfigurator<TextTableViewCell>(viewData: TextCellViewData(title: "\(searchController.searchBar.text!)于六经中数据统计图")),CellConfigurator<ImageTableViewCell>(viewData: ImageCellViewData(image: UIImage(named: "brain")!, data: outputData))]),
             BookSearcheSection(name: "太阳 \(section_cell_Taiyang.count)", newcells: section_cell_Taiyang),
             BookSearcheSection(name: "阳明 \(section_cell_Yangming.count)", newcells: section_cell_Yangming),
             BookSearcheSection(name: "少阳 \(section_cell_Shaoyang.count)", newcells: section_cell_Shaoyang),
@@ -261,6 +262,7 @@ class yuanwenTableViewController: UITableViewController {
             cellConfigurator.update(cell: cell)
             cell.isUserInteractionEnabled = false
             cell.textLabel?.numberOfLines = 0
+            cell.highlight(text: searchController.searchBar.text!, normal: nil, highlight: [NSAttributedString.Key.backgroundColor: UIColor.black, NSAttributedString.Key.foregroundColor: UIColor.white])
            
         } else {
           

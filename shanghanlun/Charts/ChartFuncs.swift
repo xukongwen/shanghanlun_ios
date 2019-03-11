@@ -64,96 +64,22 @@ class SH_Charts {
         //  barChartView.animate(xAxisDuration: 2, yAxisDuration: 2)//展示方式xAxisDuration 和 yAxisDuration两种
     }
     
+    
+    //根据搜索关键词的饼图统计
     @objc func updataData(chartData: [Int]){
       
         let myAppdelegate = UIApplication.shared.delegate as! AppDelegate
         self.fanglist = myAppdelegate.fanglist
-        
-        var yaoamount = 0
-        var guizhi = 0
-        var entry: PieChartDataEntry
-        var entryTotal: PieChartDataEntry
-        var yaoTotal = 0
-        var taiyang = 0
-        var yangming = 0
-        var shaoyang = 0
-        var taiyin = 0
-        var jueyin = 0
-        var shaoyin = 0
-        //let fangtotal = fanglist.count
-        
+
         let yVals: NSMutableArray  = NSMutableArray.init()//这个是数据的合集
         
-        
-        
-        for i in fanglist {
-            yaoTotal = fanglist.count
-            for j in i.yaoList{
-                if j.yaoname == "甘草" {
-                    yaoamount += 1
-                }
-            }
-        }
-        
-        for i in fanglist {
-            yaoTotal = fanglist.count
-            for j in i.yaoList{
-                if j.yaoname == "桂枝" {
-                    guizhi += 1
-                }
-            }
-        }
-        
-        for i in fanglist {
-            
-            if i.jing == "太阳"{
-                taiyang += 1
-            }
-        }
-        
-        for i in fanglist {
-           
-            if i.jing == "少阳"{
-                shaoyang += 1
-            }
-        }
-        
-        for i in fanglist {
-            
-            if i.jing == "阳明"{
-                yangming += 1
-            }
-        }
-        
-        for i in fanglist {
-           
-            if i.jing == "太阴"{
-                taiyin += 1
-            }
-        }
-        
-        for i in fanglist {
-            
-            if i.jing == "少阴"{
-                shaoyin += 1
-            }
-        }
-        
-        for i in fanglist {
-            
-            if i.jing == "厥阴"{
-                jueyin += 1
-            }
-        }
-        
-        entry = PieChartDataEntry.init(value: Double(yaoamount), label: "甘草\(yaoamount)")
-       
         let entry1 = PieChartDataEntry.init(value: Double(chartData[0]), label: "太阳\(chartData[0])")
         let entry2 = PieChartDataEntry.init(value: Double(chartData[1]), label: "少阳\(chartData[1])")
         let entry3 = PieChartDataEntry.init(value: Double(chartData[2]), label: "阳明\(chartData[2])")
         let entry4 = PieChartDataEntry.init(value: Double(chartData[3]), label: "太阴\(chartData[3])")
         let entry5 = PieChartDataEntry.init(value: Double(chartData[4]), label: "少阴\(chartData[4])")
         let entry6 = PieChartDataEntry.init(value: Double(chartData[5]), label: "厥阴\(chartData[5])")
+        
         yVals.add(entry1)
         yVals.add(entry2)
         yVals.add(entry3)
@@ -343,8 +269,7 @@ class SH_Charts {
         legend.textColor = ZHFColor.orange
         legend.font = UIFont.systemFont(ofSize: 11.0)
     }
-    
-    
+  
 }
 
 extension SH_Charts :ChartViewDelegate {
