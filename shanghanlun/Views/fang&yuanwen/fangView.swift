@@ -58,7 +58,7 @@ class fangView: UITableViewController {
         definesPresentationContext = true
         
         readFileJson_SH(jsonFile: "SH_all_fang1.json")
-        navigationItem.title = "伤寒论方与原文"
+        navigationItem.title = "伤寒杂病论之方剂"
        
 
     }

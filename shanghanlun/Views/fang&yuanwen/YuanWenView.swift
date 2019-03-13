@@ -57,7 +57,7 @@ class yuanwenTableViewController: UITableViewController {
    
         readFileJson_book(jsonFile: "SH_book.json")
 
-        navigationItem.title = "伤寒论与金匮要略原文"
+        navigationItem.title = "伤寒杂病论原文"
    
         tableView.tableFooterView = UIView()
         //搜索栏
@@ -68,8 +68,8 @@ class yuanwenTableViewController: UITableViewController {
         
         navigationItem.searchController = searchController
         definesPresentationContext = true
-        
-        let text = "I made this wonderful pic last #chRistmas... #instagram #nofilter #snow #fun"
+         
+        let text = "I made this wonderful pic last #中文 #instagram #可以吗#是吗 fun"
         let hashtags = text.hashtags()
         print(hashtags)
    

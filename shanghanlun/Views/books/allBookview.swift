@@ -20,39 +20,6 @@ class AllBookView : UITableViewController {
     
     }
     
-    
-    func readFileJson_book(jsonFile: String) {
-        
-        print("试图读取json")
-        guard let fileURL = Bundle.main.url(forResource: jsonFile, withExtension: nil),
-            let _ = try? Data.init(contentsOf: fileURL) else{
-                fatalError("`JSON File Fetch Failed`")
-        }
-        
-        URLSession.shared.dataTask(with: fileURL) { (data, response, err) in
-            DispatchQueue.main.async {
-                guard let data = data else { return }
-                
-                do {
-                    let oneJson = try JSONDecoder().decode(Book.self, from: data)
-                    
-                    self.allBook.append(oneJson)
-                   
-                    self.tableView.reloadData()
-                } catch let jsonErr {
-                    print(jsonErr)
-                }
-            }
-            
-            }.resume()
-    }
-    
-//    override func numberOfSections(in tableView: UITableView) -> Int {
-//
-//        return allBook.count
-//
-//    }
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
       
         return allBook.count
@@ -75,7 +42,10 @@ class AllBookView : UITableViewController {
         let bookview = EachBookView()
         bookview.alldata = allBook[indexPath.row].alldata
         bookview.booktitle = allBook[indexPath.row].bookname
+        
+        self.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(bookview, animated: true)
+        self.hidesBottomBarWhenPushed = false
     }
     
     

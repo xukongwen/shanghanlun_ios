@@ -19,6 +19,8 @@ class bookDetailTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.tableView.separatorColor = UIColor.clear
+        
         title = fang?.header
         navigationItem.largeTitleDisplayMode = .automatic
         

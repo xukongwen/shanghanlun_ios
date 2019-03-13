@@ -50,6 +50,7 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>wenyue.otf</string>
+		<string>Wyue-GutiFangsong-NC</string>
 		<string>Songti.ttc</string>
 		<string>song.ttf</string>
 	</array>

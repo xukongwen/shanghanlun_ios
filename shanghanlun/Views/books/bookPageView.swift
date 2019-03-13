@@ -19,10 +19,20 @@ class BookPageView : UITableViewController {
         title = booktitle
         
         self.tableView.separatorColor = UIColor.clear
-        //隐藏nav下面那个线
-//        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-//        self.navigationController?.navigationBar.shadowImage = UIImage()
+        
+        //在阅读的时候隐藏整个navbar
+        navigationController?.hidesBarsOnSwipe = true
+        //其他时候要改回来，这是一个bug
     
+    }
+    
+    //隐藏电量这些的状态栏
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    //隐藏iphone x 的返回home line
+    override var prefersHomeIndicatorAutoHidden: Bool {
+        return true
     }
     
     
@@ -35,7 +45,8 @@ class BookPageView : UITableViewController {
         
         let book = data[indexPath.row].text
         cell.textLabel?.numberOfLines = 0
-        cell.textLabel?.font = UIFont.init(name: "Songti Tc", size: 20)
+        cell.textLabel?.font = UIFont.init(name: "STSongti-TC-Regular", size: 25)
+        cell.textLabel?.textColor = .gray
         cell.textLabel?.text = book
         cell.isUserInteractionEnabled = false
         return cell

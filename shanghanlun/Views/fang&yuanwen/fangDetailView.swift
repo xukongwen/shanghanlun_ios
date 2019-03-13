@@ -21,6 +21,8 @@ class fangDetailView: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.tableFooterView = UIView()
+        
         // WenYue-GuDianMingChaoTi-NC-W5
         let myAppdelegate = UIApplication.shared.delegate as! AppDelegate
         benCaoList = myAppdelegate.benCaoList
@@ -69,13 +71,6 @@ class fangDetailView: UITableViewController {
         
     }
     
-    // 这个太好了，可以获取所有字体的名字！
-    func findfont() {
-        for family in UIFont.familyNames.sorted() {
-            let names = UIFont.fontNames(forFamilyName: family)
-            print("Family: \(family) Font names: \(names)")
-        }
-    }
     
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -93,14 +88,14 @@ class fangDetailView: UITableViewController {
             cell.isUserInteractionEnabled = false // 禁止选择
         } else if fangtext == "原文辨证："{
             cell.textLabel?.text = fangtext
-            cell.textLabel?.font = UIFont.init(name: "Songti Tc", size: 20)
+            cell.textLabel?.font = UIFont.init(name: "STSongti-SC-Bold", size: 20)
             
             cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: cell.frame.width - 70)
             cell.isUserInteractionEnabled = false
             
         } else if fangtext == "原文用药法："{
             cell.textLabel?.text = fangtext
-            cell.textLabel?.font = UIFont.init(name: "Songti Tc", size: 20)
+            cell.textLabel?.font = UIFont.init(name: "STSongti-SC-Bold", size: 20)
             cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: cell.frame.width - 90)
             cell.isUserInteractionEnabled = false
             

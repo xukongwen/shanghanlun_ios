@@ -25,6 +25,7 @@
 		8310AC75222630FC008BF23E /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8310AC74222630FC008BF23E /* Extensions+UIView.swift */; };
 		8350099D22364DB800519C0D /* eachBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8350099C22364DB800519C0D /* eachBookView.swift */; };
 		8350099F2236511B00519C0D /* bookPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8350099E2236511B00519C0D /* bookPageView.swift */; };
+		835009A12236A00F00519C0D /* Wyue-GutiFangsong-NC.otf in Resources */ = {isa = PBXBuildFile; fileRef = 835009A02236A00F00519C0D /* Wyue-GutiFangsong-NC.otf */; };
 		83531A9C21FB087E0055DA2F /* grid_box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83531A9B21FB087E0055DA2F /* grid_box.swift */; };
 		83531A9F21FB31000055DA2F /* GameListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83531A9E21FB31000055DA2F /* GameListView.swift */; };
 		83531AA121FB32C00055DA2F /* DragandDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83531AA021FB32C00055DA2F /* DragandDrop.swift */; };
@@ -63,6 +64,7 @@
 		838E1BAA21FFE674009CD478 /* SH_all_fang1.json in Resources */ = {isa = PBXBuildFile; fileRef = 838E1BA921FFE674009CD478 /* SH_all_fang1.json */; };
 		83C8B2C7220BC0810044CF4E /* peopleListview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C8B2C6220BC0810044CF4E /* peopleListview.swift */; };
 		83C8B2C9220BC8850044CF4E /* CreatePeople.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C8B2C8220BC8850044CF4E /* CreatePeople.swift */; };
+		83D459D1223893CB00283ED4 /* Book_TanJing.json in Resources */ = {isa = PBXBuildFile; fileRef = 83D459D0223893CB00283ED4 /* Book_TanJing.json */; };
 		83E0179221F8189C00D5E87F /* SH_jk_json1.json in Resources */ = {isa = PBXBuildFile; fileRef = 83E0178C21F8189C00D5E87F /* SH_jk_json1.json */; };
 		83E0179321F8189C00D5E87F /* SH_jk_book.json in Resources */ = {isa = PBXBuildFile; fileRef = 83E0178D21F8189C00D5E87F /* SH_jk_book.json */; };
 		83E0179421F8189C00D5E87F /* SH_book.json in Resources */ = {isa = PBXBuildFile; fileRef = 83E0178E21F8189C00D5E87F /* SH_book.json */; };
@@ -105,6 +107,7 @@
 		8310AC74222630FC008BF23E /* Extensions+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UIView.swift"; sourceTree = "<group>"; };
 		8350099C22364DB800519C0D /* eachBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eachBookView.swift; sourceTree = "<group>"; };
 		8350099E2236511B00519C0D /* bookPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bookPageView.swift; sourceTree = "<group>"; };
+		835009A02236A00F00519C0D /* Wyue-GutiFangsong-NC.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wyue-GutiFangsong-NC.otf"; sourceTree = "<group>"; };
 		83531A9B21FB087E0055DA2F /* grid_box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grid_box.swift; sourceTree = "<group>"; };
 		83531A9E21FB31000055DA2F /* GameListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListView.swift; sourceTree = "<group>"; };
 		83531AA021FB32C00055DA2F /* DragandDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragandDrop.swift; sourceTree = "<group>"; };
@@ -145,6 +148,7 @@
 		838E1BA921FFE674009CD478 /* SH_all_fang1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SH_all_fang1.json; sourceTree = "<group>"; };
 		83C8B2C6220BC0810044CF4E /* peopleListview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = peopleListview.swift; sourceTree = "<group>"; };
 		83C8B2C8220BC8850044CF4E /* CreatePeople.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePeople.swift; sourceTree = "<group>"; };
+		83D459D0223893CB00283ED4 /* Book_TanJing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Book_TanJing.json; sourceTree = "<group>"; };
 		83E0178C21F8189C00D5E87F /* SH_jk_json1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SH_jk_json1.json; sourceTree = "<group>"; };
 		83E0178D21F8189C00D5E87F /* SH_jk_book.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SH_jk_book.json; sourceTree = "<group>"; };
 		83E0178E21F8189C00D5E87F /* SH_book.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SH_book.json; sourceTree = "<group>"; };
@@ -361,6 +365,7 @@
 			children = (
 				8386E39A2232070F0037D36A /* Book_NeiJing.json */,
 				8386E39D22320B100037D36A /* Book_XinJing.json */,
+				83D459D0223893CB00283ED4 /* Book_TanJing.json */,
 				830C150A2234EBEA00AFAF36 /* test1.json */,
 			);
 			path = books_data;
@@ -430,6 +435,7 @@
 		83E0179821F818AC00D5E87F /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				835009A02236A00F00519C0D /* Wyue-GutiFangsong-NC.otf */,
 				83E0179A21F818B900D5E87F /* song.ttf */,
 				83E0179B21F818B900D5E87F /* Songti.ttc */,
 				83E0179921F818B900D5E87F /* wenyue.otf */,
@@ -526,6 +532,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83E0179E21F818B900D5E87F /* Songti.ttc in Resources */,
+				835009A12236A00F00519C0D /* Wyue-GutiFangsong-NC.otf in Resources */,
 				830C150B2234EBEA00AFAF36 /* test1.json in Resources */,
 				837DE18F21F6D0AF00E0B0E3 /* LaunchScreen.storyboard in Resources */,
 				83E0179221F8189C00D5E87F /* SH_jk_json1.json in Resources */,
@@ -538,6 +545,7 @@
 				83E0179621F8189C00D5E87F /* SH_yao.json in Resources */,
 				83E0179521F8189C00D5E87F /* SH_ty2.json in Resources */,
 				83531AA321FB330A0055DA2F /* MyStory.storyboard in Resources */,
+				83D459D1223893CB00283ED4 /* Book_TanJing.json in Resources */,
 				837DE18C21F6D0AF00E0B0E3 /* Assets.xcassets in Resources */,
 				8355195721FEF8820092B2DB /* SH_jk_json_backup.json in Resources */,
 				83E0179321F8189C00D5E87F /* SH_jk_book.json in Resources */,

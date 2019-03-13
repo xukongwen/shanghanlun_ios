@@ -11,6 +11,13 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    
+    //自己的字体
+    //WenYue GuDianMingChaoTi (Non-Commercial Use) Font names: ["WenYue-GuDianMingChaoTi-NC-W5"]
+    //Family: WenyueType GutiFangsong (Non-Commercial Use) Font names: ["Wyue-GutiFangsong-NC"]
+    //Songti SC Font names: ["STSongti-SC-Black", "STSongti-SC-Regular", "STSongti-SC-Bold", "STSongti-SC-Light"]
+    //Family: Songti TC Font names: ["STSongti-TC-Light", "STSongti-TC-Bold", "STSongti-TC-Regular
 
     var window: UIWindow?
     var lovelistView = LoveView()
@@ -26,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var sectionJk = [SH_fang_final]()
     
     let attrs = [NSAttributedString.Key.foregroundColor: UIColor.black,
-                 NSAttributedString.Key.font: UIFont(name: "WenYue-GuDianMingChaoTi-NC-W5", size: 35)!]
+                 NSAttributedString.Key.font: UIFont(name: "STSongti-SC-Black", size: 35)!]
    
     
 
@@ -43,7 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //自定义小字体导航栏
         UINavigationBar.appearance().titleTextAttributes =
             [NSAttributedString.Key.foregroundColor: UIColor.black,
-             NSAttributedString.Key.font: UIFont(name: "WenYue-GuDianMingChaoTi-NC-W5", size: 25)!]
+             NSAttributedString.Key.font: UIFont(name: "STSongti-SC-Black", size: 25)!]
         
         UINavigationBar.appearance().largeTitleTextAttributes = attrs
         
@@ -102,14 +109,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         readFileJson(jsonFile: "SH_all_fang1.json")
         readFile_BenCao(jsonFile: "SH_yao_1.json")
         readFile_book(jsonFile: "Book_XinJing.json")
+        readFile_book(jsonFile: "Book_TanJing.json")
         readFile_book(jsonFile: "Book_NeiJing.json")
 
     
         window = UIWindow()
         window?.rootViewController = tabVC
         window?.makeKeyAndVisible()
+        
+        //打印所有字体
+        //findfont()
     
         return true
+    }
+    
+    // 这个太好了，可以获取所有字体的名字！
+    func findfont() {
+        for family in UIFont.familyNames.sorted() {
+            let names = UIFont.fontNames(forFamilyName: family)
+            print("Family: \(family) Font names: \(names)")
+        }
     }
     
     
