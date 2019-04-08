@@ -111,6 +111,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         readFile_book(jsonFile: "Book_XinJing.json")
         readFile_book(jsonFile: "Book_TanJing.json")
         readFile_book(jsonFile: "Book_NeiJing.json")
+        readFile_book(jsonFile: "Book_NeiJing_ls.json")
 
     
         window = UIWindow()

@@ -205,11 +205,23 @@ class fangView: UITableViewController {
     //===========收藏==================
     override func tableView(_ tableView: UITableView, editActionsForRowAt: IndexPath) -> [UITableViewRowAction]? {
         
+        let myAppdelegate = UIApplication.shared.delegate as! AppDelegate//这个很重要，是获取当前AppDelegate的方法！花了好几天的时间！
+        
+        
         let love = UITableViewRowAction(style: .normal, title: "收藏") { action, index in
-            let myAppdelegate = UIApplication.shared.delegate as! AppDelegate//这个很重要，是获取当前AppDelegate的方法！花了好几天的时间！
-            let fang : SH_fang_final
-            fang = self.sectionsData[editActionsForRowAt.section].items[editActionsForRowAt.row]
+            var fang : SH_fang_final
+            //这里也要判断一下是否是搜索状态
+            if self.isFiltering() {
+                
+                fang = self.filter_sectionData[index.section].items[index.row]
+                
+            } else {
+                fang = self.sectionsData[index.section].items[index.row]
+                
+            }
+          
             let fangId = fang.ID
+           
             self.saveRow(id: Int16(fangId))
             myAppdelegate.lovelistView.updateData()
         

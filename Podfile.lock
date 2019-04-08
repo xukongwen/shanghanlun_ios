@@ -2,21 +2,29 @@ PODS:
   - Charts (3.2.1):
     - Charts/Core (= 3.2.1)
   - Charts/Core (3.2.1)
+  - Down (0.6.2)
   - Highlighter (1.2.0)
+  - SelectableTextView (1.0.3)
 
 DEPENDENCIES:
   - Charts
+  - Down
   - Highlighter
+  - SelectableTextView (~> 1.0.2)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Charts
+    - Down
     - Highlighter
+    - SelectableTextView
 
 SPEC CHECKSUMS:
   Charts: f122fb70b19847fa5817d018b77d6c5a2296ab25
+  Down: 8c59a03cb229ef28dfa774b2132da860f3dee0ac
   Highlighter: 60c180dcffaeca3cadcb7a353f9d19345a59ea3f
+  SelectableTextView: 5ee39973a73ce79e5ac936c9552112e300938482
 
-PODFILE CHECKSUM: 2180bff700aa1572806b54bb646f6e2b5dd80dd0
+PODFILE CHECKSUM: ff21d0f75436113ea5c2fa0f08795917bfc1bc55
 
 COCOAPODS: 1.5.3

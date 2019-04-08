@@ -7,6 +7,8 @@ target 'shanghanlun' do
 
 	pod 'Charts'
 	pod 'Highlighter'
+	pod 'SelectableTextView', '~> 1.0.2'
+	pod 'Down'
 
  
 

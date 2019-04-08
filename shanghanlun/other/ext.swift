@@ -29,11 +29,13 @@ extension UIView {
     
 }
 
+
+// 这个是用特殊符号识别出后面的中文
 extension String
 {
     func hashtags() -> [String]
     {
-        if let regex = try? NSRegularExpression(pattern: "#[a-z0-9]+", options: .caseInsensitive)
+        if let regex = try? NSRegularExpression(pattern: "#[^x00-xff]+", options: .caseInsensitive)
         {
             let string = self as NSString
             

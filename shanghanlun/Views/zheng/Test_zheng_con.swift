@@ -97,7 +97,7 @@ class ZhengTestCon: UITableViewController {
         let cell = tableView.cellForRow(at: indexPath) as! ZhengCell
         let zheng = allZheng[indexPath.row]
       
-        if let index = selectedIndexs.index(of: indexPath.row){
+        if let index = selectedIndexs.firstIndex(of: indexPath.row){
             selectedIndexs.remove(at: index)
             selectedZheng.remove(at: index)
             cell.peopleimageivew.image = UIImage(named:"deselect")

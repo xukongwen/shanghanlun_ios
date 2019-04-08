@@ -11294,6 +11294,80 @@
         "zhengtext" : "病者一身尽疼，发热，日晡所剧者，名风湿。此病伤于汗出当风，或久伤取冷所致也。可与麻黄杏仁薏苡甘草汤。",
         "yaotext" : "麻黄，去节，半两，汤泡；甘草一两，炙；薏苡仁半两；杏仁十个，去皮、火，炒。",
         "fuyaotext" : "右四味，剉麻豆大，每服四钱匕，水盏半，煮八分，去滓。温服，有微汗，避风。"
+    },
+    {
+        "name" : "防己黄芪汤",
+        "ID" : 159,
+        "book" : "金匮",
+        "yinyang" : "阳",
+        "jing" : "太阳",
+        "zheng" : {
+            "ti" : [
+                "发热",
+                "出汗",
+                "头痛"
+            ],
+            "mai" : [
+                "浮"
+            ]
+        },
+        "yaocount" : 5,
+        "yaoList" : [
+            {
+                "yaoname" : "防己",
+                "dirction" : "辛",
+                "temp" : "平",
+                "wuxing" : "金",
+                "weightChina" : "一两",
+                "weight" : 100,
+                "extraProcess" : "无",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "甘草",
+                "dirction" : "甘",
+                "temp" : "平",
+                "wuxing" : "土",
+                "weightChina" : "一两",
+                "weight" : 50,
+                "extraProcess" : "炙",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "白术",
+                "dirction" : "苦",
+                "temp" : "温",
+                "wuxing" : "土",
+                "weightChina" : "七钱半",
+                "weight" : 75,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "黄芪",
+                "dirction" : "甘",
+                "temp" : "温",
+                "wuxing" : "土",
+                "weightChina" : "一量一分",
+                "weight" : 125,
+                "extraProcess" : "切",
+                "cost" : 10
+            },
+            {
+                "yaoname" : "生姜",
+                "dirction" : "甘",
+                "temp" : "温",
+                "wuxing" : "土",
+                "weightChina" : "一量一分",
+                "weight" : 125,
+                "extraProcess" : "切",
+                "cost" : 10
+            }
+            
+        ],
+        "zhengtext" : "病者一身尽疼，发热，日晡所剧者，名风湿。此病伤于汗出当风，或久伤取冷所致也。可与麻黄杏仁薏苡甘草汤。",
+        "yaotext" : "麻黄，去节，半两，汤泡；甘草一两，炙；薏苡仁半两；杏仁十个，去皮、火，炒。",
+        "fuyaotext" : "右四味，剉麻豆大，每服四钱匕，水盏半，煮八分，去滓。温服，有微汗，避风。"
     }
     
    
