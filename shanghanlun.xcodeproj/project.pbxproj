@@ -64,6 +64,7 @@
 		8386E3A022320C7B0037D36A /* readBookJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8386E39F22320C7B0037D36A /* readBookJson.swift */; };
 		83892524220C45D2001E256B /* Core_DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83892523220C45D2001E256B /* Core_DataManager.swift */; };
 		838E1BAA21FFE674009CD478 /* SH_all_fang1.json in Resources */ = {isa = PBXBuildFile; fileRef = 838E1BA921FFE674009CD478 /* SH_all_fang1.json */; };
+		83B675FB2262D04200B2F32B /* Yinyang_univers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B675FA2262D04200B2F32B /* Yinyang_univers.swift */; };
 		83C8B2C7220BC0810044CF4E /* peopleListview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C8B2C6220BC0810044CF4E /* peopleListview.swift */; };
 		83C8B2C9220BC8850044CF4E /* CreatePeople.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C8B2C8220BC8850044CF4E /* CreatePeople.swift */; };
 		83D459D1223893CB00283ED4 /* Book_TanJing.json in Resources */ = {isa = PBXBuildFile; fileRef = 83D459D0223893CB00283ED4 /* Book_TanJing.json */; };
@@ -153,6 +154,7 @@
 		8386E39F22320C7B0037D36A /* readBookJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = readBookJson.swift; sourceTree = "<group>"; };
 		83892523220C45D2001E256B /* Core_DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core_DataManager.swift; sourceTree = "<group>"; };
 		838E1BA921FFE674009CD478 /* SH_all_fang1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SH_all_fang1.json; sourceTree = "<group>"; };
+		83B675FA2262D04200B2F32B /* Yinyang_univers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yinyang_univers.swift; sourceTree = "<group>"; };
 		83C8B2C6220BC0810044CF4E /* peopleListview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = peopleListview.swift; sourceTree = "<group>"; };
 		83C8B2C8220BC8850044CF4E /* CreatePeople.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePeople.swift; sourceTree = "<group>"; };
 		83D459D0223893CB00283ED4 /* Book_TanJing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Book_TanJing.json; sourceTree = "<group>"; };
@@ -270,13 +272,14 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		83531A9A21FB08630055DA2F /* Tests */ = {
+		83531A9A21FB08630055DA2F /* Games */ = {
 			isa = PBXGroup;
 			children = (
 				83531A9B21FB087E0055DA2F /* grid_box.swift */,
+				83B675FA2262D04200B2F32B /* Yinyang_univers.swift */,
 				83531AA021FB32C00055DA2F /* DragandDrop.swift */,
 			);
-			path = Tests;
+			path = Games;
 			sourceTree = "<group>";
 		};
 		837C51C3222F7450007B62FD /* Framework */ = {
@@ -305,6 +308,7 @@
 		837DE17821F6D0AE00E0B0E3 = {
 			isa = PBXGroup;
 			children = (
+				83B675F92262CCD100B2F32B /* Game */,
 				837DE18321F6D0AE00E0B0E3 /* shanghanlun */,
 				837DE18221F6D0AE00E0B0E3 /* Products */,
 				A8124CB3F3F5A3DD9EF414BF /* Pods */,
@@ -324,7 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				8310AC55221F78E3008BF23E /* Charts */,
-				83531A9A21FB08630055DA2F /* Tests */,
+				83531A9A21FB08630055DA2F /* Games */,
 				837DE19021F6D0AF00E0B0E3 /* Info.plist */,
 				83E017AD21F862C500D5E87F /* other */,
 				83E0179821F818AC00D5E87F /* Font */,
@@ -383,6 +387,13 @@
 				830C150A2234EBEA00AFAF36 /* test1.json */,
 			);
 			path = books_data;
+			sourceTree = "<group>";
+		};
+		83B675F92262CCD100B2F32B /* Game */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Game;
 			sourceTree = "<group>";
 		};
 		83E0178821F817D500D5E87F /* Models */ = {
@@ -687,6 +698,7 @@
 				837C51D7222F7507007B62FD /* UITableViewCell+Margins.swift in Sources */,
 				83855E8922111A0B006C1ACC /* PeopleInfoView.swift in Sources */,
 				8350099D22364DB800519C0D /* eachBookView.swift in Sources */,
+				83B675FB2262D04200B2F32B /* Yinyang_univers.swift in Sources */,
 				837C51D3222F748A007B62FD /* TextCellViewData.swift in Sources */,
 				83E017AF21F8673C00D5E87F /* fangDetailView.swift in Sources */,
 				8310AC7322263067008BF23E /* MainCell.swift in Sources */,

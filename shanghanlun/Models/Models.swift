@@ -30,17 +30,10 @@ struct SH_json: Codable {
     let name: String?
 }
 
-struct Section_jk {
-    var name: String
-    var items: [SH_fang_final]
-    var collapsed: Bool
-    
-    init(name: String, items: [SH_fang_final], collapsed: Bool = false) {
-        self.name = name
-        self.items = items
-        self.collapsed = collapsed
-    }
-}
+
+
+
+
 
 struct SH_book_data: Decodable {
     let ID: Int?
@@ -53,6 +46,21 @@ struct SH_book: Decodable {
     let section: Int?
     let data: [SH_book_data?]
     let header: String?
+}
+
+
+// sections
+
+struct Section_jk {
+    var name: String
+    var items: [SH_fang_final]
+    var collapsed: Bool
+    
+    init(name: String, items: [SH_fang_final], collapsed: Bool = false) {
+        self.name = name
+        self.items = items
+        self.collapsed = collapsed
+    }
 }
 
 struct Section {
@@ -81,7 +89,6 @@ struct BookDetailSection {
 
 struct BookSearcheSection {
     var name: String
-    //var items: [SH_book_data]
     var newcells: [CellConfiguratorType]
     var collapsed: Bool
     

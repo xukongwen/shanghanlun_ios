@@ -24,26 +24,6 @@ class fangView: UITableViewController {
     var filter_sectionData = [Section_jk]()
     var sectionJk = [SH_fang_final]()
     
-    let illType : UISegmentedControl = {
-        let type = ["方剂","原文"]
-        let sc = UISegmentedControl(items: type)
-        sc.selectedSegmentIndex = 0
-        sc.tintColor = .black
-        
-        sc.translatesAutoresizingMaskIntoConstraints = false
-        return sc
-    }()
-   
-    func setUI() {
-        //view.addSubview(illType)
-        illType.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 50).isActive = true
-        illType.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        illType.topAnchor.constraint(equalTo: view.topAnchor, constant: 5).isActive = true
-        illType.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 10).isActive = true
-        illType.heightAnchor.constraint(equalToConstant: 30).isActive = true
-    }
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
        
@@ -221,9 +201,9 @@ class fangView: UITableViewController {
             }
           
             let fangId = fang.ID
-           
+    
             self.saveRow(id: Int16(fangId))
-            myAppdelegate.lovelistView.updateData()
+            myAppdelegate.lovelistView.loadsaveData()
         
         }
         love.backgroundColor = .orange
@@ -251,9 +231,9 @@ class fangView: UITableViewController {
         return sectionsData[section].collapsed ? 0 : sectionsData[section].items.count //有多少行
     }
     
-    
+    // ==============cell====================
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "Cell")
+        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "Cell")
         let fang : SH_fang_final
         
         if isFiltering() {
@@ -268,10 +248,16 @@ class fangView: UITableViewController {
         //显示每个cell的内容
         cell.textLabel?.numberOfLines = 0//这个是让一个cell完整显示无论多少text，自动扩展
         cell.textLabel?.text = fang.name
-        cell.textLabel?.font = UIFont.init(name: "Songti Tc", size: 18)
+        cell.detailTextLabel?.text = fang.zhengtext
+        cell.detailTextLabel?.font = UIFont.init(name: "Songti Tc", size: 15)
+        cell.detailTextLabel?.textColor = .gray
+        cell.textLabel?.font = UIFont.init(name: "Songti Tc", size: 20)
+        
         return cell
     }
     
+    
+    // =============选择cell=================================
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         

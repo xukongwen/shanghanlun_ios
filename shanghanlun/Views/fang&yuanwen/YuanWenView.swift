@@ -226,7 +226,6 @@ class yuanwenTableViewController: UITableViewController {
     }
     
  
-    //下面这个必须给注释掉，否则啥也出不来，因为return0！
     override func numberOfSections(in tableView: UITableView) -> Int {
         
         if isFiltering() {
@@ -249,7 +248,7 @@ class yuanwenTableViewController: UITableViewController {
     
     // 设置cell
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = UITableViewCell(style: .default, reuseIdentifier: "Cell")
+        var cell = UITableViewCell(style: .subtitle, reuseIdentifier: "Cell")
         let book: SH_book
      
         //搜索过滤
@@ -260,16 +259,21 @@ class yuanwenTableViewController: UITableViewController {
             cellConfigurator.update(cell: cell)
             cell.isUserInteractionEnabled = false
             cell.textLabel?.numberOfLines = 0
-            cell.highlight(text: searchController.searchBar.text!, normal: nil, highlight: [NSAttributedString.Key.backgroundColor: UIColor.black, NSAttributedString.Key.foregroundColor: UIColor.white])
+            //cell.highlight(text: searchController.searchBar.text!, normal: nil, highlight: [NSAttributedString.Key.backgroundColor: UIColor.black, NSAttributedString.Key.foregroundColor: UIColor.white])
            
         } else {
           
             book = sectionsData[indexPath.section].items[indexPath.row]
             cell.textLabel?.numberOfLines = 0
             cell.textLabel?.text = book.header
+            cell.detailTextLabel?.text = book.data[0]?.text
+            cell.detailTextLabel?.textColor = .gray
+            cell.detailTextLabel?.font = UIFont.init(name: "Songti Tc", size: 15)
+            
         }
    
-        cell.textLabel?.font = UIFont.init(name: "Songti Tc", size: 18)
+        cell.textLabel?.font = UIFont.init(name: "Songti Tc", size: 20)
+        
      
         return cell
     }

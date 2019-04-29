@@ -8,6 +8,7 @@
 
 import UIKit
 import SelectableTextView
+import CoreData
 
 class bookDetailTableViewController: UITableViewController {
     
@@ -15,6 +16,7 @@ class bookDetailTableViewController: UITableViewController {
     var fang: SH_book?
     var fangdata: SH_book_data!
     
+    let db = DataBase.shared
     
     
     override func viewDidLoad() {
@@ -40,29 +42,54 @@ class bookDetailTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: "Cell")
         
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! BookPageCell
-
         fangdata = fang!.data[indexPath.row]!
-        
-       
+    
         cell.textLabel?.numberOfLines = 0//这个是让一个cell完整显示无论多少text，自动扩展
         cell.textLabel?.text = fangdata.text
         cell.textLabel?.font = UIFont.init(name: "Songti Tc", size: 18)
+        cell.isUserInteractionEnabled = true
         
-        
-//        cell.peoplename.text = fangdata.text
-//        cell.peoplename.textColor = .clear
-//        cell.peoplename.numberOfLines = 0
-//
-//        cell.textView.text = fangdata.text
-//        cell.textView.textColor = .red
-//        cell.textView.font = UIFont.init(name: "Songti Tc", size: 18)!
-//        cell.textView.numberOfLines = 0
-//        cell.isUserInteractionEnabled = true
-        
-        //print(cell.textView.text!)
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, editActionsForRowAt: IndexPath) -> [UITableViewRowAction]? {
+        
+        let myAppdelegate = UIApplication.shared.delegate as! AppDelegate
+        
+        
+        let love = UITableViewRowAction(style: .normal, title: "收藏") { action, index in
+            var text : SH_book_data
+            text = self.fang!.data[index.row]!
+            let bookId: Int = text.ID as! Int
+           
+            self.saveRow(id: Int16(bookId))
+            myAppdelegate.lovelistView.loadsaveData()
+            
+        }
+        love.backgroundColor = .orange
+        return [love]
+    }
+    
+    // 储存ID
+    func saveRow(id: Int16) {
+        
+        let managedObjectContext = db.persistentContainer.viewContext
+        
+        let entity = NSEntityDescription.entity(forEntityName: "LoveList", in: managedObjectContext)
+        let item = NSManagedObject(entity: entity!, insertInto: managedObjectContext)
+        
+        item.setValue(id, forKey: "row")
+        
+        do {
+            try managedObjectContext.save()
+        } catch  {
+            fatalError("无法保存")
+        }
+        
+        let myAppdelegate = UIApplication.shared.delegate as! AppDelegate
+        myAppdelegate.lovelistView.rowofsection.append(item)
+        
     }
 
     

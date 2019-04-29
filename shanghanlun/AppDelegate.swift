@@ -27,8 +27,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var benCaoList = [BenCao]()
     
     var allbook = [Book]()
+    var SHbook = [SH_book]()
     
-    //var sectionData = [Section_jk]()
     var sectionsData = [Section_jk]()
     var sectionJk = [SH_fang_final]()
     
@@ -85,6 +85,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let allbookView = AllBookView()
         allbookView.title = "古籍"
         
+        let yinyangView = YinYangWord()
+        yinyangView.title = "阴阳动画实验"
+        
         
         //获得storyboard里的创建好的view
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "MyStory", bundle: nil)
@@ -92,7 +95,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         setViewController.title = "Drag"
         
         let gamelist1 = GameListView()
-        gamelist1.gameList = [gridboxView, setViewController, peopleList1, chart1View, allbookView]
+        gamelist1.gameList = [yinyangView, gridboxView, setViewController, peopleList1, chart1View, allbookView]
         gamelist1.title = "其他"
         
         //======================tab view========================
@@ -108,6 +111,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //============read json==========================
         readFileJson(jsonFile: "SH_all_fang1.json")
         readFile_BenCao(jsonFile: "SH_yao_1.json")
+        readSH_book(jsonFile: "SH_book.json")
         readFile_book(jsonFile: "Book_XinJing.json")
         readFile_book(jsonFile: "Book_TanJing.json")
         readFile_book(jsonFile: "Book_NeiJing.json")
@@ -211,6 +215,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     let oneJson = try JSONDecoder().decode(Book.self, from: data)
                     
                     self.allbook.append(oneJson)
+                    
+                } catch let jsonErr {
+                    print(jsonErr)
+                }
+            }
+            
+            }.resume()
+    }
+    
+    func readSH_book(jsonFile: String) {
+        
+        guard let fileURL = Bundle.main.url(forResource: jsonFile, withExtension: nil),
+            let _ = try? Data.init(contentsOf: fileURL) else{
+                fatalError("`JSON File Fetch Failed`")
+        }
+        
+        URLSession.shared.dataTask(with: fileURL) { (data, response, err) in
+            DispatchQueue.main.async {
+                guard let data = data else { return }
+                
+                do {
+                    let oneJson = try JSONDecoder().decode([SH_book].self, from: data)
+                    
+                    self.SHbook = oneJson
                     
                 } catch let jsonErr {
                     print(jsonErr)
